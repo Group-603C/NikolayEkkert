@@ -1,6 +1,6 @@
 package com.company;
 
-import java.io.File;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -20,11 +20,19 @@ public class Main
             int countLetter = 0;
             int countLine = 0;
 
+            final BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\User\\IdeaProjects\\lab4\\src\\com\\company\\file.txt")));
+            String line;
+
+            while ((line = reader.readLine()) != null)
+            {
+                countLine++;
+            }
+            reader.close();
+
             Map<Character, Integer> dictionaryLetter = new HashMap<>();
 
             while (file.hasNext())
             {
-                countLine++;
                 countWord++;
                 String word = file.next();
                 for (int i = 0; i < word.length(); i++)
@@ -40,6 +48,8 @@ public class Main
                         dictionaryLetter.put(word.charAt(i), 1);
                     }
                 }
+
+
                 countLetter += word.length();
             }
             file.close();
