@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main
 {
 
-    public static int getMin(int[] arrayForFindingTheMinimum)
+    public static int GetMin(int[] arrayForFindingTheMinimum)
     {
         int minimum = Integer.MAX_VALUE;
         for (int i = 0; i < arrayForFindingTheMinimum.length; i++)
@@ -17,7 +17,7 @@ public class Main
         return minimum;
     }
 
-    public static int getMax(int[] arrayForFindingTheMaximum)
+    public static int GetMax(int[] arrayForFindingTheMaximum)
     {
         int maximum = Integer.MIN_VALUE;
         for (int i = 0; i < arrayForFindingTheMaximum.length; i++)
@@ -28,7 +28,7 @@ public class Main
         return maximum;
     }
 
-    public static float arithmeticMean(int[] arrayForFindingTheArithmeticMean)
+    public static float ArithmeticMean(int[] arrayForFindingTheArithmeticMean)
     {
         int valueArithmeticMean = 0;
         for (int i = 0; i < arrayForFindingTheArithmeticMean.length; i++)
@@ -39,7 +39,7 @@ public class Main
         return valueArithmeticMean / arrayForFindingTheArithmeticMean.length;
     }
 
-    public static float getMedianOfNumber(int[] arrayForFindingTheMedianOfNumber)
+    public static float GetMedianOfNumber(int[] arrayForFindingTheMedianOfNumber)
     {
         Arrays.sort(arrayForFindingTheMedianOfNumber);
         if (arrayForFindingTheMedianOfNumber.length % 2 == 0)
@@ -50,7 +50,7 @@ public class Main
         return arrayForFindingTheMedianOfNumber[arrayForFindingTheMedianOfNumber.length / 2];
     }
 
-    public static double getGeometricMean(int[] arrayForFindingTheGeometricMean)
+    public static double GetGeometricMean(int[] arrayForFindingTheGeometricMean)
     {
         double multiplicationOfNumber = 1f;
         for (int i = 0; i < arrayForFindingTheGeometricMean.length; i++)
@@ -74,13 +74,13 @@ public class Main
             arrayNumber[i] = input.nextInt();
         }
 
-        System.out.println("\nМинимум: " + getMin(arrayNumber));
-        System.out.println("Максимум: " + getMax(arrayNumber));
+        System.out.println("\nМинимум: " + GetMin(arrayNumber));
+        System.out.println("Максимум: " + GetMax(arrayNumber));
 
-        System.out.println("\nСреднее арифметическое: " + arithmeticMean(arrayNumber));
+        System.out.println("\nСреднее арифметическое: " + ArithmeticMean(arrayNumber));
 
-        System.out.println("\nМедиана: " + getMedianOfNumber(arrayNumber));
+        System.out.println("\nМедиана: " + GetMedianOfNumber(arrayNumber));
 
-        System.out.println("\nСреднее геометрическое: " + getGeometricMean(arrayNumber));
+        System.out.println("\nСреднее геометрическое: " + GetGeometricMean(arrayNumber));
     }
 }

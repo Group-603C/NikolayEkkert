@@ -49,7 +49,6 @@ public class Main
                     }
                 }
 
-
                 countLetter += word.length();
             }
             file.close();

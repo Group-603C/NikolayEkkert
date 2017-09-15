@@ -7,7 +7,7 @@ import java.util.Stack;
 public class Main
 {
 
-    public static String infixToPostfix(String expression)
+    public static String InfixToPostfix(String expression)
     {
         Map<String, Integer> dictionaryPriority = new HashMap<String, Integer>();
         dictionaryPriority.put("(", 1);
@@ -57,7 +57,7 @@ public class Main
         return tempExpression;
     }
 
-    public static int calculatePostfix(String expression)
+    public static int CalculatePostfix(String expression)
     {
         int resultCalculatePostfix = 0;
         Stack<Integer> stack = new Stack<>();
@@ -99,6 +99,6 @@ public class Main
 
     public static void main(String[] args)
     {
-        System.out.println(calculatePostfix(infixToPostfix("6+7+1*4")));
+        System.out.println(CalculatePostfix(InfixToPostfix("6+7+1*4")));
     }
 }
