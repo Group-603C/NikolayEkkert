@@ -14,13 +14,13 @@ public class Main
 
         try
         {
-            file = new Scanner(new File("C:\\Users\\User\\IdeaProjects\\lab4\\src\\com\\company\\file.txt"));
+            file = new Scanner(new File("~\\src\\com.company\\file.txt"));
 
             int countWord = 0;
             int countLetter = 0;
             int countLine = 0;
 
-            final BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\User\\IdeaProjects\\lab4\\src\\com\\company\\file.txt")));
+            final BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("~\\src\\com.company\\file.txt")));
             String line;
 
             while ((line = reader.readLine()) != null)
