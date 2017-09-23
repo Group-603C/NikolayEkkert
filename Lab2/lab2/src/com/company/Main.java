@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class Main
 {
-
     public static int GetMin(int[] arrayForFindingTheMinimum)
     {
         if (arrayForFindingTheMinimum.length != 0 || arrayForFindingTheMinimum != null)
@@ -153,9 +152,7 @@ public class Main
             {
                 System.out.println("\tОшибка, введён символ при указании длины массива!");
             }
-
         }
-
     }
 
     public static void main(String[] args)
