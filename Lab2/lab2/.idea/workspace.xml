@@ -15,8 +15,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="153" column="13" lean-forward="false" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
+            <state relative-caret-position="-1955">
+              <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,11 +31,14 @@
       <find>getMax</find>
       <find>getGeometricMean</find>
       <find>arrayNumber</find>
+      <find>arrayForFindingTheMinimum</find>
+      <find>multiplicationOfNumber</find>
     </findStrings>
     <replaceStrings>
       <replace>GetMax</replace>
       <replace>GetGeometricMean</replace>
       <replace>array</replace>
+      <replace>multiplication</replace>
     </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -300,12 +303,12 @@
       <workItem from="1505471422485" duration="904000" />
       <workItem from="1506178059090" duration="478000" />
       <workItem from="1506178596768" duration="11644000" />
-      <workItem from="1506193530801" duration="1321000" />
+      <workItem from="1506193530801" duration="1885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21477000" />
+    <option name="totallyTimeSpent" value="22041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="952" y="0" width="1313" height="744" extended-state="6" />
@@ -415,8 +418,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="153" column="13" lean-forward="false" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
+        <state relative-caret-position="-1955">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
