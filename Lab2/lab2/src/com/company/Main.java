@@ -115,23 +115,24 @@ public class Main
                 int lengthArray = input.nextInt();
 //                int lengthArray = 8;
                 int[] array = new int[lengthArray];
-                int i = 0;
-//                while (i < lengthArray)
-//                {
-//                    System.out.print(i + "Введите значение: ");
-//                    String tempInput = input.nextLine();
-//                    try
-//                    {
-//                        int temp = Integer.parseInt(tempInput);
-//                        array[i] = temp;
-//                        i++;
-//                    }
-//                    catch (NumberFormatException e)
-//                    {
-//                        System.out.println("\tОшибка, Введено не численное значение!");
-//                    }
-//                }
 
+                int i = 0;
+                while (i < lengthArray)
+                {
+                    Scanner symInput = new Scanner(System.in);
+                    System.out.print(i + "Введите значение: ");
+                    String tempInput = symInput.nextLine();
+                    try
+                    {
+                        int temp = Integer.parseInt(tempInput);
+                        array[i] = temp;
+                        i++;
+                    }
+                    catch (NumberFormatException e)
+                    {
+                        System.out.println("\tОшибка, Введено не численное значение!");
+                    }
+                }
 
 //                array[0] = 10;
 //                array[1] = 1;
@@ -146,11 +147,11 @@ public class Main
             }
             catch (NegativeArraySizeException e)
             {
-                System.out.println("\tОшибка, длина массива отрицательна!");
+                System.out.println("\tОшибка, длина массива не может быть отрицательна!");
             }
             catch (InputMismatchException e)
             {
-                System.out.println("\tОшибка, введён символ!");
+                System.out.println("\tОшибка, введён символ при указании длины массива!");
             }
 
         }
