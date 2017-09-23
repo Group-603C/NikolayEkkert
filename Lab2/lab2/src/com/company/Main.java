@@ -114,46 +114,60 @@ public class Main
                 Scanner input = new Scanner(System.in);
                 int lengthArray = input.nextInt();
 //                int lengthArray = 8;
+                int[] array = new int[lengthArray];
+                int i = 0;
+//                while (i < lengthArray)
+//                {
+//                    System.out.print(i + "Введите значение: ");
+//                    String tempInput = input.nextLine();
+//                    try
+//                    {
+//                        int temp = Integer.parseInt(tempInput);
+//                        array[i] = temp;
+//                        i++;
+//                    }
+//                    catch (NumberFormatException e)
+//                    {
+//                        System.out.println("\tОшибка, Введено не численное значение!");
+//                    }
+//                }
 
-                int[] arrayNumber = new int[lengthArray];
 
-                for (int i = 0; i < lengthArray; i++)
-                {
-                    System.out.print(i + "Введите значение: ");
-                    arrayNumber[i] = input.nextInt();
-                }
+//                array[0] = 10;
+//                array[1] = 1;
+//                array[2] = 2;
+//                array[3] = 3;
+//                array[4] = 4;
+//                array[5] = 5;
+//                array[6] = 6;
+//                array[7] = 7;
 
-
-//                arrayNumber[0] = 10;
-//                arrayNumber[1] = 1;
-//                arrayNumber[2] = 2;
-//                arrayNumber[3] = 3;
-//                arrayNumber[4] = 4;
-//                arrayNumber[5] = 5;
-//                arrayNumber[6] = 6;
-//                arrayNumber[7] = 7;
-
-                return arrayNumber;
+                return array;
             }
             catch (NegativeArraySizeException e)
             {
                 System.out.println("\tОшибка, длина массива отрицательна!");
             }
+            catch (InputMismatchException e)
+            {
+                System.out.println("\tОшибка, введён символ!");
+            }
+
         }
 
     }
 
     public static void main(String[] args)
     {
-        int[] arrayNumber = InputArray();
+        int[] array = InputArray();
 
-        System.out.println("\nМинимум: " + GetMin(arrayNumber));
-        System.out.println("Максимум: " + GetMax(arrayNumber));
+        System.out.println("\nМинимум: " + GetMin(array));
+        System.out.println("Максимум: " + GetMax(array));
 
-        System.out.println("\nСреднее арифметическое: " + ArithmeticMean(arrayNumber));
+        System.out.println("\nСреднее арифметическое: " + ArithmeticMean(array));
 
-        System.out.println("\nМедиана: " + GetMedianOfNumber(arrayNumber));
+        System.out.println("\nМедиана: " + GetMedianOfNumber(array));
 
-        System.out.println("\nСреднее геометрическое: " + GetGeometricMean(arrayNumber));
+        System.out.println("\nСреднее геометрическое: " + GetGeometricMean(array));
     }
 }
