@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 public class Main
 {
-    public static int GetMin(int[] arrayFindMin)
+    public static int FindMinimum(int[] entities)
     {
-        if (arrayFindMin.length != 0 || arrayFindMin != null)
+        if (entities.length != 0 || entities != null)
         {
             int minimum = Integer.MAX_VALUE;
-            for (int i = 0; i < arrayFindMin.length; i++)
+            for (int i = 0; i < entities.length; i++)
             {
-                minimum = Math.min(minimum, arrayFindMin[i]);
+                minimum = Math.min(minimum, entities[i]);
             }
 
             return minimum;
@@ -24,7 +24,7 @@ public class Main
         }
     }
 
-    public static int GetMax(int[] arrayFindMax)
+    public static int FindMaximum(int[] arrayFindMax)
     {
         if (arrayFindMax.length != 0 && arrayFindMax != null)
         {
@@ -42,17 +42,17 @@ public class Main
         }
     }
 
-    public static float ArithmeticMean(int[] arrayForAverage)
+    public static float FindAverage(int[] entities)
     {
-        if (arrayForAverage.length != 0 && arrayForAverage != null)
+        if (entities.length != 0 && entities != null)
         {
             int valueAverage = 0;
-            for (int i = 0; i < arrayForAverage.length; i++)
+            for (int i = 0; i < entities.length; i++)
             {
-                valueAverage += arrayForAverage[i];
+                valueAverage += entities[i];
             }
 
-            return (float) valueAverage / arrayForAverage.length;
+            return (float) valueAverage / entities.length;
         }
         else
         {
@@ -60,17 +60,17 @@ public class Main
         }
     }
 
-    public static float GetMedian(int[] arrayFindMedian)
+    public static float FindMedian(int[] entities)
     {
-        if (arrayFindMedian.length != 0 && arrayFindMedian != null)
+        if (entities.length != 0 && entities != null)
         {
-            Arrays.sort(arrayFindMedian);
-            if (arrayFindMedian.length % 2 == 0)
+            Arrays.sort(entities);
+            if (entities.length % 2 == 0)
             {
-                return ((arrayFindMedian[arrayFindMedian.length / 2] + arrayFindMedian[arrayFindMedian.length / 2 - 1]) / 2f);
+                return ((entities[entities.length / 2] + entities[entities.length / 2 - 1]) / 2f);
             }
 
-            return arrayFindMedian[arrayFindMedian.length / 2];
+            return entities[entities.length / 2];
         }
         else
         {
@@ -78,23 +78,23 @@ public class Main
         }
     }
 
-    public static double GetGeometricMean(int[] arrayFindGeometricMean)
+    public static double FindGeometricAverage(int[] entities)
     {
-        if (arrayFindGeometricMean.length != 0 || arrayFindGeometricMean != null)
+        if (entities.length != 0 || entities != null)
         {
-            if (arrayFindGeometricMean.equals(0))
+            if (entities.equals(0))
             {
                 return 0;
             }
             else
             {
                 double multiplication = 1f;
-                for (int i = 0; i < arrayFindGeometricMean.length; i++)
+                for (int i = 0; i < entities.length; i++)
                 {
-                    multiplication *= (double) arrayFindGeometricMean[i];
+                    multiplication *= (double) entities[i];
                 }
 
-                return (Math.pow(multiplication, 1d / arrayFindGeometricMean.length));
+                return (Math.pow(multiplication, 1d / entities.length));
             }
         }
         else
@@ -119,7 +119,7 @@ public class Main
                 while (i < lengthArray)
                 {
                     Scanner symInput = new Scanner(System.in);
-                    System.out.print(i + "Введите значение: ");
+                    System.out.print("Введите значение: ");
                     String tempInput = symInput.nextLine();
                     try
                     {
@@ -159,13 +159,13 @@ public class Main
     {
         int[] array = InputArray();
 
-        System.out.println("\nМинимум: " + GetMin(array));
-        System.out.println("Максимум: " + GetMax(array));
+        System.out.println("\nМинимум: " + FindMinimum(array));
+        System.out.println("Максимум: " + FindMaximum(array));
 
-        System.out.println("\nСреднее арифметическое: " + ArithmeticMean(array));
+        System.out.println("\nСреднее арифметическое: " + FindAverage(array));
 
-        System.out.println("\nМедиана: " + GetMedian(array));
+        System.out.println("\nМедиана: " + FindMedian(array));
 
-        System.out.println("\nСреднее геометрическое: " + GetGeometricMean(array));
+        System.out.println("\nСреднее геометрическое: " + FindGeometricAverage(array));
     }
 }
