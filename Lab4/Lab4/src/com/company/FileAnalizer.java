@@ -1,15 +1,11 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.StringTokenizer;
 
 public class FileAnalizer
 {
@@ -21,9 +17,9 @@ public class FileAnalizer
         {
             arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8).toArray();
 
-//            System.out.println("Количество букв: " + CountLetters());
-//            System.out.println("Количество слов: " + CountWords());
-//            System.out.println("Количество строк: " + CountLines());
+            System.out.println("Количество букв: " + CountLetters());
+            System.out.println("Количество слов: " + CountWords());
+            System.out.println("Количество строк: " + CountLines());
             System.out.println("Частотный анализ: " + CountFrequencyCharacteristic());
 
         }
@@ -31,21 +27,6 @@ public class FileAnalizer
         {
             System.out.println("Ошибка, файл не найден!");
         }
-
-
-//
-//        if (file.exists())
-//        {
-//            FileReader openFile = new FileReader(file);
-//            BufferedReader reader = new BufferedReader(openFile);
-//
-//            System.out.println("Количество букв: " + CountLetters(reader));
-//            System.out.println("Количество слов: " + CountWords(reader));
-//            System.out.println("Количество строк: " + CountLines(reader));
-//            System.out.println("Частотный анализ: " + CountFrequencyCharacteristic(reader));
-//
-//            reader.close();
-//        }
     }
 
     public int CountLetters()
@@ -58,9 +39,9 @@ public class FileAnalizer
             if (tempLineForLetter.length() != 0)
             {
                 char[] tempSymbol = tempLineForLetter.toCharArray();
-                for (char l : tempSymbol)
+                for (char element : tempSymbol)
                 {
-                    if (l != ' ')
+                    if (element != ' ')
                     {
                         countLetter++;
                     }
@@ -103,7 +84,6 @@ public class FileAnalizer
     public Map<Character, Integer> CountFrequencyCharacteristic()
     {
         Map<Character, Integer> countSymbol = new HashMap<Character, Integer>();
-
 
         for (Object line : arrayLinesFile)
         {
