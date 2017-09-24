@@ -1,4 +1,3 @@
-import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -15,12 +14,6 @@ public class FileAnalizer
         try
         {
             arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8).toArray();
-
-            System.out.println("Количество букв: " + CountLetters());
-            System.out.println("Количество слов: " + CountWords());
-            System.out.println("Количество строк: " + CountLines());
-            System.out.println("Частотный анализ: " + CountFrequencyCharacteristic());
-
         }
         catch (IOException e)
         {
