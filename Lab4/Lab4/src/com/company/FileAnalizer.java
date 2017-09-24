@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.StringTokenizer;
 
 public class FileAnalizer
 {
@@ -20,13 +21,15 @@ public class FileAnalizer
         {
             arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8).toArray();
 
+
 //            for (int i = 0; i < arrayLinesFile.length; i++)
 //            {
 //                System.out.println(arrayLinesFile[i]);
 //            }
 
-            System.out.println("Количество букв: " + CountLetters());
-//            System.out.println("Количество слов: " + CountWords(reader));
+//            System.out.println("Количество букв: " + CountLetters());
+//
+            System.out.println("Количество слов: " + CountWords());
 //            System.out.println("Количество строк: " + CountLines(reader));
 //            System.out.println("Частотный анализ: " + CountFrequencyCharacteristic(reader));
 
@@ -65,22 +68,19 @@ public class FileAnalizer
         }
     }
 
-    public int CountWords(BufferedReader reader) throws IOException
+    public int CountWords()
     {
         int countWord = 0;
 
-        String line = reader.readLine();
-        while (line != null)
+        for (Object line : arrayLinesFile)
         {
-            String[] word = line.split(" ");
-            for (String element : word)
+            String g = (String) line;
+            if (g.length() != 0)
             {
-                countWord += 1;
+                countWord += g.split(" +").length;
             }
-
-            line = reader.readLine();
         }
-
+        
         return countWord;
     }
 
