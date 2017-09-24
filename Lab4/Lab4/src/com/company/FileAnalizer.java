@@ -27,10 +27,10 @@ public class FileAnalizer
 //                System.out.println(arrayLinesFile[i]);
 //            }
 
-//            System.out.println("Количество букв: " + CountLetters());
+            System.out.println("Количество букв: " + CountLetters());
 //
             System.out.println("Количество слов: " + CountWords());
-//            System.out.println("Количество строк: " + CountLines(reader));
+            System.out.println("Количество строк: " + CountLines());
 //            System.out.println("Частотный анализ: " + CountFrequencyCharacteristic(reader));
 
         }
@@ -57,15 +57,7 @@ public class FileAnalizer
 
     public int CountLetters()
     {
-        try
-        {
-            return arrayLinesFile.length;
-        }
-        catch (NullPointerException e)
-        {
-            System.out.println("Ошибка, массив строк получен не был!");
-            return 0;
-        }
+        return 0;
     }
 
     public int CountWords()
@@ -80,22 +72,21 @@ public class FileAnalizer
                 countWord += g.split(" +").length;
             }
         }
-        
+
         return countWord;
     }
 
-    public int CountLines(BufferedReader reader) throws IOException
+    public int CountLines()
     {
-        int countLine = 0;
-
-        String line = reader.readLine();
-        while (line != null)
+        try
         {
-            countLine++;
-            line = reader.readLine();
+            return arrayLinesFile.length;
         }
-
-        return countLine;
+        catch (NullPointerException e)
+        {
+            System.out.println("Ошибка, массив строк получен не был!");
+            return 0;
+        }
     }
 
     public Map<Character, Integer> CountFrequencyCharacteristic(BufferedReader reader) throws IOException
