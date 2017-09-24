@@ -21,14 +21,7 @@ public class FileAnalizer
         {
             arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8).toArray();
 
-
-//            for (int i = 0; i < arrayLinesFile.length; i++)
-//            {
-//                System.out.println(arrayLinesFile[i]);
-//            }
-
             System.out.println("Количество букв: " + CountLetters());
-//
             System.out.println("Количество слов: " + CountWords());
             System.out.println("Количество строк: " + CountLines());
 //            System.out.println("Частотный анализ: " + CountFrequencyCharacteristic(reader));
@@ -57,7 +50,25 @@ public class FileAnalizer
 
     public int CountLetters()
     {
-        return 0;
+        int countLetter = 0;
+
+        for (Object line : arrayLinesFile)
+        {
+            String g = (String) line;
+            if (g.length() != 0)
+            {
+                char[] k = g.toCharArray();
+                for (char l : k)
+                {
+                    if (l != ' ')
+                    {
+                        countLetter++;
+                    }
+                }
+            }
+        }
+
+        return countLetter;
     }
 
     public int CountWords()
