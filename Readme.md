@@ -31,26 +31,33 @@
 
 Реализовать набор методов для нахождения статических характеристик массива.
 1) Минимум
-
 ```java
 int FindMinimum(int[] entities);
 ```
 
 2) Максимум
 
-<code>int FindMaximum(int[] entities);</code>
+```java
+int FindMaximum(int[] entities);
+```
 
 3) Среднее арифметическое
 
-<code>double FindAverage(int[] entities);</code>
+```java
+double FindAverage(int[] entities);
+```
 
 4) Медиана
 
-<code>double FindMedian(int[] entities);</code>
+```java
+double FindMedian(int[] entities);
+```
 
 5) Среднее геометрическое
 
-<code>double FindGeometricAverage(int[] entities);</code>
+```java
+double FindGeometricAverage(int[] entities);
+```
 
 ***
 
@@ -65,7 +72,9 @@ int FindMinimum(int[] entities);
 4) __/__
 5) __()__
 
-<code>double Calculate(String expresion);</code>
+```java
+double Calculate(String expresion);
+```
 
 ***
 
@@ -73,16 +82,16 @@ int FindMinimum(int[] entities);
 
 Реализовать класс с набором методов анализа файла.
 
-	class FileAnalizer
-	{
-	    public FileAnalizer(String path);
-	 
-	    public int CountLetters();
-	    public int CountWords();
-	    public int CountLines();
-	    public Map<char,int> CountFrequencyCharacteristic();
-	}
-
+```java
+class FileAnalizer
+{
+	public FileAnalizer(String path);
+	public int CountLetters();
+	public int CountWords();
+	public int CountLines();
+	public Map<char,int> CountFrequencyCharacteristic();
+}
+```
 
 >Частотная характеристика это таблица, где для каждого символа указано как часто он встречается. Более подробное объяснение (http://www.abakbot.ru/online-5/97-freq-letter).
 
