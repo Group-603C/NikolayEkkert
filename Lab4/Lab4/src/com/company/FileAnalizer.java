@@ -4,47 +4,65 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
 public class FileAnalizer
 {
-    public FileAnalizer(String path) throws IOException
+    private Object[] arrayLinesFile;
+
+    public FileAnalizer(String path)
     {
-        File file = new File(path);
-
-        if (file.exists())
+        try
         {
-            FileReader openFile = new FileReader(file);
-            BufferedReader reader = new BufferedReader(openFile);
+            arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8).toArray();
 
-            System.out.println("Количество букв: " + CountLetters(reader));
-            System.out.println("Количество слов: " + CountWords(reader));
-            System.out.println("Количество строк: " + CountLines(reader));
-            System.out.println("Частотный анализ: " + CountFrequencyCharacteristic(reader));
+//            for (int i = 0; i < arrayLinesFile.length; i++)
+//            {
+//                System.out.println(arrayLinesFile[i]);
+//            }
 
-            reader.close();
+            System.out.println("Количество букв: " + CountLetters());
+//            System.out.println("Количество слов: " + CountWords(reader));
+//            System.out.println("Количество строк: " + CountLines(reader));
+//            System.out.println("Частотный анализ: " + CountFrequencyCharacteristic(reader));
+
         }
+        catch (IOException e)
+        {
+            System.out.println("Ошибка, файл не найден!");
+        }
+
+
+//
+//        if (file.exists())
+//        {
+//            FileReader openFile = new FileReader(file);
+//            BufferedReader reader = new BufferedReader(openFile);
+//
+//            System.out.println("Количество букв: " + CountLetters(reader));
+//            System.out.println("Количество слов: " + CountWords(reader));
+//            System.out.println("Количество строк: " + CountLines(reader));
+//            System.out.println("Частотный анализ: " + CountFrequencyCharacteristic(reader));
+//
+//            reader.close();
+//        }
     }
 
-    public int CountLetters(BufferedReader reader) throws IOException
+    public int CountLetters()
     {
-        int countLetter = 0;
-
-        String line = reader.readLine();
-        while (line != null)
+        try
         {
-            String[] word = line.split(" ");
-            for (String element : word)
-            {
-                char[] charArray = element.toCharArray();
-                countLetter += charArray.length;
-            }
-
-            line = reader.readLine();
+            return arrayLinesFile.length;
         }
-
-        return countLetter;
+        catch (NullPointerException e)
+        {
+            System.out.println("Ошибка, массив строк получен не был!");
+            return 0;
+        }
     }
 
     public int CountWords(BufferedReader reader) throws IOException
