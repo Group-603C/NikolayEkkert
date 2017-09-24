@@ -21,10 +21,10 @@ public class FileAnalizer
         {
             arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8).toArray();
 
-            System.out.println("Количество букв: " + CountLetters());
-            System.out.println("Количество слов: " + CountWords());
-            System.out.println("Количество строк: " + CountLines());
-//            System.out.println("Частотный анализ: " + CountFrequencyCharacteristic(reader));
+//            System.out.println("Количество букв: " + CountLetters());
+//            System.out.println("Количество слов: " + CountWords());
+//            System.out.println("Количество строк: " + CountLines());
+            System.out.println("Частотный анализ: " + CountFrequencyCharacteristic());
 
         }
         catch (IOException e)
@@ -100,33 +100,35 @@ public class FileAnalizer
         }
     }
 
-    public Map<Character, Integer> CountFrequencyCharacteristic(BufferedReader reader) throws IOException
+    public Map<Character, Integer> CountFrequencyCharacteristic()
     {
-        Map<Character, Integer> CountSymbol = new HashMap<Character, Integer>();
+        Map<Character, Integer> countSymbol = new HashMap<Character, Integer>();
 
-        String line = reader.readLine();
-        while (line != null)
+
+        for (Object line : arrayLinesFile)
         {
-            String[] word = line.split(" ");
-            for (String element : word)
+            String tempLineForLetter = (String) line;
+            if (tempLineForLetter.length() != 0)
             {
-                char[] charArray = element.toCharArray();
-                for (Character symbol : charArray)
+                char[] tempSymbol = tempLineForLetter.toCharArray();
+                for (char element : tempSymbol)
                 {
-                    if (CountSymbol.equals(symbol))
+                    if (element != ' ')
                     {
-                        int tempCountSymbol = CountSymbol.get(symbol) + 1;
-                        CountSymbol.put(symbol, tempCountSymbol);
-                    }
-                    else
-                    {
-                        CountSymbol.put(symbol, 1);
+                        if (countSymbol.containsKey(element))
+                        {
+                            int tempValue = countSymbol.get(element) + 1;
+                            countSymbol.put(element, tempValue);
+                        }
+                        else
+                        {
+                            countSymbol.put(element, 1);
+                        }
                     }
                 }
             }
-            
-            line = reader.readLine();
         }
-        return CountSymbol;
+
+        return countSymbol;
     }
 }
