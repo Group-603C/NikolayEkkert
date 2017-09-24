@@ -17,9 +17,7 @@
 
 2) Простое число. Реализуйте метод для проверки числа на простоту. 
 
-
-	boolean IsSimple(int number);
-
+ 	boolean IsSimple(int number);
 
 3) Скобки. Реализовать метод, который по заданной скобочной последовательности говорит, “правильная” ли она.
 
@@ -34,23 +32,23 @@
 Реализовать набор методов для нахождения статических характеристик массива.
 1) Минимум
 
-	int FindMinimum(int[] entities);
+<code>int FindMinimum(int[] entities);</code>
 
 2) Максимум
 
-	int FindMaximum(int[] entities);
+<code>int FindMaximum(int[] entities);</code>
 
 3) Среднее арифметическое
 
-	double FindAverage(int[] entities);
+<code>double FindAverage(int[] entities);</code>
 
 4) Медиана
 
-	double FindMedian(int[] entities);
+<code>double FindMedian(int[] entities);</code>
 
 5) Среднее геометрическое
 
-	double FindGeometricAverage(int[] entities);
+<code>double FindGeometricAverage(int[] entities);</code>
 
 ***
 
@@ -59,13 +57,13 @@
 Реализовать класс с методом  для вычисления математического выражения.
 Используя встроенную коллекцию Stack, перевести математическое выражение из инфиксной записи в обратную польскую, а затем вычислить его.
 В качестве операций использовать:
-1) +
-2) -
-3) *
-4) /
-5) ()
+1) __+__
+2) __-__
+3) __*__
+4) __/__
+5) __()__
 
-	double Calculate(String expresion);
+<code>double Calculate(String expresion);</code>
 
 ***
 
