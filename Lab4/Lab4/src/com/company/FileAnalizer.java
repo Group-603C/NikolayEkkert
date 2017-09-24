@@ -54,11 +54,11 @@ public class FileAnalizer
 
         for (Object line : arrayLinesFile)
         {
-            String g = (String) line;
-            if (g.length() != 0)
+            String tempLineForLetter = (String) line;
+            if (tempLineForLetter.length() != 0)
             {
-                char[] k = g.toCharArray();
-                for (char l : k)
+                char[] tempSymbol = tempLineForLetter.toCharArray();
+                for (char l : tempSymbol)
                 {
                     if (l != ' ')
                     {
@@ -77,10 +77,10 @@ public class FileAnalizer
 
         for (Object line : arrayLinesFile)
         {
-            String g = (String) line;
-            if (g.length() != 0)
+            String tempLineForWord = (String) line;
+            if (tempLineForWord.length() != 0)
             {
-                countWord += g.split(" +").length;
+                countWord += tempLineForWord.split(" +").length;
             }
         }
 
@@ -124,7 +124,7 @@ public class FileAnalizer
                     }
                 }
             }
-
+            
             line = reader.readLine();
         }
         return CountSymbol;
