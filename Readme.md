@@ -32,7 +32,9 @@
 Реализовать набор методов для нахождения статических характеристик массива.
 1) Минимум
 
-<code>int FindMinimum(int[] entities);</code>
+'''java
+int FindMinimum(int[] entities);
+'''
 
 2) Максимум
 
