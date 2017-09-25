@@ -8,7 +8,7 @@ public class Main
 {
     public static int FindMinimum(int[] entities)
     {
-        if (entities.length != 0 || entities != null)
+        if (entities.length != 0 && entities != null)
         {
             int minimum = Integer.MAX_VALUE;
             for (int i = 0; i < entities.length; i++)
@@ -80,7 +80,7 @@ public class Main
 
     public static double FindGeometricAverage(int[] entities)
     {
-        if (entities.length != 0 || entities != null)
+        if (entities.length != 0 && entities != null)
         {
             if (entities.equals(0))
             {
@@ -93,7 +93,7 @@ public class Main
                 {
                     multiplication *= (double) entities[i];
                 }
-
+                
                 return (Math.pow(multiplication, 1d / entities.length));
             }
         }
