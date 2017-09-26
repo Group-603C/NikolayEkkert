@@ -94,9 +94,9 @@ public class Main
             }
         }
 
-        if (entities.length % 2 == 0)
+        if (multiplication < 0 || entities.length % 2 == 0)
         {
-            return Math.abs(Math.pow(multiplication, 1d / entities.length));
+            return 0;
         }
         return (Math.pow(multiplication, 1d / entities.length));
     }
