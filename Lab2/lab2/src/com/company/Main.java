@@ -8,99 +8,97 @@ public class Main
 {
     public static int FindMinimum(int[] entities)
     {
-        if (entities.length != 0 && entities != null)
-        {
-            int minimum = Integer.MAX_VALUE;
-            for (int i = 0; i < entities.length; i++)
-            {
-                minimum = Math.min(minimum, entities[i]);
-            }
+        int minimum = Integer.MAX_VALUE;
 
+        if (entities == null || entities.length == 0)
+        {
             return minimum;
         }
-        else
+
+        for (int j : entities)
         {
-            return Integer.MAX_VALUE;
+            minimum = Math.min(minimum, j);
         }
+        return minimum;
     }
 
-    public static int FindMaximum(int[] arrayFindMax)
+    public static int FindMaximum(int[] entities)
     {
-        if (arrayFindMax.length != 0 && arrayFindMax != null)
-        {
-            int maximum = Integer.MIN_VALUE;
-            for (int i = 0; i < arrayFindMax.length; i++)
-            {
-                maximum = Math.max(maximum, arrayFindMax[i]);
-            }
+        int maximum = Integer.MIN_VALUE;
 
+        if (entities == null || entities.length == 0)
+        {
             return maximum;
         }
-        else
+
+        for (int j : entities)
         {
-            return Integer.MIN_VALUE;
+            maximum = Math.max(maximum, j);
         }
+
+        return maximum;
     }
 
-    public static float FindAverage(int[] entities)
+    public static double FindAverage(int[] entities)
     {
-        if (entities.length != 0 && entities != null)
-        {
-            int valueAverage = 0;
-            for (int i = 0; i < entities.length; i++)
-            {
-                valueAverage += entities[i];
-            }
+        int valueAverage = 0;
 
-            return (float) valueAverage / entities.length;
+        if (entities == null || entities.length == 0)
+        {
+            return valueAverage;
         }
-        else
+
+        for (double j : entities)
+        {
+            valueAverage += j;
+        }
+
+        return (double) valueAverage / entities.length;
+    }
+
+    public static double FindMedian(int[] entities)
+    {
+        if (entities == null || entities.length == 0)
         {
             return 0;
         }
-    }
 
-    public static float FindMedian(int[] entities)
-    {
-        if (entities.length != 0 && entities != null)
-        {
-            Arrays.sort(entities);
-            if (entities.length % 2 == 0)
-            {
-                return ((entities[entities.length / 2] + entities[entities.length / 2 - 1]) / 2f);
-            }
+        int[] copyEntities = entities.clone();
+        Arrays.sort(copyEntities);
 
-            return entities[entities.length / 2];
-        }
-        else
+        if (copyEntities.length % 2 == 0)
         {
-            return 0;
+            return ((copyEntities[copyEntities.length / 2] + copyEntities[copyEntities.length / 2 - 1]) / 2f);
         }
+
+        return copyEntities[copyEntities.length / 2];
     }
 
     public static double FindGeometricAverage(int[] entities)
     {
-        if (entities.length != 0 && entities != null)
+        if (entities == null || entities.length == 0)
         {
-            if (entities.equals(0))
+            return 0;
+        }
+
+        double multiplication = 1f;
+        for (double j : entities)
+        {
+            if (j == 0)
             {
                 return 0;
             }
             else
             {
-                double multiplication = 1f;
-                for (int i = 0; i < entities.length; i++)
-                {
-                    multiplication *= (double) entities[i];
-                }
-                
-                return (Math.pow(multiplication, 1d / entities.length));
+                multiplication *= j;
             }
         }
-        else
+
+        if (entities.length % 2 == 0)
         {
-            return 0;
+            return Math.abs(Math.pow(multiplication, 1d / entities.length));
         }
+        return (Math.pow(multiplication, 1d / entities.length));
     }
 
     public static int[] InputArray()
@@ -112,7 +110,7 @@ public class Main
                 System.out.print("Введите количество цифр: ");
                 Scanner input = new Scanner(System.in);
                 int lengthArray = input.nextInt();
-//                int lengthArray = 8;
+
                 int[] array = new int[lengthArray];
 
                 int i = 0;
@@ -132,15 +130,6 @@ public class Main
                         System.out.println("\tОшибка, Введено не численное значение!");
                     }
                 }
-
-//                array[0] = 10;
-//                array[1] = 1;
-//                array[2] = 2;
-//                array[3] = 3;
-//                array[4] = 4;
-//                array[5] = 5;
-//                array[6] = 6;
-//                array[7] = 7;
 
                 return array;
             }
