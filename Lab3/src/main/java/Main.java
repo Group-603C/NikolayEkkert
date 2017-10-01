@@ -6,8 +6,6 @@ public class Main
 {
     public static double Calculate(String expresion)
     {
-        double result = 0d;
-
         Map<String, Integer> dictionaryPriority = new HashMap<String, Integer>();
         dictionaryPriority.put("(", 1);
         dictionaryPriority.put(")", 2);
@@ -18,14 +16,14 @@ public class Main
 
         Stack<String> stack_symbol = new Stack<String>();
 
-        String tempexpresion = "";
+        String tempExpresion = "";
 
         for (int i = 0; i < expresion.length(); i++)
         {
             String oneSymbol = expresion.substring(i, i + 1);
             if (oneSymbol.getBytes()[0] >= 48 && oneSymbol.getBytes()[0] <= 57)
             {
-                tempexpresion += oneSymbol;
+                tempExpresion += oneSymbol;
             }
             else if (stack_symbol.empty())
             {
@@ -41,7 +39,7 @@ public class Main
                 {
                     while (!stack_symbol.empty() && dictionaryPriority.get(stack_symbol.peek()) >= dictionaryPriority.get(oneSymbol))
                     {
-                        tempexpresion += stack_symbol.pop();
+                        tempExpresion += stack_symbol.pop();
                     }
                     stack_symbol.push(oneSymbol);
                 }
@@ -50,16 +48,20 @@ public class Main
 
         while (!stack_symbol.empty())
         {
-            tempexpresion += stack_symbol.pop();
+            tempExpresion += stack_symbol.pop();
         }
+
+        System.out.println(tempExpresion);
+
+
 
 
         int resultCalculatePostfix = 0;
         Stack<Integer> stack_calc = new Stack<Integer>();
 
-        for (int i = 0; i < tempexpresion.length(); i++)
+        for (int i = 0; i < tempExpresion.length(); i++)
         {
-            char oneSymbol = tempexpresion.substring(i, i + 1).charAt(0);
+            char oneSymbol = tempExpresion.substring(i, i + 1).charAt(0);
 
             if ((int) oneSymbol >= 48 && (int) oneSymbol <= 57)
             {
@@ -94,6 +96,6 @@ public class Main
 
     public static void main(String[] args)
     {
-        System.out.println(Calculate("6+2"));
+        System.out.println(Calculate("2+2"));
     }
 }
