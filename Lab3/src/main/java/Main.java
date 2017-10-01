@@ -14,7 +14,7 @@ public class Main
         dictionaryPriority.put("*", 4);
         dictionaryPriority.put("/", 4);
 
-        Stack<String> stack_symbol = new Stack<String>();
+        Stack<String> stackSymbol = new Stack<String>();
 
         String tempExpresion = "";
 
@@ -25,30 +25,30 @@ public class Main
             {
                 tempExpresion += oneSymbol;
             }
-            else if (stack_symbol.empty())
+            else if (stackSymbol.empty())
             {
-                stack_symbol.push(oneSymbol);
+                stackSymbol.push(oneSymbol);
             }
-            else if (!(stack_symbol.empty()))
+            else if (!(stackSymbol.empty()))
             {
-                if (dictionaryPriority.get(stack_symbol.peek()) < dictionaryPriority.get(oneSymbol))
+                if (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(oneSymbol))
                 {
-                    stack_symbol.push(oneSymbol);
+                    stackSymbol.push(oneSymbol);
                 }
                 else
                 {
-                    while (!stack_symbol.empty() && dictionaryPriority.get(stack_symbol.peek()) >= dictionaryPriority.get(oneSymbol))
+                    while (!stackSymbol.empty() && dictionaryPriority.get(stackSymbol.peek()) >= dictionaryPriority.get(oneSymbol))
                     {
-                        tempExpresion += stack_symbol.pop();
+                        tempExpresion += stackSymbol.pop();
                     }
-                    stack_symbol.push(oneSymbol);
+                    stackSymbol.push(oneSymbol);
                 }
             }
         }
 
-        while (!stack_symbol.empty())
+        while (!stackSymbol.empty())
         {
-            tempExpresion += stack_symbol.pop();
+            tempExpresion += stackSymbol.pop();
         }
 
         System.out.println(tempExpresion);
@@ -57,7 +57,7 @@ public class Main
 
 
         int resultCalculatePostfix = 0;
-        Stack<Integer> stack_calc = new Stack<Integer>();
+        Stack<Integer> stackCalc = new Stack<Integer>();
 
         for (int i = 0; i < tempExpresion.length(); i++)
         {
@@ -65,27 +65,27 @@ public class Main
 
             if ((int) oneSymbol >= 48 && (int) oneSymbol <= 57)
             {
-                stack_calc.push((int) oneSymbol - 48);
+                stackCalc.push((int) oneSymbol - 48);
             }
             else if ((oneSymbol == ')') || (oneSymbol == '(') || (oneSymbol == '+') || (oneSymbol == '-') || (oneSymbol == '*') || (oneSymbol == '/'))
             {
                 switch (oneSymbol)
                 {
                     case '+':
-                        resultCalculatePostfix = stack_calc.pop() + stack_calc.pop();
-                        stack_calc.push(resultCalculatePostfix);
+                        resultCalculatePostfix = stackCalc.pop() + stackCalc.pop();
+                        stackCalc.push(resultCalculatePostfix);
                         break;
                     case '-':
-                        resultCalculatePostfix = stack_calc.pop() - stack_calc.pop();
-                        stack_calc.push(resultCalculatePostfix);
+                        resultCalculatePostfix = stackCalc.pop() - stackCalc.pop();
+                        stackCalc.push(resultCalculatePostfix);
                         break;
                     case '*':
-                        resultCalculatePostfix = stack_calc.pop() * stack_calc.pop();
-                        stack_calc.push(resultCalculatePostfix);
+                        resultCalculatePostfix = stackCalc.pop() * stackCalc.pop();
+                        stackCalc.push(resultCalculatePostfix);
                         break;
                     case '/':
-                        resultCalculatePostfix = stack_calc.pop() / stack_calc.pop();
-                        stack_calc.push(resultCalculatePostfix);
+                        resultCalculatePostfix = stackCalc.pop() / stackCalc.pop();
+                        stackCalc.push(resultCalculatePostfix);
                         break;
                 }
             }
