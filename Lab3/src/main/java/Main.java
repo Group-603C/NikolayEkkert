@@ -174,8 +174,16 @@ public class Main
                         System.out.println("Мы здесь");
                         while (stackSymbol.size() != 0 && (dictionaryPriority.get(stackSymbol.peek()) >= dictionaryPriority.get(element)))
                         {
-                            //  System.out.println("Мы в счётчике");
-                            elementsExpresion.add(stackSymbol.pop());
+                            if (stackSymbol.peek().charAt(0) != '(' && stackSymbol.peek().charAt(0) != ')')
+                            {
+                                //  System.out.println("Мы в счётчике");
+                                elementsExpresion.add(stackSymbol.pop());
+                            }
+                            else
+                            {
+                                System.out.println("peek = " + stackSymbol.peek());
+                                stackSymbol.pop();
+                            }
                         }
 //                        System.out.println("Помещаем");
                         stackSymbol.push(element);
@@ -185,7 +193,14 @@ public class Main
         }
         while (stackSymbol.size() != 0)
         {
-            elementsExpresion.add(stackSymbol.pop());
+            if (stackSymbol.peek().charAt(0) != '(' && stackSymbol.peek().charAt(0) != ')')
+            {
+                elementsExpresion.add(stackSymbol.pop());
+            }
+            else
+            {
+                stackSymbol.pop();
+            }
         }
         System.out.println(stackSymbol);
         System.out.println(elementsExpresion);
@@ -196,8 +211,8 @@ public class Main
 
     public static void main(String[] args)
     {
-//        String expresion = "100+1.2345*2-(10/6)";
-        String expresion = "6 + 5 * 4";
+        String expresion = "124 + 5/3-105.357 *90";
+//        String expresion = "6 + 5 * 4";
 
         Calculate(expresion);
 
