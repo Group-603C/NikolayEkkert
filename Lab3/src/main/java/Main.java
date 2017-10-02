@@ -1,8 +1,4 @@
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 public class Main
 {
@@ -109,6 +105,15 @@ public class Main
 
         return resultCalculatePostfix;
     }
+//
+//    public static boolean stackEmpty(Stack stack)
+//    {
+//
+//    }
+
+    {
+
+    }
 
     public static double Calculate(String expresion)
     {
@@ -134,13 +139,14 @@ public class Main
             arrayElementExpresion.add(tempExpresion);
             tempExpresion = "";
         }
-        //arrayElementExpresion.add(tempExpresion);
+        arrayElementExpresion.add(tempExpresion);
+        // System.out.println(arrayElementExpresion);
 
 //System.out.println(arrayElementExpresion);
 
-        ArrayList<String> elementsExpresion = new ArrayList<String>();
-        Stack<String> stackSymbol = new Stack<String>();
-//        System.out.println(stackSymbol.size());
+        ArrayList<String> elementsExpresion = new ArrayList<String>();  //здесь элементы постфиксной записи
+        Stack<String> stackSymbol = new Stack<String>();  //здесь операции для стека
+
         for (String element : arrayElementExpresion)
         {
             try
@@ -152,15 +158,28 @@ public class Main
             {
                 if (element.contains("+") || element.contains("-") || element.contains("/") || element.contains("*") || element.contains("(") || element.contains(")"))
                 {
+                    stackSymbol.push(element);
 
+                    if (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element))
+                    {
+                        stackSymbol.push(element);
+                    }
+                    else
+                    {
+//                        System.out.println("dsds - " + dictionaryPriority.get(stackSymbol.peek()));
+//                        System.out.println("\t - " + dictionaryPriority.get(element));
+//                        while (dictionaryPriority.get(stackSymbol.peek()) >= dictionaryPriority.get(element))
+//                        {
+//                            elementsExpresion.add(stackSymbol.pop());
+//                        }
+////                        stackSymbol.push(element);
+                    }
                 }
             }
-
-
         }
         System.out.println(stackSymbol);
-       System.out.println(elementsExpresion);
-       System.out.println(tempExpresion);
+        System.out.println(elementsExpresion);
+        System.out.println(tempExpresion);
         return 0;
     }
 
@@ -168,9 +187,30 @@ public class Main
     public static void main(String[] args)
     {
 //        String expresion = "100+1.2345*2-(10/6)";
-        String expresion = "6 + 7 + 10 * 4";
+        String expresion = "6 + 5 * 4";
 
         Calculate(expresion);
+
+//
+//        Stack<String> stackSymbol = new Stack<String>();
+//        stackSymbol.push("1");
+//        stackSymbol.push("2");
+//        stackSymbol.push("3");
+//        stackSymbol.push("4");
+//        stackSymbol.push("5");
+//        stackSymbol.push("6");
+
+//        System.out.println(stackSymbol.peek());
+//        System.out.println(stackSymbol.peek());
+//        System.out.println(stackSymbol.peek());
+//        System.out.println(stackSymbol.peek());
+//        System.out.println(stackSymbol.peek());
+//        System.out.println(stackSymbol.peek());
+//        System.out.println(stackSymbol.peek());
+//        System.out.println(stackSymbol.peek());
+//        System.out.println(stackSymbol.peek());
+//        System.out.println(stackSymbol.peek());
+
 
     }
 }
