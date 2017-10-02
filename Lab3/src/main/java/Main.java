@@ -149,6 +149,7 @@ public class Main
 
         for (String element : arrayElementExpresion)
         {
+            System.out.println("qqq - " + element);
             try
             {
                 double checkNumber = Double.parseDouble(element);
@@ -158,24 +159,33 @@ public class Main
             {
                 if (element.contains("+") || element.contains("-") || element.contains("/") || element.contains("*") || element.contains("(") || element.contains(")"))
                 {
-                    stackSymbol.push(element);
-
-                    if (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element))
+                    if (stackSymbol.size() == 0)
                     {
+                        //System.out.println("Стек пуст, помещаем в него: " + element);
+                        stackSymbol.push(element);
+                    }
+                    else if (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element))
+                    {
+                        //  System.out.println("Приоритет меньше, помещаем в стек элемент: " + element);
                         stackSymbol.push(element);
                     }
                     else
                     {
-//                        System.out.println("dsds - " + dictionaryPriority.get(stackSymbol.peek()));
-//                        System.out.println("\t - " + dictionaryPriority.get(element));
-//                        while (dictionaryPriority.get(stackSymbol.peek()) >= dictionaryPriority.get(element))
-//                        {
-//                            elementsExpresion.add(stackSymbol.pop());
-//                        }
-////                        stackSymbol.push(element);
+                        System.out.println("Мы здесь");
+                        while (stackSymbol.size() != 0 && (dictionaryPriority.get(stackSymbol.peek()) >= dictionaryPriority.get(element)))
+                        {
+                            //  System.out.println("Мы в счётчике");
+                            elementsExpresion.add(stackSymbol.pop());
+                        }
+//                        System.out.println("Помещаем");
+                        stackSymbol.push(element);
                     }
                 }
             }
+        }
+        while (stackSymbol.size() != 0)
+        {
+            elementsExpresion.add(stackSymbol.pop());
         }
         System.out.println(stackSymbol);
         System.out.println(elementsExpresion);
@@ -191,26 +201,15 @@ public class Main
 
         Calculate(expresion);
 
-//
+
 //        Stack<String> stackSymbol = new Stack<String>();
+//        System.out.println(stackSymbol.size());
 //        stackSymbol.push("1");
 //        stackSymbol.push("2");
-//        stackSymbol.push("3");
-//        stackSymbol.push("4");
-//        stackSymbol.push("5");
-//        stackSymbol.push("6");
-
-//        System.out.println(stackSymbol.peek());
-//        System.out.println(stackSymbol.peek());
-//        System.out.println(stackSymbol.peek());
-//        System.out.println(stackSymbol.peek());
-//        System.out.println(stackSymbol.peek());
-//        System.out.println(stackSymbol.peek());
-//        System.out.println(stackSymbol.peek());
-//        System.out.println(stackSymbol.peek());
-//        System.out.println(stackSymbol.peek());
-//        System.out.println(stackSymbol.peek());
-
-
+//        System.out.println(stackSymbol.size());
+//        stackSymbol.pop();
+//        System.out.println(stackSymbol.size());
+//        stackSymbol.pop();
+//        System.out.println(stackSymbol.size());
     }
 }
