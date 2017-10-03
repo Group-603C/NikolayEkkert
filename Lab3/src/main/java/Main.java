@@ -149,7 +149,7 @@ public class Main
 
         for (String element : arrayElementExpresion)
         {
-            System.out.println("qqq - " + element);
+//            System.out.println("qqq - " + element);
             try
             {
                 double checkNumber = Double.parseDouble(element);
@@ -171,7 +171,7 @@ public class Main
                     }
                     else
                     {
-                        System.out.println("Мы здесь");
+//                        System.out.println("Мы здесь");
                         while (stackSymbol.size() != 0 && (dictionaryPriority.get(stackSymbol.peek()) >= dictionaryPriority.get(element)))
                         {
                             if (stackSymbol.peek().charAt(0) != '(' && stackSymbol.peek().charAt(0) != ')')
@@ -181,7 +181,7 @@ public class Main
                             }
                             else
                             {
-                                System.out.println("peek = " + stackSymbol.peek());
+//                                System.out.println("peek = " + stackSymbol.peek());
                                 stackSymbol.pop();
                             }
                         }
@@ -202,9 +202,9 @@ public class Main
                 stackSymbol.pop();
             }
         }
-        System.out.println(stackSymbol);
-        System.out.println(elementsExpresion);
-        System.out.println(tempExpresion);
+//        System.out.println(stackSymbol);
+//        System.out.println(elementsExpresion);
+//        System.out.println(tempExpresion);
         return 0;
     }
 
@@ -212,7 +212,6 @@ public class Main
     public static void main(String[] args)
     {
         String expresion = "124 + 5/3-105.357 *90";
-//        String expresion = "6 + 5 * 4";
 
         Calculate(expresion);
 
