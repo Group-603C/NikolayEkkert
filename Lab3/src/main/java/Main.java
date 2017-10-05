@@ -149,7 +149,7 @@ public class Main
 
         for (String element : arrayElementExpresion)
         {
-            System.out.println("qqq - " + element);
+//            System.out.println("qqq - " + element);
             try
             {
                 double checkNumber = Double.parseDouble(element);
@@ -171,7 +171,7 @@ public class Main
                     }
                     else
                     {
-                        System.out.println("Мы здесь");
+//                        System.out.println("Мы здесь");
                         while (stackSymbol.size() != 0 && (dictionaryPriority.get(stackSymbol.peek()) >= dictionaryPriority.get(element)))
                         {
                             if (stackSymbol.peek().charAt(0) != '(' && stackSymbol.peek().charAt(0) != ')')
@@ -181,7 +181,7 @@ public class Main
                             }
                             else
                             {
-                                System.out.println("peek = " + stackSymbol.peek());
+//                                System.out.println("peek = " + stackSymbol.peek());
                                 stackSymbol.pop();
                             }
                         }
@@ -202,19 +202,86 @@ public class Main
                 stackSymbol.pop();
             }
         }
-        System.out.println(stackSymbol);
-        System.out.println(elementsExpresion);
-        System.out.println(tempExpresion);
-        return 0;
+//        System.out.println(stackSymbol);
+//        System.out.println(elementsExpresion);
+//        System.out.println(tempExpresion);
+
+
+        double resultCalcPostfix = 0d;
+        Stack<Double> stackCalculate = new Stack<Double>();
+
+        for (int i = 0; i < elementsExpresion.size(); i++)
+        {
+            try
+            {
+                double temp = Double.parseDouble(elementsExpresion.get(i));
+                stackCalculate.push(temp);
+            }
+            catch (NumberFormatException e)
+            {
+                System.out.println(elementsExpresion.get(i).contains("+"));
+                System.out.println(elementsExpresion.get(i));
+                if (elementsExpresion.get(i).contains("+"))
+                {
+
+                    resultCalcPostfix = stackCalculate.pop() + stackCalculate.pop();
+                    stackCalculate.push(resultCalcPostfix);
+                }
+                else if (elementsExpresion.get(i).contains("-"))
+                {
+                    resultCalcPostfix = stackCalculate.pop() - stackCalculate.pop();
+                    stackCalculate.push(resultCalcPostfix);
+                }
+                else if (elementsExpresion.get(i).contains("*"))
+                {
+                    resultCalcPostfix = stackCalculate.pop() - stackCalculate.pop();
+                    stackCalculate.push(resultCalcPostfix);
+                }
+                else if (elementsExpresion.get(i).contains("/"))
+                {
+                    resultCalcPostfix = stackCalculate.pop() - stackCalculate.pop();
+                    stackCalculate.push(resultCalcPostfix);
+                }
+
+//                switch (arrayElementExpresion.get(i).contains('+'))
+//                {
+//                    case '+':
+//
+//                        break;
+//                    case '-':
+//
+//                        break;
+//                    case '*':
+//                        resultCalcPostfix = stackCalculate.pop() * stackCalculate.pop();
+//                        stackCalculate.push(resultCalcPostfix);
+//                        break;
+//                    case '/':
+//                        resultCalcPostfix = stackCalculate.pop() / stackCalculate.pop();
+//                        stackCalculate.push(resultCalcPostfix);
+//                        break;
+//                }
+            }
+        }
+
+        return resultCalcPostfix;
     }
 
 
     public static void main(String[] args)
     {
-        String expresion = "124 + 5/3-105.357 *90";
-//        String expresion = "6 + 5 * 4";
+        String expresion = "124 + 90";
 
-        Calculate(expresion);
+        System.out.println(Calculate(expresion));
+
+//        String temp = " 100";
+//        try
+//        {
+//            System.out.println("YES\t" + Double.parseDouble(temp));
+//        }
+//        catch (NumberFormatException e)
+//        {
+//            System.out.println("NO\t" + temp);
+//    }
 
 
 //        Stack<String> stackSymbol = new Stack<String>();
