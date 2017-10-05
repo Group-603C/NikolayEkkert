@@ -17,104 +17,6 @@ public class Main
         return dictionaryPriority;
     }
 
-
-    public static double Calculat(String expresion)
-    {
-//        Map<String, Double> dictionaryPriority = new HashMap<String, Double>();
-//        dictionaryPriority.put("(", 1d);
-//        dictionaryPriority.put(")", 2d);
-//        dictionaryPriority.put("+", 3d);
-//        dictionaryPriority.put("-", 3d);
-//        dictionaryPriority.put("*", 4d);
-//        dictionaryPriority.put("/", 4d);
-
-//        Stack<String> stackSymbol = new Stack<String>();
-//
-//        String tempExpresion = "";
-//
-//        for (int i = 0; i < expresion.length(); i++)
-//        {
-//            String oneSymbol = expresion.substring(i, i + 1);
-//            if (oneSymbol.getBytes()[0] >= 48 && oneSymbol.getBytes()[0] <= 57)
-//            {
-//                tempExpresion += oneSymbol;
-//            }
-//            else if (stackSymbol.empty())
-//            {
-//                stackSymbol.push(oneSymbol);
-//            }
-//            else if (!(stackSymbol.empty()))
-//            {
-//                if (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(oneSymbol))
-//                {
-//                    stackSymbol.push(oneSymbol);
-//                }
-//                else
-//                {
-//                    while (!stackSymbol.empty() && dictionaryPriority.get(stackSymbol.peek()) >= dictionaryPriority.get(oneSymbol))
-//                    {
-//                        tempExpresion += stackSymbol.pop();
-//                    }
-//                    stackSymbol.push(oneSymbol);
-//                }
-//            }
-//        }
-
-//        while (!stackSymbol.empty())
-//        {
-//            tempExpresion += stackSymbol.pop();
-//        }
-//
-//        System.out.println(tempExpresion);
-
-
-        int resultCalculatePostfix = 0;
-//        Stack<Integer> stackCalc = new Stack<Integer>();
-//
-//        for (int i = 0; i < tempExpresion.length(); i++)
-//        {
-//            char oneSymbol = tempExpresion.substring(i, i + 1).charAt(0);
-//
-//            if ((int) oneSymbol >= 48 && (int) oneSymbol <= 57)
-//            {
-//                stackCalc.push((int) oneSymbol - 48);
-//            }
-//            else if ((oneSymbol == ')') || (oneSymbol == '(') || (oneSymbol == '+') || (oneSymbol == '-') || (oneSymbol == '*') || (oneSymbol == '/'))
-//            {
-//                switch (oneSymbol)
-//                {
-//                    case '+':
-//                        resultCalculatePostfix = stackCalc.pop() + stackCalc.pop();
-//                        stackCalc.push(resultCalculatePostfix);
-//                        break;
-//                    case '-':
-//                        resultCalculatePostfix = stackCalc.pop() - stackCalc.pop();
-//                        stackCalc.push(resultCalculatePostfix);
-//                        break;
-//                    case '*':
-//                        resultCalculatePostfix = stackCalc.pop() * stackCalc.pop();
-//                        stackCalc.push(resultCalculatePostfix);
-//                        break;
-//                    case '/':
-//                        resultCalculatePostfix = stackCalc.pop() / stackCalc.pop();
-//                        stackCalc.push(resultCalculatePostfix);
-//                        break;
-//                }
-//            }
-//        }
-
-        return resultCalculatePostfix;
-    }
-//
-//    public static boolean stackEmpty(Stack stack)
-//    {
-//
-//    }
-
-    {
-
-    }
-
     public static double Calculate(String expresion)
     {
         String tempExpresion = "";
@@ -146,7 +48,6 @@ public class Main
 
         for (String element : arrayElementExpresion)
         {
-//            System.out.println("qqq - " + element);
             try
             {
                 double checkNumber = Double.parseDouble(element);
@@ -158,31 +59,25 @@ public class Main
                 {
                     if (stackSymbol.size() == 0)
                     {
-                        //System.out.println("Стек пуст, помещаем в него: " + element);
                         stackSymbol.push(element);
                     }
                     else if (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element))
                     {
-                        //  System.out.println("Приоритет меньше, помещаем в стек элемент: " + element);
                         stackSymbol.push(element);
                     }
                     else
                     {
-//                        System.out.println("Мы здесь");
                         while (stackSymbol.size() != 0 && (dictionaryPriority.get(stackSymbol.peek()) >= dictionaryPriority.get(element)))
                         {
                             if (stackSymbol.peek().charAt(0) != '(' && stackSymbol.peek().charAt(0) != ')')
                             {
-                                //  System.out.println("Мы в счётчике");
                                 elementsExpresion.add(stackSymbol.pop());
                             }
                             else
                             {
-//                                System.out.println("peek = " + stackSymbol.peek());
                                 stackSymbol.pop();
                             }
                         }
-//                        System.out.println("Помещаем");
                         stackSymbol.push(element);
                     }
                 }
@@ -197,13 +92,8 @@ public class Main
             else
             {
                 elementsExpresion.add(stackSymbol.pop());
-
             }
         }
-//        System.out.println(stackSymbol);
-        System.out.println(elementsExpresion);
-//        System.out.println(tempExpresion);
-
 
         double resultCalcPostfix = 0d;
         Stack<Double> stackCalculate = new Stack<Double>();
@@ -214,59 +104,32 @@ public class Main
             {
                 double temp = Double.parseDouble(elementsExpresion.get(i));
                 stackCalculate.push(temp);
-//                System.out.println(temp);
             }
             catch (NumberFormatException e)
             {
-//                System.out.println(elementsExpresion.get(i));
-//                System.out.println(elementsExpresion.get(i).contains("+"));
-//                System.out.println(elementsExpresion.get(i));
                 if (elementsExpresion.get(i).contains("+"))
                 {
-//                    System.out.println("+");
                     resultCalcPostfix = stackCalculate.pop() + stackCalculate.pop();
                     stackCalculate.push(resultCalcPostfix);
                 }
                 else if (elementsExpresion.get(i).contains("-"))
                 {
-//                    System.out.println("-");
                     resultCalcPostfix = stackCalculate.pop() - stackCalculate.pop();
                     stackCalculate.push(resultCalcPostfix);
                 }
                 else if (elementsExpresion.get(i).contains("*"))
                 {
-//                    System.out.println("*");
                     resultCalcPostfix = stackCalculate.pop() * stackCalculate.pop();
                     stackCalculate.push(resultCalcPostfix);
                 }
                 else if (elementsExpresion.get(i).contains("/"))
                 {
-//                    System.out.println("/");
                     resultCalcPostfix = stackCalculate.pop() / stackCalculate.pop();
                     stackCalculate.push(resultCalcPostfix);
                 }
-
-
-//                switch (arrayElementExpresion.get(i).contains('+'))
-//                {
-//                    case '+':
-//
-//                        break;
-//                    case '-':
-//
-//                        break;
-//                    case '*':
-//                        resultCalcPostfix = stackCalculate.pop() * stackCalculate.pop();
-//                        stackCalculate.push(resultCalcPostfix);
-//                        break;
-//                    case '/':
-//                        resultCalcPostfix = stackCalculate.pop() / stackCalculate.pop();
-//                        stackCalculate.push(resultCalcPostfix);
-//                        break;
-//                }
             }
         }
-        System.out.println(resultCalcPostfix);
+        
         return resultCalcPostfix;
     }
 
@@ -275,27 +138,6 @@ public class Main
     {
         String expresion = "6+7+10*4";
 
-//        System.out.println(Calculate(expresion));
-        Calculate(expresion);
-//        String temp = " 100";
-//        try
-//        {
-//            System.out.println("YES\t" + Double.parseDouble(temp));
-//        }
-//        catch (NumberFormatException e)
-//        {
-//            System.out.println("NO\t" + temp);
-//    }
-
-
-//        Stack<String> stackSymbol = new Stack<String>();
-//        System.out.println(stackSymbol.size());
-//        stackSymbol.push("1");
-//        stackSymbol.push("2");
-//        System.out.println(stackSymbol.size());
-//        stackSymbol.pop();
-//        System.out.println(stackSymbol.size());
-//        stackSymbol.pop();
-//        System.out.println(stackSymbol.size());
+        System.out.println(Calculate(expresion));
     }
 }
