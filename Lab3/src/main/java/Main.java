@@ -205,7 +205,6 @@ public class Main
 //        System.out.println(stackSymbol);
 //        System.out.println(elementsExpresion);
 //        System.out.println(tempExpresion);
-<<<<<<< HEAD
 
 
         double resultCalcPostfix = 0d;
@@ -265,19 +264,12 @@ public class Main
         }
 
         return resultCalcPostfix;
-=======
-        return 0;
->>>>>>> 6c2ea68343949851773b2829c9f8fe54c346fa84
     }
 
 
     public static void main(String[] args)
     {
-<<<<<<< HEAD
         String expresion = "124 + 90";
-=======
-        String expresion = "124 + 5/3-105.357 *90";
->>>>>>> 6c2ea68343949851773b2829c9f8fe54c346fa84
 
         System.out.println(Calculate(expresion));
 
