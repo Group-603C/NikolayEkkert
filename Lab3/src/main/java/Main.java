@@ -140,9 +140,6 @@ public class Main
             tempExpresion = "";
         }
         arrayElementExpresion.add(tempExpresion);
-        // System.out.println(arrayElementExpresion);
-
-//System.out.println(arrayElementExpresion);
 
         ArrayList<String> elementsExpresion = new ArrayList<String>();  //здесь элементы постфиксной записи
         Stack<String> stackSymbol = new Stack<String>();  //здесь операции для стека
@@ -193,17 +190,18 @@ public class Main
         }
         while (stackSymbol.size() != 0)
         {
-            if (stackSymbol.peek().charAt(0) != '(' && stackSymbol.peek().charAt(0) != ')')
-            {
-                elementsExpresion.add(stackSymbol.pop());
-            }
-            else
+            if (stackSymbol.peek().contains("(") && stackSymbol.peek().contains(")"))
             {
                 stackSymbol.pop();
             }
+            else
+            {
+                elementsExpresion.add(stackSymbol.pop());
+
+            }
         }
 //        System.out.println(stackSymbol);
-//        System.out.println(elementsExpresion);
+        System.out.println(elementsExpresion);
 //        System.out.println(tempExpresion);
 
 
@@ -216,32 +214,38 @@ public class Main
             {
                 double temp = Double.parseDouble(elementsExpresion.get(i));
                 stackCalculate.push(temp);
+//                System.out.println(temp);
             }
             catch (NumberFormatException e)
             {
-                System.out.println(elementsExpresion.get(i).contains("+"));
-                System.out.println(elementsExpresion.get(i));
+//                System.out.println(elementsExpresion.get(i));
+//                System.out.println(elementsExpresion.get(i).contains("+"));
+//                System.out.println(elementsExpresion.get(i));
                 if (elementsExpresion.get(i).contains("+"))
                 {
-
+//                    System.out.println("+");
                     resultCalcPostfix = stackCalculate.pop() + stackCalculate.pop();
                     stackCalculate.push(resultCalcPostfix);
                 }
                 else if (elementsExpresion.get(i).contains("-"))
                 {
+//                    System.out.println("-");
                     resultCalcPostfix = stackCalculate.pop() - stackCalculate.pop();
                     stackCalculate.push(resultCalcPostfix);
                 }
                 else if (elementsExpresion.get(i).contains("*"))
                 {
-                    resultCalcPostfix = stackCalculate.pop() - stackCalculate.pop();
+//                    System.out.println("*");
+                    resultCalcPostfix = stackCalculate.pop() * stackCalculate.pop();
                     stackCalculate.push(resultCalcPostfix);
                 }
                 else if (elementsExpresion.get(i).contains("/"))
                 {
-                    resultCalcPostfix = stackCalculate.pop() - stackCalculate.pop();
+//                    System.out.println("/");
+                    resultCalcPostfix = stackCalculate.pop() / stackCalculate.pop();
                     stackCalculate.push(resultCalcPostfix);
                 }
+
 
 //                switch (arrayElementExpresion.get(i).contains('+'))
 //                {
@@ -262,17 +266,17 @@ public class Main
 //                }
             }
         }
-
+        System.out.println(resultCalcPostfix);
         return resultCalcPostfix;
     }
 
 
     public static void main(String[] args)
     {
-        String expresion = "124 + 90";
+        String expresion = "6+7+10*4";
 
-        System.out.println(Calculate(expresion));
-
+//        System.out.println(Calculate(expresion));
+        Calculate(expresion);
 //        String temp = " 100";
 //        try
 //        {
