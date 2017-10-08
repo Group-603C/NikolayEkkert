@@ -81,7 +81,7 @@ public class Calculator
                     stackSymbol.push(element);
                     continue;
                 }
-System.out.println(stackSymbol);
+
                 if (dictionaryPriority.get(element) > dictionaryPriority.get(stackSymbol.peek()))
                 {
                     stackSymbol.push(element);
@@ -143,7 +143,7 @@ System.out.println(stackSymbol);
         double resultCalcPostfix = 0d;
         Stack<Double> stackCalculate = new Stack<Double>();
 
-        System.out.println(elementsExpresion);
+//        System.out.println(elementsExpresion);
         for (int i = 0; i < elementsExpresion.size(); i++)
         {
 //            System.out.println(stackCalculate);
@@ -164,7 +164,7 @@ System.out.println(stackSymbol);
                     double var0 = stackCalculate.pop();
                     double var1 = stackCalculate.pop();
                     resultCalcPostfix = var1 - var0;
-                    System.out.println(resultCalcPostfix);
+//                    System.out.println(resultCalcPostfix);
                     stackCalculate.push(resultCalcPostfix);
                 }
                 else if (elementsExpresion.get(i).contains("*"))
