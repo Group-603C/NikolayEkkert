@@ -112,10 +112,10 @@ public class Calculator
                     }
                     stackSymbol.push(element);
                 }
-                System.out.println(stackSymbol);
+//                System.out.println(stackSymbol);
             }
         }
-        System.out.println("AAA: "+ elementsExpresion);
+//        System.out.println("AAA: "+ elementsExpresion);
         while (stackSymbol.size() != 0)
         {
             elementsExpresion.add(stackSymbol.pop());
