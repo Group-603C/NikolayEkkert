@@ -123,29 +123,11 @@ public class Calculator
                         }
                     }
                 }
-<<<<<<< HEAD
-=======
-                else if (dictionaryPriority.get(element) > dictionaryPriority.get(stackSymbol.peek()))
-                {
-                    stackSymbol.push(element);
-                }
-                else if (dictionaryPriority.get(element) <= dictionaryPriority.get(stackSymbol.peek()))
-                {
-                    while (stackSymbol.peek().equals("(") || dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element))
-                    {
-                        elementsExpresion.add(stackSymbol.pop());
-                    }
-                    stackSymbol.push(element);
-                }
->>>>>>> 59c1f6da7a71dd6468db8dd569d66fd9273aca9e
 //                System.out.println(stackSymbol);
             }
         }
 //        System.out.println("AAA: "+ elementsExpresion);
-<<<<<<< HEAD
 //        System.out.println(elementsExpresion);
-=======
->>>>>>> 59c1f6da7a71dd6468db8dd569d66fd9273aca9e
         while (stackSymbol.size() != 0)
         {
             elementsExpresion.add(stackSymbol.pop());
