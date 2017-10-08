@@ -1,3 +1,5 @@
+import com.sun.deploy.util.ArrayUtil;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,12 +12,11 @@ public class Calculator
     private static Map priorities()
     {
         dictionaryPriority = new HashMap<String, Double>();
-        dictionaryPriority.put("(", 1d);
-        dictionaryPriority.put(")", 2d);
-        dictionaryPriority.put("+", 3d);
-        dictionaryPriority.put("-", 3d);
-        dictionaryPriority.put("*", 4d);
-        dictionaryPriority.put("/", 4d);
+        dictionaryPriority.put("(", 0d);
+        dictionaryPriority.put("+", 1d);
+        dictionaryPriority.put("-", 1d);
+        dictionaryPriority.put("*", 2d);
+        dictionaryPriority.put("/", 2d);
 
         return dictionaryPriority;
     }
@@ -25,7 +26,7 @@ public class Calculator
         String tempExpresion = "";
         ArrayList<String> arrayElementExpresion = new ArrayList<String>();
 
-        char[] elementsExpresion = expresion.replaceAll(" ", "").toCharArray();
+        char[] elementsExpresion = expresion.replaceAll(" ", "").replaceAll(",", ".").toCharArray();
 
         for (int i = 0; i < elementsExpresion.length; i++)
         {
@@ -39,12 +40,20 @@ public class Calculator
                 tempExpresion += elementsExpresion[i];
                 continue;
             }
+
             arrayElementExpresion.add(tempExpresion);
             tempExpresion = "" + elementsExpresion[i];
+
             arrayElementExpresion.add(tempExpresion);
             tempExpresion = "";
         }
         arrayElementExpresion.add(tempExpresion);
+
+
+        while (arrayElementExpresion.contains(""))
+        {
+            arrayElementExpresion.remove("");
+        }
 
         return arrayElementExpresion;
     }
@@ -65,46 +74,54 @@ public class Calculator
             }
             catch (NumberFormatException e)
             {
-                if (element.contains("+") || element.contains("-") || element.contains("/") || element.contains("*") || element.contains("(") || element.contains(")"))
+                if (stackSymbol.size() == 0)
                 {
-                    if (stackSymbol.size() == 0)
+                    stackSymbol.push(element);
+                }
+                else if (stackSymbol.peek().equals("("))
+                {
+                    stackSymbol.push(element);
+                }
+
+
+                else if (element.equals(")"))
+                {
+                    String skobka = "(";
+                    for (; ; )
                     {
-                        stackSymbol.push(element);
-                    }
-                    else if (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element))
-                    {
-                        stackSymbol.push(element);
-                    }
-                    else
-                    {
-                        while (stackSymbol.size() != 0 && (dictionaryPriority.get(stackSymbol.peek()) >= dictionaryPriority.get(element)))
+                        if (stackSymbol.peek().equals(skobka))
                         {
-                            if (stackSymbol.peek().charAt(0) != '(' && stackSymbol.peek().charAt(0) != ')')
-                            {
-                                elementsExpresion.add(stackSymbol.pop());
-                            }
-                            else
-                            {
-                                stackSymbol.pop();
-                            }
+                            stackSymbol.pop();
+                            break;
                         }
-                        stackSymbol.push(element);
+                        else
+                        {
+                            elementsExpresion.add(stackSymbol.pop());
+                        }
                     }
                 }
+                else if (dictionaryPriority.get(element) > dictionaryPriority.get(stackSymbol.peek()))
+                {
+                    stackSymbol.push(element);
+                }
+                else if (dictionaryPriority.get(element) <= dictionaryPriority.get(stackSymbol.peek()))
+                {
+                    while (stackSymbol.peek().equals("(") || dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element))
+                    {
+                        elementsExpresion.add(stackSymbol.pop());
+                    }
+                    stackSymbol.push(element);
+                }
+                System.out.println(stackSymbol);
             }
         }
+        System.out.println("AAA: "+ elementsExpresion);
         while (stackSymbol.size() != 0)
         {
-            if (stackSymbol.peek().contains("(") && stackSymbol.peek().contains(")"))
-            {
-                stackSymbol.pop();
-            }
-            else
-            {
-                elementsExpresion.add(stackSymbol.pop());
-            }
+            elementsExpresion.add(stackSymbol.pop());
         }
 
+//        System.out.println(elementsExpresion);
         return elementsExpresion;
     }
 
