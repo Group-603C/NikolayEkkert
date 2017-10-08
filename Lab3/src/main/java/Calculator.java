@@ -20,31 +20,38 @@ public class Calculator
         return dictionaryPriority;
     }
 
-    private static ArrayList<String> infixToPostfix(String expresion)
+    private static ArrayList<String> divisionArray(String expresion)
     {
         String tempExpresion = "";
         ArrayList<String> arrayElementExpresion = new ArrayList<String>();
 
-        char[] str = expresion.toCharArray();
+        char[] elementsExpresion = expresion.replaceAll(" ", "").toCharArray();
 
-        for (int i = 0; i < str.length; i++)
+        for (int i = 0; i < elementsExpresion.length; i++)
         {
-            if (str[i] != '+' && str[i] != '-' && str[i] != '/' && str[i] != '*' && str[i] != '(' && str[i] != ')')
+            if (elementsExpresion[i] != '+' && elementsExpresion[i] != '-' && elementsExpresion[i] != '/' && elementsExpresion[i] != '*' && elementsExpresion[i] != '(' && elementsExpresion[i] != ')')
             {
-                tempExpresion += str[i];
+                tempExpresion += elementsExpresion[i];
                 continue;
             }
-            if (str[i] == '.')
+            if (elementsExpresion[i] == '.')
             {
-                tempExpresion += str[i];
+                tempExpresion += elementsExpresion[i];
                 continue;
             }
             arrayElementExpresion.add(tempExpresion);
-            tempExpresion = "" + str[i];
+            tempExpresion = "" + elementsExpresion[i];
             arrayElementExpresion.add(tempExpresion);
             tempExpresion = "";
         }
         arrayElementExpresion.add(tempExpresion);
+
+        return arrayElementExpresion;
+    }
+
+    private static ArrayList<String> infixToPostfix(String expresion)
+    {
+        ArrayList<String> arrayElementExpresion = divisionArray(expresion);
 
         ArrayList<String> elementsExpresion = new ArrayList<String>();  //здесь элементы постфиксной записи
         Stack<String> stackSymbol = new Stack<String>();  //здесь операции для стека
@@ -141,6 +148,4 @@ public class Calculator
 
         return resultCalcPostfix;
     }
-
-
 }
