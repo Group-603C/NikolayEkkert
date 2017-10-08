@@ -1,7 +1,13 @@
+<<<<<<< HEAD
+=======
+import org.junit.Test;
+
+>>>>>>> 59c1f6da7a71dd6468db8dd569d66fd9273aca9e
 import static org.junit.Assert.*;
 
 public class CalculatorTest
 {
+<<<<<<< HEAD
     @org.junit.Test
     public void calculate() throws Exception
     {
@@ -26,4 +32,16 @@ public class CalculatorTest
 //        actual = exemplar1.calculate("4*5-2+3");
 //        assertEquals("Five test", expect, actual, 0.0001);
     }
+=======
+    @Test
+    public void calculate() throws Exception
+    {
+        Calculator exemplar = new Calculator();
+        double actual = exemplar.calculate("");
+        double expected = 74.2d;
+
+        assertEquals("One Test", expected, actual);
+    }
+
+>>>>>>> 59c1f6da7a71dd6468db8dd569d66fd9273aca9e
 }
