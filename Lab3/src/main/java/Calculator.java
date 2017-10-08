@@ -65,6 +65,7 @@ public class Calculator
         ArrayList<String> elementsExpresion = new ArrayList<String>();  //здесь элементы постфиксной записи
         Stack<String> stackSymbol = new Stack<String>();  //здесь операции для стека
 
+
         for (String element : arrayElementExpresion)
         {
             try
@@ -74,17 +75,39 @@ public class Calculator
             }
             catch (NumberFormatException e)
             {
-                if (stackSymbol.size() == 0)
+//                System.out.println(stackSymbol);
+                if (stackSymbol.size() == 0 || stackSymbol.peek().equals("("))
                 {
                     stackSymbol.push(element);
+                    continue;
                 }
-                else if (stackSymbol.peek().equals("("))
+
+                if (dictionaryPriority.get(element) > dictionaryPriority.get(stackSymbol.peek()))
                 {
                     stackSymbol.push(element);
+                    continue;
                 }
 
+                if (dictionaryPriority.get(element) <= dictionaryPriority.get(stackSymbol.peek()))
+                {
+//                    System.out.println(elementsExpresion);
+                    if (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element) || stackSymbol.peek().equals("("))
+                    {
+                        while (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element))
+                        {
+                            elementsExpresion.add(stackSymbol.pop());
+                        }
+                    }
+                    else
+                    {
+                        elementsExpresion.add(stackSymbol.pop());
+                    }
 
-                else if (element.equals(")"))
+                    stackSymbol.push(element);
+                    continue;
+                }
+
+                if (element.equals(")"))
                 {
                     String skobka = "(";
                     for (; ; )
@@ -100,28 +123,17 @@ public class Calculator
                         }
                     }
                 }
-                else if (dictionaryPriority.get(element) > dictionaryPriority.get(stackSymbol.peek()))
-                {
-                    stackSymbol.push(element);
-                }
-                else if (dictionaryPriority.get(element) <= dictionaryPriority.get(stackSymbol.peek()))
-                {
-                    while (stackSymbol.peek().equals("(") || dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element))
-                    {
-                        elementsExpresion.add(stackSymbol.pop());
-                    }
-                    stackSymbol.push(element);
-                }
-                System.out.println(stackSymbol);
+//                System.out.println(stackSymbol);
             }
         }
-        System.out.println("AAA: "+ elementsExpresion);
+//        System.out.println("AAA: "+ elementsExpresion);
+//        System.out.println(elementsExpresion);
         while (stackSymbol.size() != 0)
         {
             elementsExpresion.add(stackSymbol.pop());
         }
 
-//        System.out.println(elementsExpresion);
+//        System.out.println("Postfix: " + elementsExpresion);
         return elementsExpresion;
     }
 
@@ -131,8 +143,10 @@ public class Calculator
         double resultCalcPostfix = 0d;
         Stack<Double> stackCalculate = new Stack<Double>();
 
+        System.out.println(elementsExpresion);
         for (int i = 0; i < elementsExpresion.size(); i++)
         {
+//            System.out.println(stackCalculate);
             try
             {
                 double temp = Double.parseDouble(elementsExpresion.get(i));
@@ -147,7 +161,10 @@ public class Calculator
                 }
                 else if (elementsExpresion.get(i).contains("-"))
                 {
-                    resultCalcPostfix = stackCalculate.pop() - stackCalculate.pop();
+                    double var0 = stackCalculate.pop();
+                    double var1 = stackCalculate.pop();
+                    resultCalcPostfix = var1 - var0;
+                    System.out.println(resultCalcPostfix);
                     stackCalculate.push(resultCalcPostfix);
                 }
                 else if (elementsExpresion.get(i).contains("*"))
@@ -157,10 +174,20 @@ public class Calculator
                 }
                 else if (elementsExpresion.get(i).contains("/"))
                 {
-                    resultCalcPostfix = stackCalculate.pop() / stackCalculate.pop();
+                    double var0 = stackCalculate.pop();
+                    double var1 = stackCalculate.pop();
+                    if (var1 == 0d)
+                    {
+                        resultCalcPostfix = Double.MIN_VALUE;
+                    }
+                    else
+                    {
+                        resultCalcPostfix = var1 / var0;
+                    }
                     stackCalculate.push(resultCalcPostfix);
                 }
             }
+//            System.out.println(resultCalcPostfix);
         }
 
         return resultCalcPostfix;
