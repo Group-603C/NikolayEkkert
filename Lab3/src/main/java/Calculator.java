@@ -81,7 +81,7 @@ public class Calculator
                     stackSymbol.push(element);
                     continue;
                 }
-
+System.out.println(stackSymbol);
                 if (dictionaryPriority.get(element) > dictionaryPriority.get(stackSymbol.peek()))
                 {
                     stackSymbol.push(element);
