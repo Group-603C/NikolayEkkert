@@ -75,7 +75,6 @@ public class Calculator
             }
             catch (NumberFormatException e)
             {
-//                System.out.println(stackSymbol);
                 if (stackSymbol.size() == 0 || stackSymbol.peek().equals("("))
                 {
                     stackSymbol.push(element);
@@ -90,7 +89,6 @@ public class Calculator
 
                 if (dictionaryPriority.get(element) <= dictionaryPriority.get(stackSymbol.peek()))
                 {
-//                    System.out.println(elementsExpresion);
                     if (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element) || stackSymbol.peek().equals("("))
                     {
                         while (dictionaryPriority.get(stackSymbol.peek()) < dictionaryPriority.get(element))
@@ -123,17 +121,14 @@ public class Calculator
                         }
                     }
                 }
-//                System.out.println(stackSymbol);
             }
         }
-//        System.out.println("AAA: "+ elementsExpresion);
-//        System.out.println(elementsExpresion);
+
         while (stackSymbol.size() != 0)
         {
             elementsExpresion.add(stackSymbol.pop());
         }
 
-//        System.out.println("Postfix: " + elementsExpresion);
         return elementsExpresion;
     }
 
@@ -143,10 +138,8 @@ public class Calculator
         double resultCalcPostfix = 0d;
         Stack<Double> stackCalculate = new Stack<Double>();
 
-//        System.out.println(elementsExpresion);
         for (int i = 0; i < elementsExpresion.size(); i++)
         {
-//            System.out.println(stackCalculate);
             try
             {
                 double temp = Double.parseDouble(elementsExpresion.get(i));
@@ -164,7 +157,6 @@ public class Calculator
                     double var0 = stackCalculate.pop();
                     double var1 = stackCalculate.pop();
                     resultCalcPostfix = var1 - var0;
-//                    System.out.println(resultCalcPostfix);
                     stackCalculate.push(resultCalcPostfix);
                 }
                 else if (elementsExpresion.get(i).contains("*"))
@@ -187,7 +179,6 @@ public class Calculator
                     stackCalculate.push(resultCalcPostfix);
                 }
             }
-//            System.out.println(resultCalcPostfix);
         }
 
         return resultCalcPostfix;

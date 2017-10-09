@@ -16,14 +16,11 @@
       <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="193" column="5" lean-forward="false" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+            <state relative-caret-position="550">
+              <caret line="177" column="21" lean-forward="true" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#priorities#0;class#Calculator#0" expanded="false" />
-                <element signature="method#divisionArray#0;class#Calculator#0" expanded="false" />
-                <element signature="method#infixToPostfix#0;class#Calculator#0" expanded="false" />
-                <element signature="method#calculate#0;class#Calculator#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -67,9 +64,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Calculator.java" />
         <option value="$PROJECT_DIR$/src/test/java/CalculatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Calculator.java" />
       </list>
     </option>
   </component>
@@ -322,7 +319,7 @@
       <workItem from="1507473280876" duration="169000" />
       <workItem from="1507473723795" duration="929000" />
       <workItem from="1507567243491" duration="515000" />
-      <workItem from="1507570195492" duration="974000" />
+      <workItem from="1507570195492" duration="1067000" />
     </task>
     <servers />
   </component>
@@ -333,9 +330,12 @@
     <history-entry file="CalculatorTest - 2017.10.10 at 00h 51m 38s.xml">
       <configuration name="CalculatorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CalculatorTest - 2017.10.10 at 00h 53m 37s.xml">
+      <configuration name="CalculatorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2587000" />
+    <option name="totallyTimeSpent" value="2680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -349,7 +349,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36087865" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36087865" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -390,9 +390,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#priorities#0;class#Calculator#0" expanded="false" />
-            <element signature="method#divisionArray#0;class#Calculator#0" expanded="false" />
-            <element signature="method#infixToPostfix#0;class#Calculator#0" expanded="false" />
-            <element signature="method#calculate#0;class#Calculator#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -420,9 +417,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#priorities#0;class#Calculator#0" expanded="false" />
-            <element signature="method#divisionArray#0;class#Calculator#0" expanded="false" />
-            <element signature="method#infixToPostfix#0;class#Calculator#0" expanded="false" />
-            <element signature="method#calculate#0;class#Calculator#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -458,9 +452,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#priorities#0;class#Calculator#0" expanded="false" />
-            <element signature="method#divisionArray#0;class#Calculator#0" expanded="false" />
-            <element signature="method#infixToPostfix#0;class#Calculator#0" expanded="false" />
-            <element signature="method#calculate#0;class#Calculator#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -489,14 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -505,16 +488,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="193" column="5" lean-forward="false" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+        <state relative-caret-position="550">
+          <caret line="177" column="21" lean-forward="true" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#priorities#0;class#Calculator#0" expanded="false" />
-            <element signature="method#divisionArray#0;class#Calculator#0" expanded="false" />
-            <element signature="method#infixToPostfix#0;class#Calculator#0" expanded="false" />
-            <element signature="method#calculate#0;class#Calculator#0" expanded="false" />
           </folding>
         </state>
       </provider>
