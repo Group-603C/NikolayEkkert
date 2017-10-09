@@ -4,8 +4,7 @@ public class Formatter
     {
         for (int i = 0; i < arguments.length; i++)
         {
-            String argumentsElement = arguments[i].toString();
-            formatString = formatString.replace("{" + i + "}", argumentsElement);
+            formatString = formatString.replace("{" + i + "}", arguments[i].toString());
         }
 
         return formatString;
