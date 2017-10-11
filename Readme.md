@@ -8,6 +8,7 @@
 *   [Лаб.№2 - Массивы](#lab2)
 *   [Лаб.№3 - Коллекции](#lab3)
 *   [Лаб.№4 - Работа с файлами](#lab4)
+*   [Лаб.№5 - Formatter](#lab5)
 
 ***
 
@@ -147,3 +148,28 @@ class FileAnalizer {
 * ООП
 
 ***
+
+
+<h2 id="lab5">Лабораторная работа №5 - Formatter</h2>
+
+Реализовать метод для форматирвоания строки. На выходе должна получится единая строка со вставленными по правилам аргументами. Аргументы вставляются в строку через {}.
+
+```java
+class Formatter {
+ 
+    static String build(String formatString, Object... arguments);
+}
+```
+
+```java
+//Example
+String result = Formatter.build("Hello {0}, I am {1} years old", "hell", 15);
+System.out.println(result); //Hello hell, I am 15 years old
+```
+<h4>Обратить внимание:</h4>
+* Возможные типы данных
+	* Реализацию println
+* Перевод объекта в строку
+* Важное свойство строк, их изменяемость
+* Применение StringBuilder
+
