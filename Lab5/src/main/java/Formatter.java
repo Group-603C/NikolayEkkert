@@ -63,13 +63,16 @@ public class Formatter
             }
         }
 
-//        System.out.println(array.length);
+        System.out.println(array.length);
 
         for (int i = 0; i < array.length; i++)
         {
-            for (int j = 0; j < array[i].length; j++)
+            if (array[i] != null)
             {
-                System.out.print(array[i][j] + "\t");
+                for (int j = 0; j < array[i].length; j++)
+                {
+                    System.out.print(array[i][j] + "\t");
+                }
             }
             System.out.println();
         }
@@ -78,44 +81,23 @@ public class Formatter
 
         for (int i = array.length - 1; i >= 0; i--)
         {
-            for (int j = 0; j < array[i].length; j++)
+            if (array[i] != null)
             {
-                System.out.print(array[i][j] + "\t");
+                for (int j = 0; j < array[i].length; j++)
+                {
+                    System.out.print(array[i][j] + "\t");
+                }
             }
             System.out.println();
         }
 
 
-        for (int i = array.length - 1; i >= 0; i--)
+        for (int i = arguments.length - 1; i >= 0; i--)
         {
-            int start1;
-            int end1;
-            String arg;
-
-//            for (int j = 0; j < array[i].length; j++)
-//            {
-//                switch (j)
-//                {
-//                    case 0:
-//                        start1 = j;
-//                        System.out.print(start1);
-//                        break;
-//                    case 1:
-//                        end1 = j;
-//                        System.out.print(end1);
-//                        break;
-//                    case 2:
-//                        arg = arguments[array[i][j]].toString();
-//                        break;
-//                }
-////System.out.print(start1);
-////                System.out.print(array[i][j] + "\t");
-//            }
-//            editedFormatString.replace(start1 - 1, end1, arg);
-
-
-            editedFormatString.replace(array[i][0] - 1, array[i][1], arguments[array[i][2]].toString());
-//            System.out.println();
+            if (array[i] != null)
+            {
+                editedFormatString.replace(array[i][0] - 1, array[i][1], arguments[array[i][2]].toString());
+            }
         }
 
         return editedFormatString.toString();
