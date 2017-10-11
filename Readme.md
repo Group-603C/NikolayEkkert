@@ -46,34 +46,18 @@ boolean isCorrect(String sequence);
 <h2 id="lab2">Лабораторная работа №2 - Массивы</h2>
 
 Реализовать набор методов для нахождения статических характеристик массива.
-1) Минимум
 
 ```java
-int findMinimum(int[] entities);
-```
-
-2) Максимум
-
-```java
-int findMaximum(int[] entities);
-```
-
-3) Среднее арифметическое
-
-```java
-double findAverage(int[] entities);
-```
-
-4) Медиана
-
-```java
-double findMedian(int[] entities);
-```
-
-5) Среднее геометрическое
-
-```java
-double findGeometricAverage(int[] entities);
+class ArrayAnalizer {
+ 
+    ArrayAnalizer(int[] entities)
+ 
+    int findMinimum();
+    int findMaximum();
+    double findAverage();
+    double findMedian();
+    double findGeometricAverage();
+}
 ```
 
 <h4>Обратить внимание:</h4>
@@ -120,7 +104,10 @@ double findGeometricAverage(int[] entities);
 5) __()__
 
 ```java
-double calculate(String expresion);
+class Calculator {
+
+    static double calculate(String expresion);
+}
 ```
 
 <h4>Обратить внимание:</h4>
@@ -139,13 +126,14 @@ double calculate(String expresion);
 Реализовать класс с набором методов анализа файла.
 
 ```java
-class FileAnalizer
-{
-	public fileAnalizer(String path);
-	public int countLetters();
-	public int countWords();
-	public int countLines();
-	public Map<char,int> countFrequencyCharacteristic();
+class FileAnalizer {
+ 
+    public FileAnalizer(String path);
+ 
+    public int countLetters();
+    public int countWords();
+    public int countLines();
+    public Map<char,int> countFrequencyCharacteristic();
 }
 ```
 
