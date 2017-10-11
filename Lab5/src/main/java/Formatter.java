@@ -25,6 +25,10 @@ public class Formatter
         int tempOpen = 0;
         int tempClose = 0;
 
+        int counterArray = 0;
+
+        int[][] array = new int[arguments.length][];
+
         for (char element : arrayFormatString)
         {
             countOpenQuote++;
@@ -32,35 +36,86 @@ public class Formatter
             if (element == '{')
             {
                 tempOpen = countOpenQuote;
-//                System.out.println("Open: " + countOpenQuote + "\t" + element);
-//                System.out.println("2");
                 flag = true;
             }
             else if (element == '}')
             {
                 tempClose = countCloseQuote;
-//                System.out.println("Close: " + countCloseQuote + "\t" + element);
-//                System.out.println("3");
                 flag = false;
-//                System.out.println(numberLabel);
 
                 String temp = numberLabel.toString();
                 int numberArgument = Integer.parseInt(temp);
-//                editedFormatString.replace(countOpenQuote, countCloseQuote, arguments[numberArgument].toString());
 
-                System.out.println(tempOpen + "\t" + tempClose);
-                editedFormatString.replace(tempOpen-1, tempClose, "!!");
+//                System.out.println(tempOpen + "\t" + tempClose + "\t" + numberArgument);
+
+
+                int[] tempArray = {tempOpen, tempClose, numberArgument};
+                array[counterArray] = tempArray;
+                counterArray++;
+//                editedFormatString.replace(tempOpen-1, tempClose, "!!!");
 //                editedFormatString.replace(tempOpen-1, tempClose, arguments[numberArgument].toString());
 
                 numberLabel.delete(0, numberLabel.length());
             }
             else if (flag)
             {
-//                System.out.println("1");
                 numberLabel.append(element);
-//                System.out.println(i);
-//                System.out.println(numberLabel);
             }
+        }
+
+//        System.out.println(array.length);
+
+        for (int i = 0; i < array.length; i++)
+        {
+            for (int j = 0; j < array[i].length; j++)
+            {
+                System.out.print(array[i][j] + "\t");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for (int i = array.length - 1; i >= 0; i--)
+        {
+            for (int j = 0; j < array[i].length; j++)
+            {
+                System.out.print(array[i][j] + "\t");
+            }
+            System.out.println();
+        }
+
+
+        for (int i = array.length - 1; i >= 0; i--)
+        {
+            int start1;
+            int end1;
+            String arg;
+
+//            for (int j = 0; j < array[i].length; j++)
+//            {
+//                switch (j)
+//                {
+//                    case 0:
+//                        start1 = j;
+//                        System.out.print(start1);
+//                        break;
+//                    case 1:
+//                        end1 = j;
+//                        System.out.print(end1);
+//                        break;
+//                    case 2:
+//                        arg = arguments[array[i][j]].toString();
+//                        break;
+//                }
+////System.out.print(start1);
+////                System.out.print(array[i][j] + "\t");
+//            }
+//            editedFormatString.replace(start1 - 1, end1, arg);
+
+
+            editedFormatString.replace(array[i][0] - 1, array[i][1], arguments[array[i][2]].toString());
+//            System.out.println();
         }
 
         return editedFormatString.toString();
