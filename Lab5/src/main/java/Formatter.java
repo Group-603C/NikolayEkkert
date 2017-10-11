@@ -1,5 +1,3 @@
-import com.sun.deploy.util.StringUtils;
-
 public class Formatter
 {
     public String build(String formatString, Object... arguments)
