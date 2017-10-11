@@ -4,16 +4,6 @@ public class Formatter
 {
     public String build(String formatString, Object... arguments)
     {
-        for (int i = 0; i < arguments.length; i++)
-        {
-            formatString = formatString.replace("{" + i + "}", arguments[i].toString());
-        }
-
-        return formatString;
-    }
-
-    public String build1(String formatString, Object... arguments)
-    {
         StringBuilder editedFormatString = new StringBuilder(formatString);
         StringBuilder numberLabel = new StringBuilder();
 
@@ -42,18 +32,13 @@ public class Formatter
             {
                 tempClose = countCloseQuote;
                 flag = false;
-
                 String temp = numberLabel.toString();
+
                 int numberArgument = Integer.parseInt(temp);
-
-//                System.out.println(tempOpen + "\t" + tempClose + "\t" + numberArgument);
-
-
                 int[] tempArray = {tempOpen, tempClose, numberArgument};
+
                 array[counterArray] = tempArray;
                 counterArray++;
-//                editedFormatString.replace(tempOpen-1, tempClose, "!!!");
-//                editedFormatString.replace(tempOpen-1, tempClose, arguments[numberArgument].toString());
 
                 numberLabel.delete(0, numberLabel.length());
             }
@@ -61,34 +46,6 @@ public class Formatter
             {
                 numberLabel.append(element);
             }
-        }
-
-        System.out.println(array.length);
-
-        for (int i = 0; i < array.length; i++)
-        {
-            if (array[i] != null)
-            {
-                for (int j = 0; j < array[i].length; j++)
-                {
-                    System.out.print(array[i][j] + "\t");
-                }
-            }
-            System.out.println();
-        }
-
-        System.out.println();
-
-        for (int i = array.length - 1; i >= 0; i--)
-        {
-            if (array[i] != null)
-            {
-                for (int j = 0; j < array[i].length; j++)
-                {
-                    System.out.print(array[i][j] + "\t");
-                }
-            }
-            System.out.println();
         }
 
 
