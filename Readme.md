@@ -20,14 +20,14 @@
 Реализуйте метод для проверки числа на простоту. 
 
 ```java
-boolean IsSimple(int number);
+boolean isSimple(int number);
 ```
 
 3) __Скобки__. 
 Реализовать метод, который по заданной скобочной последовательности говорит, “правильная” ли она.
 
 ```java
-boolean IsCorrect(String sequence);
+boolean isCorrect(String sequence);
 ```
 
 >Правильной скобочной последовательностью называется такая последовательность, в которой для каждой открывающейся скобки справа от неё найдётся соответствующая ей закрывающая, и наоборот: для каждой закрывающей скобки слева от неё найдётся соответствующая ей открывающая. Пример: (), (()()), ()()()()(()) - правильные последовательности; ()), )(, (())()()) - неправильные.
@@ -49,31 +49,31 @@ boolean IsCorrect(String sequence);
 1) Минимум
 
 ```java
-int FindMinimum(int[] entities);
+int findMinimum(int[] entities);
 ```
 
 2) Максимум
 
 ```java
-int FindMaximum(int[] entities);
+int findMaximum(int[] entities);
 ```
 
 3) Среднее арифметическое
 
 ```java
-double FindAverage(int[] entities);
+double findAverage(int[] entities);
 ```
 
 4) Медиана
 
 ```java
-double FindMedian(int[] entities);
+double findMedian(int[] entities);
 ```
 
 5) Среднее геометрическое
 
 ```java
-double FindGeometricAverage(int[] entities);
+double findGeometricAverage(int[] entities);
 ```
 
 <h4>Обратить внимание:</h4>
@@ -120,7 +120,7 @@ double FindGeometricAverage(int[] entities);
 5) __()__
 
 ```java
-double Calculate(String expresion);
+double calculate(String expresion);
 ```
 
 <h4>Обратить внимание:</h4>
@@ -141,11 +141,11 @@ double Calculate(String expresion);
 ```java
 class FileAnalizer
 {
-	public FileAnalizer(String path);
-	public int CountLetters();
-	public int CountWords();
-	public int CountLines();
-	public Map<char,int> CountFrequencyCharacteristic();
+	public fileAnalizer(String path);
+	public int countLetters();
+	public int countWords();
+	public int countLines();
+	public Map<char,int> countFrequencyCharacteristic();
 }
 ```
 
