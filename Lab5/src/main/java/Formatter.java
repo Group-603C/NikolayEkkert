@@ -94,9 +94,16 @@ public class Formatter
 
         for (int i = arguments.length - 1; i >= 0; i--)
         {
-            if (array[i] != null)
+            try
             {
                 editedFormatString.replace(array[i][0] - 1, array[i][1], arguments[array[i][2]].toString());
+            }
+            catch (NullPointerException e)
+            {
+            }
+            catch (ArrayIndexOutOfBoundsException e)
+            {
+                System.out.println("Не корректная метка");
             }
         }
 
