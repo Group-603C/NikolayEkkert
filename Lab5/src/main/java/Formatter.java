@@ -35,9 +35,15 @@ public class Formatter
                 int numberArgument = Integer.parseInt(temp);
                 int[] tempArray = {tempOpen, tempClose, numberArgument};
 
-                array[counterArray] = tempArray;
-                counterArray++;
-
+                try
+                {
+                    array[counterArray] = tempArray;
+                    counterArray++;
+                }
+                catch (ArrayIndexOutOfBoundsException e)
+                {
+                    System.out.println("---Не корректное количество аргументов---".toUpperCase());
+                }
                 numberLabel.delete(0, numberLabel.length());
             }
             else if (flag)
@@ -58,7 +64,7 @@ public class Formatter
             }
             catch (ArrayIndexOutOfBoundsException e)
             {
-                System.out.println("Не корректная метка");
+                System.out.println("---Не корректная метка---".toUpperCase());
             }
         }
 

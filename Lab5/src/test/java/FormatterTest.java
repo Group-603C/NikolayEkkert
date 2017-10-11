@@ -18,6 +18,10 @@ public class FormatterTest
         value = exemplar.build("Нельзя {2} так взять и {3} {0} по {1}", "лабы", "Java", "так", "сдать", "иначе кирдык");
         expected = "Нельзя так так взять и сдать лабы по Java";
         assertEquals("Three test", expected, value);
+
+        value = exemplar.build("здесь {0}, а здесь {1}, а вот {2}", "мама", "папа");
+        expected = "здесь мама, а здесь папа, а вот {2}";
+        assertEquals("Four test", expected, value);
     }
 
 }
