@@ -42,7 +42,6 @@ public class Formatter
                 }
                 catch (ArrayIndexOutOfBoundsException e)
                 {
-                    System.out.println("---Не корректное количество аргументов---".toUpperCase());
                 }
                 numberLabel.delete(0, numberLabel.length());
             }
@@ -64,7 +63,6 @@ public class Formatter
             }
             catch (ArrayIndexOutOfBoundsException e)
             {
-                System.out.println("---Не корректная метка---".toUpperCase());
             }
         }
 
