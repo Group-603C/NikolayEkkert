@@ -34,6 +34,10 @@ public class FormatterTest
         value = exemplar.build("здесь 0, а здесь {1}, а вот {2}", "мама", "папа");
         expected = "здесь 0, а здесь папа, а вот {2}";
         assertEquals("Seven test", expected, value);
+
+        value = exemplar.build("", "");
+        expected = "";
+        assertEquals("Eight test", expected, value);
     }
 
 }
