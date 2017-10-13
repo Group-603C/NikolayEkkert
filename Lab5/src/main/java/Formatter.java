@@ -33,17 +33,20 @@ public class Formatter
                 tempClose = countCloseQuote;
                 flag = false;
                 String temp = numberLabel.toString();
-
-                int numberArgument = Integer.parseInt(temp);
-
                 try
                 {
+                    int numberArgument = Integer.parseInt(temp);
+
                     indexOpenQuote.add(tempOpen);
                     indexCloseQuote.add(tempClose);
                     indexArgument.add(numberArgument);
                 }
                 catch (ArrayIndexOutOfBoundsException e)
                 {
+                }
+                catch (NumberFormatException e)
+                {
+
                 }
                 numberLabel.delete(0, numberLabel.length());
             }
