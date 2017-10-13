@@ -38,5 +38,9 @@ public class FormatterTest {
         value = exemplar.build("", "");
         expected = "";
         assertEquals("Eight test", expected, value);
+
+        value = exemplar.build(null, null);
+        expected = "";
+        assertEquals("Nine test", expected, value);
     }
 }

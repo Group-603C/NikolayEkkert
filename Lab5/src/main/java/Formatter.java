@@ -4,10 +4,19 @@ import java.util.List;
 public class Formatter {
 
     public String build(String formatString, Object... arguments) {
-        StringBuilder editedFormatString = new StringBuilder(formatString);
-        StringBuilder numberLabel = new StringBuilder( );
 
-        char[] arrayFormatString = formatString.toCharArray( );
+        char[] arrayFormatString = { };
+
+        StringBuilder editedFormatString = new StringBuilder( );
+        try {
+            editedFormatString = new StringBuilder(formatString);
+            arrayFormatString = formatString.toCharArray( );
+        }
+        catch (NullPointerException e) {
+            
+        }
+
+        StringBuilder numberLabel = new StringBuilder( );
 
         boolean flag = false;
 
@@ -45,6 +54,7 @@ public class Formatter {
                         indexArgument.add(numberArgument);
                     }
                     catch (ArrayIndexOutOfBoundsException e) {
+
                     }
                     catch (NumberFormatException e) {
 
@@ -60,17 +70,26 @@ public class Formatter {
             }
         }
 
-        for (int i = arguments.length - 1; i >= 0; i--) {
+        try {
 
-            try {
-                editedFormatString.replace(indexOpenQuote.get(i) - 1, indexCloseQuote.get(i), arguments[indexArgument.get(i)].toString( ));
+            for (int i = arguments.length - 1; i >= 0; i--) {
+
+                try {
+                    editedFormatString.replace(indexOpenQuote.get(i) - 1, indexCloseQuote.get(i), arguments[indexArgument.get(i)].toString( ));
+                }
+                catch (NullPointerException e) {
+
+                }
+                catch (ArrayIndexOutOfBoundsException e) {
+
+                }
+                catch (IndexOutOfBoundsException e) {
+
+                }
             }
-            catch (NullPointerException e) {
-            }
-            catch (ArrayIndexOutOfBoundsException e) {
-            }
-            catch (IndexOutOfBoundsException e) {
-            }
+        }
+        catch (NullPointerException e) {
+
         }
 
         return editedFormatString.toString( );
