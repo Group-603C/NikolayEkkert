@@ -1,11 +1,11 @@
 import static org.junit.Assert.*;
 
-public class FormatterTest
-{
+public class FormatterTest {
+
     @org.junit.Test
-    public void build() throws Exception
-    {
-        Formatter exemplar = new Formatter();
+    public void build( ) throws Exception {
+
+        Formatter exemplar = new Formatter( );
 
         String value = exemplar.build("здесь {0}, а здесь {1}, а вот {2}", "мама", "папа", "Я");
         String expected = "здесь мама, а здесь папа, а вот Я";
@@ -39,5 +39,4 @@ public class FormatterTest
         expected = "";
         assertEquals("Eight test", expected, value);
     }
-
 }
