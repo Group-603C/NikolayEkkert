@@ -16,12 +16,6 @@ public class Formatter
         int tempOpen = 0;
         int tempClose = 0;
 
-        int counterArray = 0;
-
-//        int[][] array = new int[arguments.length][];
-
-//        ArrayQuotes indexArray = new ArrayQuotes();
-
         List<Integer> indexOpenQuote = new ArrayList<Integer>();
         List<Integer> indexCloseQuote = new ArrayList<Integer>();
         List<Integer> indexArgument = new ArrayList<Integer>();
@@ -41,17 +35,12 @@ public class Formatter
                 String temp = numberLabel.toString();
 
                 int numberArgument = Integer.parseInt(temp);
-//                int[] tempArray = {tempOpen, tempClose, numberArgument};
-
 
                 try
                 {
                     indexOpenQuote.add(tempOpen);
                     indexCloseQuote.add(tempClose);
                     indexArgument.add(numberArgument);
-
-//                    array[counterArray] = tempArray;
-//                    counterArray++;
                 }
                 catch (ArrayIndexOutOfBoundsException e)
                 {
@@ -69,8 +58,6 @@ public class Formatter
         {
             try
             {
-//                editedFormatString.replace(array[i][0] - 1, array[i][1], arguments[array[i][2]].toString());
-//                System.out.println(indexOpenQuote.get(i) - 1 + "\t" + indexCloseQuote.get(i) + "\t" + arguments[indexArgument.get(i)].toString());
                 editedFormatString.replace(indexOpenQuote.get(i) - 1, indexCloseQuote.get(i), arguments[indexArgument.get(i)].toString());
             }
             catch (NullPointerException e)
