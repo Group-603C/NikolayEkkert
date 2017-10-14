@@ -17,21 +17,19 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Formatter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding>
-                <element signature="method#build#0;class#Formatter#0" expanded="false" />
                 <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
                 <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
                 <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
                 <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-                <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
                 <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-                <element signature="e#3949#3950#0" expanded="true" />
-                <element signature="e#3998#3999#0" expanded="true" />
-                <element signature="e#4041#4042#0" expanded="true" />
-                <element signature="e#4091#4092#0" expanded="true" />
-                <element signature="e#4135#4136#0" expanded="true" />
-                <element signature="e#4186#4187#0" expanded="true" />
+                <element signature="e#3547#3548#0" expanded="true" />
+                <element signature="e#3596#3597#0" expanded="true" />
+                <element signature="e#3639#3640#0" expanded="true" />
+                <element signature="e#3689#3690#0" expanded="true" />
+                <element signature="e#3733#3734#0" expanded="true" />
+                <element signature="e#3784#3785#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +38,8 @@
       <file leaf-file-name="FormatterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="194">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,6 +73,10 @@
       <find>editedFormatString</find>
       <find>editedFormatString.replace(</find>
       <find>setIndexArgument</find>
+      <find>new Container(</find>
+      <find>Container</find>
+      <find>new Container</find>
+      <find>formationMessageRow</find>
     </findStrings>
     <replaceStrings>
       <replace>numberLabel</replace>
@@ -345,44 +347,44 @@
       <workItem from="1507905467963" duration="4878000" />
       <workItem from="1507935206594" duration="1569000" />
       <workItem from="1507948327055" duration="3599000" />
-      <workItem from="1507984803055" duration="10742000" />
+      <workItem from="1507984803055" duration="12790000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FormatterTest - 2017.10.14 at 23h 39m 10s.xml">
+    <history-entry file="FormatterTest - 2017.10.15 at 00h 45m 37s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormatterTest - 2017.10.14 at 23h 39m 43s.xml">
+    <history-entry file="FormatterTest - 2017.10.15 at 00h 46m 36s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormatterTest - 2017.10.14 at 23h 40m 11s.xml">
+    <history-entry file="FormatterTest - 2017.10.15 at 00h 48m 06s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormatterTest - 2017.10.14 at 23h 40m 15s.xml">
+    <history-entry file="FormatterTest - 2017.10.15 at 00h 48m 37s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormatterTest - 2017.10.14 at 23h 40m 19s.xml">
+    <history-entry file="FormatterTest - 2017.10.15 at 00h 48m 47s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormatterTest - 2017.10.14 at 23h 40m 56s.xml">
+    <history-entry file="FormatterTest - 2017.10.15 at 00h 49m 03s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormatterTest - 2017.10.14 at 23h 43m 39s.xml">
+    <history-entry file="FormatterTest - 2017.10.15 at 00h 49m 15s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormatterTest - 2017.10.14 at 23h 48m 13s.xml">
+    <history-entry file="FormatterTest - 2017.10.15 at 00h 50m 37s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormatterTest - 2017.10.14 at 23h 48m 44s.xml">
+    <history-entry file="FormatterTest - 2017.10.15 at 00h 50m 46s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormatterTest - 2017.10.14 at 23h 49m 04s.xml">
+    <history-entry file="FormatterTest - 2017.10.15 at 00h 51m 01s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39900000" />
+    <option name="totallyTimeSpent" value="41948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -435,19 +437,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -473,19 +473,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -511,19 +509,17 @@
         <state relative-caret-position="1980">
           <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -549,19 +545,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -587,19 +581,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -625,19 +617,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,19 +653,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -701,19 +689,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -731,19 +717,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -761,19 +745,17 @@
         <state relative-caret-position="242">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -791,19 +773,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -821,19 +801,17 @@
         <state relative-caret-position="264">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -866,19 +844,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -888,19 +864,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -918,19 +892,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -948,19 +920,17 @@
         <state relative-caret-position="242">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -978,19 +948,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1008,19 +976,17 @@
         <state relative-caret-position="264">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1057,8 +1023,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="194">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1066,21 +1032,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Formatter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#initArrayClassContainer#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <element signature="method#formationMessageRow#0;class#Formatter#0" expanded="false" />
             <element signature="class#Container#0;class#Formatter#0" expanded="false" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
           </folding>
         </state>
       </provider>

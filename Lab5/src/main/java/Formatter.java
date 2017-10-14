@@ -7,10 +7,9 @@ public class Formatter {
         Container[] arrayFormatString = createTemplateInsert(formatString, arguments);
 
         try {
-
             int counter = arguments.length - 1;
             for (Object argument : arguments) {
-                editedFormatString = formationMessageRow(editedFormatString, arrayFormatString, counter);
+                arrayFormatString[0].formationMessageRow(editedFormatString, arrayFormatString[counter]);
                 counter--;
             }
         }
@@ -110,17 +109,6 @@ public class Formatter {
         return array;
     }
 
-    private StringBuilder formationMessageRow(StringBuilder editedFormatString, Container[] arrayFormatString, int i) {
-
-        try {
-            editedFormatString.replace(arrayFormatString[i].getIndexOpenQuote( ) - 1, arrayFormatString[i].getIndexCloseQuote( ), arrayFormatString[i].getIndexArgument( ));
-        }
-        catch (Exception e) {
-        }
-
-        return editedFormatString;
-    }
-
 
     class Container {
 
@@ -144,6 +132,15 @@ public class Formatter {
 
         public int getIndexCloseQuote( ) {
             return this.IndexCloseQuote;
+        }
+
+        public void formationMessageRow(StringBuilder editedFormatString, Container arrayFormatString) {
+
+            try {
+                editedFormatString.replace(arrayFormatString.getIndexOpenQuote( ) - 1, arrayFormatString.getIndexCloseQuote( ), arrayFormatString.getIndexArgument( ));
+            }
+            catch (Exception e) {
+            }
         }
     }
 }
