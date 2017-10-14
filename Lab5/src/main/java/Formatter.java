@@ -13,7 +13,13 @@ public class Formatter {
 
         }
 
-        StringBuilder numberLabel = new StringBuilder( );
+        Container[] array = new Container[0];
+        try {
+            array = new Container[arguments.length];
+        }
+        catch (NullPointerException e) {
+
+        }
 
         boolean flag = false;
 
@@ -24,14 +30,7 @@ public class Formatter {
         int tempClose = 0;
         int counter = 0;
 
-        Container[] array = new Container[0];
-        try {
-            array = new Container[arguments.length];
-        }
-        catch (NullPointerException e) {
-
-        }
-
+        StringBuilder numberLabel = new StringBuilder( );
         for (char element : arrayFormatString) {
 
             countOpenQuote++;
@@ -50,16 +49,12 @@ public class Formatter {
 
                     try {
                         int numberArgument = Integer.parseInt(temp);
-
                         Container exemplar = new Container( );
-
                         exemplar.setIndexOpenQuote(tempOpen);
                         exemplar.setIndexCloseQuote(tempClose);
                         exemplar.setIndexArgument(arguments[numberArgument].toString( ));
-
                         array[counter] = exemplar;
                         counter++;
-
                     }
 
                     catch (ArrayIndexOutOfBoundsException e) {
@@ -78,7 +73,7 @@ public class Formatter {
                 }
             }
         }
-
+        
         try {
 
             for (int i = arguments.length - 1; i >= 0; i--) {
