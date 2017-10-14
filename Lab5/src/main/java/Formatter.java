@@ -1,17 +1,29 @@
 public class Formatter {
 
-    public String build(String formatString, Object... arguments) {
-
-        char[] arrayFormatString = { };
+    private StringBuilder initEditedFormatString(String formatString){
 
         StringBuilder editedFormatString = new StringBuilder( );
         try {
             editedFormatString = new StringBuilder(formatString);
+        }
+        catch (NullPointerException e) {
+        }
+
+        return editedFormatString;
+    }
+
+    private char[] initArrayFormatString (String formatString){
+        char[] arrayFormatString = {};
+        try {
             arrayFormatString = formatString.toCharArray( );
         }
         catch (NullPointerException e) {
-
         }
+
+        return arrayFormatString;
+    }
+
+    private Container[] initArrayClassContainer(Object... arguments){
 
         Container[] array = new Container[0];
         try {
@@ -21,16 +33,23 @@ public class Formatter {
 
         }
 
-        boolean flag = false;
+        return array;
+    }
 
+    private Container[] createTemplateInsert(String formatString, Object... arguments){
+
+        char[] arrayFormatString = initArrayFormatString(formatString);
+
+        boolean flag = false;
         int countOpenQuote = 0;
         int countCloseQuote = 0;
-
         int tempOpen = 0;
         int tempClose = 0;
         int counter = 0;
 
+        Container[] array = initArrayClassContainer(arguments);
         StringBuilder numberLabel = new StringBuilder( );
+
         for (char element : arrayFormatString) {
 
             countOpenQuote++;
@@ -53,6 +72,7 @@ public class Formatter {
                         exemplar.setIndexOpenQuote(tempOpen);
                         exemplar.setIndexCloseQuote(tempClose);
                         exemplar.setIndexArgument(arguments[numberArgument].toString( ));
+
                         array[counter] = exemplar;
                         counter++;
                     }
@@ -73,13 +93,24 @@ public class Formatter {
                 }
             }
         }
-        
+
+        return array;
+    }
+
+    public String build(String formatString, Object... arguments) {
+
+        StringBuilder editedFormatString = initEditedFormatString(formatString);
+
+        Container[] arrayFormatString = createTemplateInsert(formatString, arguments);
+
         try {
-
             for (int i = arguments.length - 1; i >= 0; i--) {
-
                 try {
-                    editedFormatString.replace(array[i].getIndexOpenQuote( ) - 1, array[i].getIndexCloseQuote( ), array[i].getIndexArgument( ));
+                    editedFormatString.replace(
+                            arrayFormatString[i].getIndexOpenQuote( ) - 1,
+                            arrayFormatString[i].getIndexCloseQuote( ),
+                            arrayFormatString[i].getIndexArgument( )
+                    );
                 }
                 catch (Exception e) {
 
@@ -95,6 +126,7 @@ public class Formatter {
 
 
     class Container {
+
         private int IndexOpenQuote;
         private int IndexCloseQuote;
         private String IndexArgument;
