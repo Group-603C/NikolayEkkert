@@ -1,6 +1,6 @@
 public class Formatter {
 
-    private StringBuilder initEditedFormatString(String formatString){
+    private StringBuilder initEditedFormatString(String formatString) {
 
         StringBuilder editedFormatString = new StringBuilder( );
         try {
@@ -12,8 +12,8 @@ public class Formatter {
         return editedFormatString;
     }
 
-    private char[] initArrayFormatString (String formatString){
-        char[] arrayFormatString = {};
+    private char[] initArrayFormatString(String formatString) {
+        char[] arrayFormatString = { };
         try {
             arrayFormatString = formatString.toCharArray( );
         }
@@ -23,20 +23,19 @@ public class Formatter {
         return arrayFormatString;
     }
 
-    private Container[] initArrayClassContainer(Object... arguments){
+    private Container[] initArrayClassContainer(Object... arguments) {
 
         Container[] array = new Container[0];
         try {
             array = new Container[arguments.length];
         }
         catch (NullPointerException e) {
-
         }
 
         return array;
     }
 
-    private Container[] createTemplateInsert(String formatString, Object... arguments){
+    private Container[] createTemplateInsert(String formatString, Object... arguments) {
 
         char[] arrayFormatString = initArrayFormatString(formatString);
 
@@ -78,11 +77,10 @@ public class Formatter {
                     }
 
                     catch (ArrayIndexOutOfBoundsException e) {
-
                     }
                     catch (NumberFormatException e) {
-
                     }
+
                     numberLabel.delete(0, numberLabel.length( ));
                 }
 
@@ -106,19 +104,13 @@ public class Formatter {
         try {
             for (int i = arguments.length - 1; i >= 0; i--) {
                 try {
-                    editedFormatString.replace(
-                            arrayFormatString[i].getIndexOpenQuote( ) - 1,
-                            arrayFormatString[i].getIndexCloseQuote( ),
-                            arrayFormatString[i].getIndexArgument( )
-                    );
+                    editedFormatString.replace(arrayFormatString[i].getIndexOpenQuote( ) - 1, arrayFormatString[i].getIndexCloseQuote( ), arrayFormatString[i].getIndexArgument( ));
                 }
                 catch (Exception e) {
-
                 }
             }
         }
         catch (NullPointerException e) {
-
         }
 
         return editedFormatString.toString( );
