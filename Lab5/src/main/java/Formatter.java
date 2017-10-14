@@ -1,5 +1,25 @@
 public class Formatter {
 
+    public String build(String formatString, Object... arguments) {
+
+        StringBuilder editedFormatString = initEditedFormatString(formatString);
+
+        Container[] arrayFormatString = createTemplateInsert(formatString, arguments);
+
+        try {
+
+            int counter = arguments.length - 1;
+            for (Object argument : arguments) {
+                editedFormatString = formationMessageRow(editedFormatString, arrayFormatString, counter);
+                counter--;
+            }
+        }
+        catch (NullPointerException e) {
+        }
+
+        return editedFormatString.toString( );
+    }
+
     private StringBuilder initEditedFormatString(String formatString) {
 
         StringBuilder editedFormatString = new StringBuilder( );
@@ -67,15 +87,10 @@ public class Formatter {
 
                     try {
                         int numberArgument = Integer.parseInt(temp);
-                        Container exemplar = new Container( );
-                        exemplar.setIndexOpenQuote(tempOpen);
-                        exemplar.setIndexCloseQuote(tempClose);
-                        exemplar.setIndexArgument(arguments[numberArgument].toString( ));
-
+                        Container exemplar = new Container(tempOpen, tempClose, arguments[numberArgument].toString( ));
                         array[counter] = exemplar;
                         counter++;
                     }
-
                     catch (ArrayIndexOutOfBoundsException e) {
                     }
                     catch (NumberFormatException e) {
@@ -95,25 +110,15 @@ public class Formatter {
         return array;
     }
 
-    public String build(String formatString, Object... arguments) {
-
-        StringBuilder editedFormatString = initEditedFormatString(formatString);
-
-        Container[] arrayFormatString = createTemplateInsert(formatString, arguments);
+    private StringBuilder formationMessageRow(StringBuilder editedFormatString, Container[] arrayFormatString, int i) {
 
         try {
-            for (int i = arguments.length - 1; i >= 0; i--) {
-                try {
-                    editedFormatString.replace(arrayFormatString[i].getIndexOpenQuote( ) - 1, arrayFormatString[i].getIndexCloseQuote( ), arrayFormatString[i].getIndexArgument( ));
-                }
-                catch (Exception e) {
-                }
-            }
+            editedFormatString.replace(arrayFormatString[i].getIndexOpenQuote( ) - 1, arrayFormatString[i].getIndexCloseQuote( ), arrayFormatString[i].getIndexArgument( ));
         }
-        catch (NullPointerException e) {
+        catch (Exception e) {
         }
 
-        return editedFormatString.toString( );
+        return editedFormatString;
     }
 
 
@@ -123,16 +128,10 @@ public class Formatter {
         private int IndexCloseQuote;
         private String IndexArgument;
 
-        public void setIndexArgument(String text) {
+        Container(int open, int close, String text) {
+            this.IndexOpenQuote = open;
+            this.IndexCloseQuote = close;
             this.IndexArgument = text;
-        }
-
-        public void setIndexOpenQuote(int index) {
-            this.IndexOpenQuote = index;
-        }
-
-        public void setIndexCloseQuote(int index) {
-            this.IndexCloseQuote = index;
         }
 
         public String getIndexArgument( ) {
