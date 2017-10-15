@@ -1,8 +1,4 @@
-import java.util.concurrent.CountDownLatch;
-
 public class Formatter {
-
-//    private Container[] arrayFormatString;
 
     public String build(String formatString, Object... arguments) {
 
@@ -10,10 +6,14 @@ public class Formatter {
 
         Container[] arrayFormatString = createTemplateInsert(formatString, arguments);
 
+        int counter = 0;
         try {
-            int counter = arguments.length - 1;
+
+            counter = arguments.length - 1;
             for (Object argument : arguments) {
-                arrayFormatString[counter].formationMessageRow(editedFormatString);
+                if (arrayFormatString[counter] != null) {
+                    arrayFormatString[counter].formationMessageRow(editedFormatString);
+                }
                 counter--;
             }
         }
@@ -141,9 +141,9 @@ public class Formatter {
         public void formationMessageRow(StringBuilder editedFormatString) {
 
             try {
-                editedFormatString.replace(arrayFormatString.getIndexOpenQuote( ) - 1,  arrayFormatString.getIndexCloseQuote( ), arrayFormatString.getIndexArgument( ));
+                editedFormatString.replace(this.IndexOpenQuote - 1, this.IndexCloseQuote, this.IndexArgument);
             }
-            catch (Exception e) {
+            catch (NullPointerException e) {
             }
         }
     }
