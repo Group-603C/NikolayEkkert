@@ -4,37 +4,19 @@ import static org.junit.Assert.*;
 
 public class FormatterTest {
 
-    class Container {
+    class Box {
+        int width;
+        int height;
+        int depth;
 
-        private int IndexOpenQuote;
-        private int IndexCloseQuote;
-        private String IndexArgument;
-
-        Container(int open, int close, String text) {
-            this.IndexOpenQuote = open;
-            this.IndexCloseQuote = close;
-            this.IndexArgument = text;
+        Box(int width, int height, int depth) {
+            this.width = width;
+            this.height = height;
+            this.depth = depth;
         }
 
-        public String getIndexArgument( ) {
-            return this.IndexArgument;
-        }
-
-        public int getIndexOpenQuote( ) {
-            return this.IndexOpenQuote;
-        }
-
-        public int getIndexCloseQuote( ) {
-            return this.IndexCloseQuote;
-        }
-
-        public void formationMessageRow(StringBuilder editedFormatString) {
-
-            try {
-                editedFormatString.replace(this.IndexOpenQuote - 1, this.IndexCloseQuote, this.IndexArgument);
-            }
-            catch (NullPointerException e) {
-            }
+        public String toString( ) {
+            return "Размер " + width + " * " + height + " * " + depth;
         }
     }
 
@@ -118,9 +100,9 @@ public class FormatterTest {
         expected = "Без параметров";
         assertEquals("Eighteen test", expected, value);
 
-        Container customType = new Container(1, 2, "e");
-        value = exemplar.build("Собственный тип {0}", customType);
-        expected = "Собственный тип ";
+        Box box = new Box(111,222,333);
+        value = exemplar.build("Без параметров: {0}", box);
+        expected = "Без параметров: Размер 111 * 222 * 333";
         assertEquals("Nineteen test", expected, value);
     }
 }
