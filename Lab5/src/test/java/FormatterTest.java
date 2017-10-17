@@ -15,6 +15,7 @@ public class FormatterTest {
             this.depth = depth;
         }
 
+        @Override
         public String toString( ) {
             return "Размер " + width + " * " + height + " * " + depth;
         }
