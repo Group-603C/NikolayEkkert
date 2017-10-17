@@ -33,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="704">
-              <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+              <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -345,20 +345,11 @@
       <workItem from="1507984803055" duration="25919000" />
       <workItem from="1508095750514" duration="70000" />
       <workItem from="1508125352593" duration="595000" />
-      <workItem from="1508204097273" duration="1632000" />
+      <workItem from="1508204097273" duration="1879000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FormatterTest - 2017.10.17 at 08h 52m 50s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 08h 53m 22s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 08h 53m 31s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FormatterTest - 2017.10.17 at 08h 57m 11s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
@@ -380,9 +371,18 @@
     <history-entry file="FormatterTest - 2017.10.17 at 09h 02m 13s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 09h 05m 47s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 09h 06m 02s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 09h 06m 21s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57374000" />
+    <option name="totallyTimeSpent" value="57621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -950,7 +950,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
-          <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+          <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
           <folding />
         </state>
       </provider>
