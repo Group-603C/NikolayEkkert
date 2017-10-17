@@ -34,11 +34,11 @@
       <file leaf-file-name="FormatterTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="105" column="59" lean-forward="false" selection-start-line="105" selection-start-column="59" selection-end-line="105" selection-end-column="59" />
+            <state relative-caret-position="220">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -353,14 +353,11 @@
       <workItem from="1508125352593" duration="595000" />
       <workItem from="1508204097273" duration="6596000" />
       <workItem from="1508217362974" duration="2170000" />
-      <workItem from="1508245009994" duration="3250000" />
+      <workItem from="1508245009994" duration="3455000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FormatterTest - 2017.10.17 at 20h 49m 31s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FormatterTest - 2017.10.17 at 20h 49m 46s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
@@ -388,9 +385,12 @@
     <history-entry file="FormatterTest - 2017.10.17 at 20h 51m 03s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 20h 54m 24s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67758000" />
+    <option name="totallyTimeSpent" value="67963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -483,8 +483,8 @@
         <state relative-caret-position="550">
           <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -518,8 +518,8 @@
         <state relative-caret-position="550">
           <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -561,8 +561,8 @@
         <state relative-caret-position="418">
           <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -588,8 +588,8 @@
         <state relative-caret-position="506">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -623,8 +623,8 @@
         <state relative-caret-position="506">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -658,8 +658,8 @@
         <state relative-caret-position="506">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -693,8 +693,8 @@
         <state relative-caret-position="506">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1018,11 +1018,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="105" column="59" lean-forward="false" selection-start-line="105" selection-start-column="59" selection-end-line="105" selection-end-column="59" />
+        <state relative-caret-position="220">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>

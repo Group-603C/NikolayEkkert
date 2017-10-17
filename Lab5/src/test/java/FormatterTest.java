@@ -1,5 +1,3 @@
-import org.junit.experimental.theories.FromDataPoints;
-
 import static org.junit.Assert.*;
 
 public class FormatterTest {
@@ -17,7 +15,7 @@ public class FormatterTest {
 
         @Override
         public String toString( ) {
-            return "Размер " + width + " * " + height + " * " + depth;
+            return "size " + width + " * " + height + " * " + depth;
         }
     }
 
@@ -103,7 +101,7 @@ public class FormatterTest {
 
         Box box = new Box(111,222,333);
         value = exemplar.build("Parameter class: {0}", box);
-        expected = "Parameter class: Размер 111 * 222 * 333";
+        expected = "Parameter class: size 111 * 222 * 333";
         assertEquals("The transfer of a class with three fields and an overload of toString", expected, value);
     }
 }
