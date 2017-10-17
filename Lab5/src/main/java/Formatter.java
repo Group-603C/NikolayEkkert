@@ -25,17 +25,27 @@ public class Formatter {
 
     private StringBuilder initEditedFormatString(String formatString) {
 
+        if (formatString != null) {
+            StringBuilder editedFormatString = new StringBuilder(formatString);
+            return editedFormatString;
+        }
         StringBuilder editedFormatString = new StringBuilder( );
-        try {
-            editedFormatString = new StringBuilder(formatString);
-        }
-        catch (NullPointerException e) {
-        }
 
         return editedFormatString;
     }
 
+    private Container[] createContainersRange(Object... arguments) {
+
+        if (arguments != null) {
+            Container[] array = new Container[arguments.length];
+            return array;
+        }
+
+        return null;
+    }
+
     private char[] initArrayFormatString(String formatString) {
+
         char[] arrayFormatString = { };
         try {
             arrayFormatString = formatString.toCharArray( );
@@ -44,18 +54,6 @@ public class Formatter {
         }
 
         return arrayFormatString;
-    }
-
-    private Container[] initArrayClassContainer(Object... arguments) {
-
-        Container[] array = new Container[0];
-        try {
-            array = new Container[arguments.length];
-        }
-        catch (NullPointerException e) {
-        }
-
-        return array;
     }
 
     private Container[] createTemplateInsert(String formatString, Object... arguments) {
@@ -69,7 +67,7 @@ public class Formatter {
         int tempClose = 0;
         int counter = 0;
 
-        Container[] array = initArrayClassContainer(arguments);
+        Container[] array = createContainersRange(arguments);
         StringBuilder numberLabel = new StringBuilder( );
 
         for (char element : arrayFormatString) {
