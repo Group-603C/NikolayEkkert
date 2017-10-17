@@ -16,8 +16,8 @@
       <file leaf-file-name="Formatter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Formatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-484">
-              <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+            <state relative-caret-position="486">
+              <caret line="148" column="5" lean-forward="true" selection-start-line="116" selection-start-column="3" selection-end-line="148" selection-end-column="5" />
               <folding>
                 <element signature="method#build#0;class#Formatter#0" expanded="false" />
                 <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
@@ -33,9 +33,13 @@
       <file leaf-file-name="FormatterTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="82" column="55" lean-forward="false" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
-              <folding />
+            <state relative-caret-position="1980">
+              <caret line="122" column="38" lean-forward="true" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#Container#0;class#FormatterTest#0" expanded="false" />
+                <element signature="method#formationMessageRow#0;class#Container#0;class#FormatterTest#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,8 +89,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Formatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/FormatterTest.java" />
       </list>
     </option>
@@ -98,8 +102,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="63" />
-    <option name="y" value="26" />
+    <option name="x" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1088" />
   </component>
@@ -346,44 +349,44 @@
       <workItem from="1507984803055" duration="25919000" />
       <workItem from="1508095750514" duration="70000" />
       <workItem from="1508125352593" duration="595000" />
-      <workItem from="1508204097273" duration="2591000" />
+      <workItem from="1508204097273" duration="5750000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FormatterTest - 2017.10.17 at 08h 59m 37s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 08h 59m 53s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 09h 02m 13s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 09h 05m 47s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 09h 06m 02s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 09h 06m 21s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 09h 09m 53s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 09h 10m 03s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FormatterTest - 2017.10.17 at 09h 12m 43s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FormatterTest - 2017.10.17 at 09h 18m 16s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 09h 30m 06s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 09h 30m 35s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 09h 31m 30s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 09h 44m 30s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 09h 48m 33s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 09h 51m 31s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 09h 52m 46s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.17 at 11h 28m 24s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58333000" />
+    <option name="totallyTimeSpent" value="61492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -402,7 +405,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22552083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4519833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -473,7 +476,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Container#0;class#FormatterTest#0" expanded="false" />
+            <element signature="method#formationMessageRow#0;class#Container#0;class#FormatterTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -504,7 +511,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Container#0;class#FormatterTest#0" expanded="false" />
+            <element signature="method#formationMessageRow#0;class#Container#0;class#FormatterTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -543,7 +554,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Container#0;class#FormatterTest#0" expanded="false" />
+            <element signature="method#formationMessageRow#0;class#Container#0;class#FormatterTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -566,7 +581,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Container#0;class#FormatterTest#0" expanded="false" />
+            <element signature="method#formationMessageRow#0;class#Container#0;class#FormatterTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -597,7 +616,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Container#0;class#FormatterTest#0" expanded="false" />
+            <element signature="method#formationMessageRow#0;class#Container#0;class#FormatterTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -628,7 +651,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Container#0;class#FormatterTest#0" expanded="false" />
+            <element signature="method#formationMessageRow#0;class#Container#0;class#FormatterTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -659,7 +686,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Container#0;class#FormatterTest#0" expanded="false" />
+            <element signature="method#formationMessageRow#0;class#Container#0;class#FormatterTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -955,8 +986,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Formatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-484">
-          <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+        <state relative-caret-position="486">
+          <caret line="148" column="5" lean-forward="true" selection-start-line="116" selection-start-column="3" selection-end-line="148" selection-end-column="5" />
           <folding>
             <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
@@ -970,9 +1001,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="82" column="55" lean-forward="false" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="1980">
+          <caret line="122" column="38" lean-forward="true" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Container#0;class#FormatterTest#0" expanded="false" />
+            <element signature="method#formationMessageRow#0;class#Container#0;class#FormatterTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

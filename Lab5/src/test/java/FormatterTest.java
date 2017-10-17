@@ -1,6 +1,42 @@
+import org.junit.experimental.theories.FromDataPoints;
+
 import static org.junit.Assert.*;
 
 public class FormatterTest {
+
+    class Container {
+
+        private int IndexOpenQuote;
+        private int IndexCloseQuote;
+        private String IndexArgument;
+
+        Container(int open, int close, String text) {
+            this.IndexOpenQuote = open;
+            this.IndexCloseQuote = close;
+            this.IndexArgument = text;
+        }
+
+        public String getIndexArgument( ) {
+            return this.IndexArgument;
+        }
+
+        public int getIndexOpenQuote( ) {
+            return this.IndexOpenQuote;
+        }
+
+        public int getIndexCloseQuote( ) {
+            return this.IndexCloseQuote;
+        }
+
+        public void formationMessageRow(StringBuilder editedFormatString) {
+
+            try {
+                editedFormatString.replace(this.IndexOpenQuote - 1, this.IndexCloseQuote, this.IndexArgument);
+            }
+            catch (NullPointerException e) {
+            }
+        }
+    }
 
     @org.junit.Test
     public void build( ) throws Exception {
@@ -81,5 +117,10 @@ public class FormatterTest {
         value = exemplar.build("Без параметров");
         expected = "Без параметров";
         assertEquals("Eighteen test", expected, value);
+
+        Container customType = new Container(1, 2, "e");
+        value = exemplar.build("Собственный тип {0}", customType);
+        expected = "Собственный тип ";
+        assertEquals("Nineteen test", expected, value);
     }
 }
