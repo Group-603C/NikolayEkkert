@@ -71,6 +71,6 @@ public class FormatterTest {
 
         value = exemplar.build("Здесь boolean значение {0}", true);
         expected = "Здесь boolean значение true";
-        assertEquals(" test", expected, value);
+        assertEquals("Sixteen test", expected, value);
     }
 }
