@@ -12,6 +12,9 @@ public class Formatter {
             counter = arguments.length - 1;
             for (Object argument : arguments) {
                 if (arrayFormatString[counter] != null) {
+                    if (argument instanceof Object) {
+
+                    }
                     arrayFormatString[counter].formationMessageRow(editedFormatString);
                 }
                 counter--;

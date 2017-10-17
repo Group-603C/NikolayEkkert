@@ -42,5 +42,35 @@ public class FormatterTest {
         value = exemplar.build(null, null);
         expected = "";
         assertEquals("Nine test", expected, value);
+
+        value = exemplar.build("Здесь int значение {0}", 20543);
+        expected = "Здесь int значение 20543";
+        assertEquals("Ten test", expected, value);
+
+        value = exemplar.build("Здесь float значение {0}", 0.68f);
+        expected = "Здесь float значение 0.68";
+        assertEquals("Eleven test", expected, value);
+
+        value = exemplar.build("Здесь double значение {0}", 3.14d);
+        expected = "Здесь double значение 3.14";
+        assertEquals("Twelve test", expected, value);
+
+        value = exemplar.build("Здесь char значение {0}", 'V');
+        expected = "Здесь char значение V";
+        assertEquals("Thirteen test", expected, value);
+
+        Object objZero = "Object";
+        value = exemplar.build("Здесь object значение {0}", objZero);
+        expected = "Здесь object значение Object";
+        assertEquals("Fourteen test", expected, value);
+
+        Object objOne = 1234.54;
+        value = exemplar.build("Здесь object значение {0}", objOne);
+        expected = "Здесь object значение 1234.54";
+        assertEquals("Fifteen test", expected, value);
+
+        value = exemplar.build("Здесь boolean значение {0}", true);
+        expected = "Здесь boolean значение true";
+        assertEquals(" test", expected, value);
     }
 }
