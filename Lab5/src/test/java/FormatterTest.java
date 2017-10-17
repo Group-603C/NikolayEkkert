@@ -77,5 +77,9 @@ public class FormatterTest {
         value = exemplar.build("Здесь String значение {0}", text);
         expected = "Здесь String значение text";
         assertEquals("Seventeen test", expected, value);
+
+        value = exemplar.build("Без параметров");
+        expected = "Без параметров";
+        assertEquals("Eighteen test", expected, value);
     }
 }
