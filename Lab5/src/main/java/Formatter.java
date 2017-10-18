@@ -8,13 +8,13 @@ public class Formatter {
 
         StringBuilder editedFormatString = new StringBuilder(formatString);
 
-        Container[] arrayFormatString = createTemplateInsert(formatString, arguments);
+        Container[] tempFormatString = createTemplateInsert(formatString, arguments);
 
         int counter = 0;
         counter = arguments.length - 1;
         for (Object argument : arguments) {
-            if (arrayFormatString[counter] != null) {
-                arrayFormatString[counter].formationMessageRow(editedFormatString);
+            if (tempFormatString[counter] != null) {
+                tempFormatString[counter].formationMessageRow(editedFormatString);
             }
             counter--;
         }
@@ -24,7 +24,7 @@ public class Formatter {
 
     private Container[] createTemplateInsert(String formatString, Object... arguments) {
 
-        char[] arrayFormatString = formatString.toCharArray( );
+        char[] tempFormatString = formatString.toCharArray( );
 
         boolean flag = false;
         int countOpenQuote = 0;
@@ -33,10 +33,10 @@ public class Formatter {
         int tempClose = 0;
         int counter = 0;
 
-        Container[] array = new Container[arguments.length];
+        Container[] instance = new Container[arguments.length];
         StringBuilder numberLabel = new StringBuilder( );
 
-        for (char element : arrayFormatString) {
+        for (char element : tempFormatString) {
 
             countOpenQuote++;
             countCloseQuote++;
@@ -55,7 +55,7 @@ public class Formatter {
                     try {
                         int numberArgument = Integer.parseInt(temp);
                         Container exemplar = new Container(tempOpen, tempClose, arguments[numberArgument].toString( ));
-                        array[counter] = exemplar;
+                        instance[counter] = exemplar;
                         counter++;
                     }
                     catch (Exception e) {
@@ -72,7 +72,7 @@ public class Formatter {
             }
         }
 
-        return array;
+        return instance;
     }
 
 
