@@ -58,9 +58,7 @@ public class Formatter {
                         array[counter] = exemplar;
                         counter++;
                     }
-                    catch (ArrayIndexOutOfBoundsException e) {
-                    }
-                    catch (NumberFormatException e) {
+                    catch (Exception e) {
                     }
 
                     numberLabel.delete(0, numberLabel.length( ));
