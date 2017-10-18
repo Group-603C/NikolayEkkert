@@ -2,63 +2,29 @@ public class Formatter {
 
     public String build(String formatString, Object... arguments) {
 
-        StringBuilder editedFormatString = initEditedFormatString(formatString);
+        if (formatString == null) {
+            return "";
+        }
+
+        StringBuilder editedFormatString = new StringBuilder(formatString);
 
         Container[] arrayFormatString = createTemplateInsert(formatString, arguments);
 
         int counter = 0;
-        try {
-
-            counter = arguments.length - 1;
-            for (Object argument : arguments) {
-                if (arrayFormatString[counter] != null) {
-                    arrayFormatString[counter].formationMessageRow(editedFormatString);
-                }
-                counter--;
+        counter = arguments.length - 1;
+        for (Object argument : arguments) {
+            if (arrayFormatString[counter] != null) {
+                arrayFormatString[counter].formationMessageRow(editedFormatString);
             }
-        }
-        catch (NullPointerException e) {
+            counter--;
         }
 
         return editedFormatString.toString( );
     }
 
-    private StringBuilder initEditedFormatString(String formatString) {
-
-        if (formatString != null) {
-            StringBuilder editedFormatString = new StringBuilder(formatString);
-            return editedFormatString;
-        }
-        StringBuilder editedFormatString = new StringBuilder( );
-
-        return editedFormatString;
-    }
-
-    private Container[] createContainersRange(Object... arguments) {
-
-        if (arguments != null) {
-            Container[] array = new Container[arguments.length];
-            return array;
-        }
-
-        return null;
-    }
-
-    private char[] initArrayFormatString(String formatString) {
-
-        char[] arrayFormatString = { };
-        try {
-            arrayFormatString = formatString.toCharArray( );
-        }
-        catch (NullPointerException e) {
-        }
-
-        return arrayFormatString;
-    }
-
     private Container[] createTemplateInsert(String formatString, Object... arguments) {
 
-        char[] arrayFormatString = initArrayFormatString(formatString);
+        char[] arrayFormatString = formatString.toCharArray( );
 
         boolean flag = false;
         int countOpenQuote = 0;
@@ -67,7 +33,7 @@ public class Formatter {
         int tempClose = 0;
         int counter = 0;
 
-        Container[] array = createContainersRange(arguments);
+        Container[] array = new Container[arguments.length];
         StringBuilder numberLabel = new StringBuilder( );
 
         for (char element : arrayFormatString) {

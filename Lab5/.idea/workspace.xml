@@ -16,22 +16,18 @@
       <file leaf-file-name="Formatter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Formatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="58" column="87" lean-forward="false" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
+            <state relative-caret-position="264">
+              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
-                <element signature="method#build#0;class#Formatter#0" expanded="false" />
-                <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-                <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-                <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
                 <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-                <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-                <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-                <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-                <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-                <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-                <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-                <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-                <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+                <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+                <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+                <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+                <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+                <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+                <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+                <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+                <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -40,12 +36,10 @@
       <file leaf-file-name="FormatterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+            <state relative-caret-position="990">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
                 <element signature="class#Box#0;class#FormatterTest#0" expanded="false" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +101,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Formatter.java" />
         <option value="$PROJECT_DIR$/src/test/java/FormatterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Formatter.java" />
       </list>
     </option>
   </component>
@@ -119,7 +113,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
+    <option name="x" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1088" />
   </component>
@@ -191,7 +185,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Kuznetsova/Laba5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
@@ -368,44 +362,44 @@
       <workItem from="1508125352593" duration="595000" />
       <workItem from="1508204097273" duration="6596000" />
       <workItem from="1508217362974" duration="2170000" />
-      <workItem from="1508245009994" duration="7569000" />
+      <workItem from="1508245009994" duration="12384000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FormatterTest - 2017.10.17 at 21h 34m 40s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 21h 35m 37s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 21h 37m 32s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 21h 37m 43s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 21h 37m 53s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 21h 38m 00s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 21h 38m 31s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.17 at 21h 38m 38s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FormatterTest - 2017.10.17 at 22h 07m 51s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FormatterTest - 2017.10.17 at 22h 14m 38s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FormatterTest - 2017.10.18 at 22h 10m 26s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.18 at 22h 11m 05s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.18 at 22h 11m 12s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.18 at 22h 11m 30s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.18 at 22h 14m 42s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.18 at 22h 16m 05s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.18 at 22h 16m 28s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.18 at 22h 16m 49s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72077000" />
+    <option name="totallyTimeSpent" value="76892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -413,18 +407,18 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253138" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32346722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45302713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -448,7 +442,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -458,19 +452,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -488,19 +478,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -511,8 +497,6 @@
           <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="class#Box#0;class#FormatterTest#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -530,19 +514,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -553,8 +533,6 @@
           <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="class#Box#0;class#FormatterTest#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -572,19 +550,15 @@
         <state relative-caret-position="1980">
           <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -603,8 +577,6 @@
           <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="class#Box#0;class#FormatterTest#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -614,19 +586,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -637,8 +605,6 @@
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="class#Box#0;class#FormatterTest#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -656,19 +622,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -679,8 +641,6 @@
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="class#Box#0;class#FormatterTest#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -698,19 +658,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -721,8 +677,6 @@
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="class#Box#0;class#FormatterTest#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -740,19 +694,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -763,8 +713,6 @@
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="class#Box#0;class#FormatterTest#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -782,19 +730,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -812,19 +756,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -842,19 +782,15 @@
         <state relative-caret-position="242">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -872,19 +808,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -902,19 +834,15 @@
         <state relative-caret-position="264">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -947,19 +875,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -969,19 +893,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -999,19 +919,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1029,19 +945,15 @@
         <state relative-caret-position="242">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1059,19 +971,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1089,19 +997,15 @@
         <state relative-caret-position="264">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1128,18 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-          <folding>
-            <element signature="class#Box#0;class#FormatterTest#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1148,24 +1040,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FormatterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="class#Box#0;class#FormatterTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Formatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="58" column="87" lean-forward="false" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
+        <state relative-caret-position="264">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
-            <element signature="method#build#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initEditedFormatString#0;class#Formatter#0" expanded="false" />
-            <element signature="method#createContainersRange#0;class#Formatter#0" expanded="false" />
-            <element signature="method#initArrayFormatString#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
-            <marker date="1508253498761" expanded="false" signature="3264:4141" ph="{...}" />
-            <marker date="1508253498761" expanded="false" signature="3606:3621" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3647:3657" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3698:3713" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3740:3750" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3792:3807" ph=" { " />
-            <marker date="1508253498761" expanded="false" signature="3835:3845" ph=" }" />
-            <marker date="1508253498761" expanded="false" signature="3921:4135" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2354:3231" ph="{...}" />
+            <marker date="1508339829279" expanded="false" signature="2696:2711" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2737:2747" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2788:2803" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2830:2840" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="2882:2897" ph=" { " />
+            <marker date="1508339829279" expanded="false" signature="2925:2935" ph=" }" />
+            <marker date="1508339829279" expanded="false" signature="3011:3225" ph="{...}" />
           </folding>
         </state>
       </provider>
