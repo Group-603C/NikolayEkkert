@@ -78,32 +78,32 @@ public class Formatter {
 
     class Container {
 
-        private int IndexOpenQuote;
-        private int IndexCloseQuote;
-        private String IndexArgument;
+        private int indexOpenQuote;
+        private int indexCloseQuote;
+        private String indexArgument;
 
         Container(int open, int close, String text) {
-            this.IndexOpenQuote = open;
-            this.IndexCloseQuote = close;
-            this.IndexArgument = text;
+            this.indexOpenQuote = open;
+            this.indexCloseQuote = close;
+            this.indexArgument = text;
         }
 
         public String getIndexArgument( ) {
-            return this.IndexArgument;
+            return this.indexArgument;
         }
 
         public int getIndexOpenQuote( ) {
-            return this.IndexOpenQuote;
+            return this.indexOpenQuote;
         }
 
         public int getIndexCloseQuote( ) {
-            return this.IndexCloseQuote;
+            return this.indexCloseQuote;
         }
 
         public void formationMessageRow(StringBuilder editedFormatString) {
 
             try {
-                editedFormatString.replace(this.IndexOpenQuote - 1, this.IndexCloseQuote, this.IndexArgument);
+                editedFormatString.replace(this.indexOpenQuote - 1, this.indexCloseQuote, this.indexArgument);
             }
             catch (NullPointerException e) {
             }
