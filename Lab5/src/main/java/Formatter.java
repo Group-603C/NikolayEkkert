@@ -21,12 +21,12 @@ public class Formatter {
 
     static private Container[] createTemplateInsert(String formatString, Object... arguments) {
 
-        boolean flag = false;
-        int countOpenQuote = 0;
-        int countCloseQuote = 0;
         int tempOpen = 0;
         int tempClose = 0;
         int counter = arguments.length - 1;
+        int countOpenQuote = 0;
+        int countCloseQuote = 0;
+        boolean flag = false;
 
         Container[] instance = new Container[arguments.length];
         StringBuilder numberLabel = new StringBuilder( );
