@@ -40,32 +40,27 @@ public class Formatter {
                 tempOpen = countOpenQuote;
                 flag = true;
             }
-            else {
+            else if (element == '}') {
+                tempClose = countCloseQuote;
+                flag = false;
+                String temp = numberLabel.toString( );
 
-                if (element == '}') {
-                    tempClose = countCloseQuote;
-                    flag = false;
-                    String temp = numberLabel.toString( );
-
-                    try {
-                        int numberArgument = Integer.parseInt(temp);
-                        Container exemplar = new Container(tempOpen, tempClose, arguments[numberArgument].toString( ));
-                        instance[counter] = exemplar;
-                        counter--;
-                    }
-                    catch (IndexOutOfBoundsException e) {
-                    }
-                    catch (NumberFormatException e) {
-                    }
-
-                    numberLabel.delete(0, numberLabel.length( ));
+                try {
+                    int numberArgument = Integer.parseInt(temp);
+                    Container exemplar = new Container(tempOpen, tempClose, arguments[numberArgument].toString( ));
+                    instance[counter] = exemplar;
+                    counter--;
+                }
+                catch (IndexOutOfBoundsException e) {
+                }
+                catch (NumberFormatException e) {
                 }
 
-                else {
-                    if (flag) {
-                        numberLabel.append(element);
-                    }
-                }
+                numberLabel.delete(0, numberLabel.length( ));
+            }
+
+            else if (flag) {
+                numberLabel.append(element);
             }
         }
 
