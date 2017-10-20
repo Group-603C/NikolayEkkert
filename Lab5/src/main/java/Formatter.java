@@ -1,6 +1,6 @@
 public class Formatter {
 
-    public String build(String formatString, Object... arguments) {
+    static public String build(String formatString, Object... arguments) {
 
         if (formatString == null) {
             return "";
@@ -19,7 +19,7 @@ public class Formatter {
         return editedFormatString.toString( );
     }
 
-    private Container[] createTemplateInsert(String formatString, Object... arguments) {
+    static private Container[] createTemplateInsert(String formatString, Object... arguments) {
 
         char[] tempFormatString = formatString.toCharArray( );
 
@@ -75,7 +75,7 @@ public class Formatter {
     }
 
 
-    class Container {
+    private static class Container {
 
         private int indexOpenQuote;
         private int indexCloseQuote;
