@@ -16,8 +16,8 @@
       <file leaf-file-name="Formatter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Formatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="21" column="94" lean-forward="false" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
+            <state relative-caret-position="176">
+              <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
               <folding>
                 <element signature="method#build#0;class#Formatter#0" expanded="false" />
                 <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />
@@ -372,23 +372,11 @@
       <workItem from="1508217362974" duration="2170000" />
       <workItem from="1508245009994" duration="14733000" />
       <workItem from="1508404525017" duration="56000" />
-      <workItem from="1508517148089" duration="6167000" />
+      <workItem from="1508517148089" duration="6297000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FormatterTest - 2017.10.21 at 01h 13m 19s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.21 at 02h 18m 29s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.21 at 02h 50m 12s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormatterTest - 2017.10.21 at 02h 50m 21s.xml">
-      <configuration name="FormatterTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FormatterTest - 2017.10.21 at 02h 52m 34s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
@@ -407,9 +395,21 @@
     <history-entry file="FormatterTest - 2017.10.21 at 03h 04m 04s.xml">
       <configuration name="FormatterTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FormatterTest - 2017.10.21 at 03h 06m 12s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.21 at 03h 06m 24s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.21 at 03h 06m 39s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormatterTest - 2017.10.21 at 03h 06m 43s.xml">
+      <configuration name="FormatterTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85464000" />
+    <option name="totallyTimeSpent" value="85594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -948,8 +948,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Formatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="21" column="94" lean-forward="false" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
+        <state relative-caret-position="176">
+          <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
           <folding>
             <element signature="method#build#0;class#Formatter#0" expanded="false" />
             <element signature="method#createTemplateInsert#0;class#Formatter#0" expanded="false" />

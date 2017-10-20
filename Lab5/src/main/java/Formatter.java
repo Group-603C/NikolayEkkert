@@ -1,6 +1,6 @@
 public class Formatter {
 
-    static public String build(String formatString, Object... arguments) {
+    static String build(String formatString, Object... arguments) {
 
         if (formatString == null) {
             return "";
@@ -68,7 +68,7 @@ public class Formatter {
     }
 
 
-    private static class Container {
+    static class Container {
 
         private int indexOpenQuote;
         private int indexCloseQuote;
