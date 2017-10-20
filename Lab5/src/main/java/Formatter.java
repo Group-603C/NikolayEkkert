@@ -55,7 +55,9 @@ public class Formatter {
                         instance[counter] = exemplar;
                         counter--;
                     }
-                    catch (Exception e) {
+                    catch (IndexOutOfBoundsException e) {
+                    }
+                    catch (NumberFormatException e) {
                     }
 
                     numberLabel.delete(0, numberLabel.length( ));
