@@ -8,9 +8,9 @@ public class Formatter {
 
         StringBuilder editedFormatString = new StringBuilder(formatString);
 
-        Container[] tempFormatString = createTemplateInsert(formatString, arguments);
+        Container[] divisionTemplate = createTemplateInsert(formatString, arguments);
 
-        for (Container element : tempFormatString) {
+        for (Container element : divisionTemplate) {
             if (element != null) {
                 element.formationMessageRow(editedFormatString);
             }
@@ -20,8 +20,6 @@ public class Formatter {
     }
 
     static private Container[] createTemplateInsert(String formatString, Object... arguments) {
-
-        char[] tempFormatString = formatString.toCharArray( );
 
         boolean flag = false;
         int countOpenQuote = 0;
@@ -33,7 +31,7 @@ public class Formatter {
         Container[] instance = new Container[arguments.length];
         StringBuilder numberLabel = new StringBuilder( );
 
-        for (char element : tempFormatString) {
+        for (char element : formatString.toCharArray( )) {
 
             countOpenQuote++;
             countCloseQuote++;
