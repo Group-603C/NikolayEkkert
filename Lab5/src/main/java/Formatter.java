@@ -10,13 +10,10 @@ public class Formatter {
 
         Container[] tempFormatString = createTemplateInsert(formatString, arguments);
 
-        int counter = 0;
-        counter = arguments.length - 1;
-        for (Object argument : arguments) {
-            if (tempFormatString[counter] != null) {
-                tempFormatString[counter].formationMessageRow(editedFormatString);
+        for (Container element : tempFormatString) {
+            if (element != null) {
+                element.formationMessageRow(editedFormatString);
             }
-            counter--;
         }
 
         return editedFormatString.toString( );
@@ -31,7 +28,7 @@ public class Formatter {
         int countCloseQuote = 0;
         int tempOpen = 0;
         int tempClose = 0;
-        int counter = 0;
+        int counter = arguments.length - 1;
 
         Container[] instance = new Container[arguments.length];
         StringBuilder numberLabel = new StringBuilder( );
@@ -56,7 +53,7 @@ public class Formatter {
                         int numberArgument = Integer.parseInt(temp);
                         Container exemplar = new Container(tempOpen, tempClose, arguments[numberArgument].toString( ));
                         instance[counter] = exemplar;
-                        counter++;
+                        counter--;
                     }
                     catch (Exception e) {
                     }
