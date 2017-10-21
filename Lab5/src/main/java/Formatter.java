@@ -1,101 +1,87 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 public class Formatter {
 
     static String build(String formatString, Object... arguments) {
 
-        if (formatString == null) {
+        if (formatString == null || formatString.equals("")) {
             return "";
         }
 
-        StringBuilder editedFormatString = new StringBuilder(formatString);
+        StringBuilder builder = new StringBuilder(formatString);
+        ArrayList<Container> reverseContainer = parse(formatString, arguments);
+        Collections.reverse(reverseContainer);
+        for (Container element : reverseContainer) {
+//            if (element != null) {
 
-        Container[] divisionTemplate = createTemplateInsert(formatString, arguments);
-
-        for (Container element : divisionTemplate) {
-            if (element != null) {
-                element.formationMessageRow(editedFormatString);
-            }
+            element.formationMessageRow(builder);
+//            }
         }
 
-        return editedFormatString.toString( );
+        return builder.toString( );
     }
 
-    static private Container[] createTemplateInsert(String formatString, Object... arguments) {
+    static private ArrayList<Container> parse(String formatString, Object... arguments) {
 
-        int tempOpen = 0;
-        int tempClose = 0;
-        int counter = arguments.length - 1;
-        int countOpenQuote = 0;
-        int countCloseQuote = 0;
-        boolean flag = false;
+        int indexOPenQuite = 0;
+        int currentIndex = 0;
+        boolean isReadArgument = false;
 
-        Container[] instance = new Container[arguments.length];
-        StringBuilder numberLabel = new StringBuilder( );
-
+        ArrayList<Container> result = new ArrayList<Container>( );
+        StringBuilder argumentReader = new StringBuilder( );
         for (char element : formatString.toCharArray( )) {
 
-            countOpenQuote++;
-            countCloseQuote++;
+            currentIndex++;
 
             if (element == '{') {
-                tempOpen = countOpenQuote;
-                flag = true;
+                indexOPenQuite = currentIndex;
+                isReadArgument = true;
             }
-            else if (element == '}') {
-                tempClose = countCloseQuote;
-                flag = false;
-                String temp = numberLabel.toString( );
+            else if (element == '}' && isReadArgument) {
+
+                isReadArgument = false;
+                String temp = argumentReader.toString( );
 
                 try {
                     int numberArgument = Integer.parseInt(temp);
-                    Container exemplar = new Container(tempOpen, tempClose, arguments[numberArgument].toString( ));
-                    instance[counter] = exemplar;
-                    counter--;
+                    result.add(new Container(indexOPenQuite, currentIndex, arguments[numberArgument]));
                 }
                 catch (IndexOutOfBoundsException e) {
+                    throw new IndexOutOfBoundsException("Number of argument our of range.");
                 }
                 catch (NumberFormatException e) {
+                    throw new IllegalArgumentException("Number of argument in bad format.", e);
                 }
 
-                numberLabel.delete(0, numberLabel.length( ));
+                argumentReader.delete(0, argumentReader.length( ));
             }
-
-            else if (flag) {
-                numberLabel.append(element);
+            else if (isReadArgument) {
+                argumentReader.append(element);
             }
         }
 
-        return instance;
+        return result;
     }
-
 
     static class Container {
 
         private int indexOpenQuote;
         private int indexCloseQuote;
-        private String indexArgument;
+        private Object argument;
 
-        Container(int open, int close, String text) {
+        Container(int open, int close, Object argument) {
             this.indexOpenQuote = open;
             this.indexCloseQuote = close;
-            this.indexArgument = text;
+            this.argument = argument;
         }
 
-        public String getIndexArgument( ) {
-            return this.indexArgument;
-        }
-
-        public int getIndexOpenQuote( ) {
-            return this.indexOpenQuote;
-        }
-
-        public int getIndexCloseQuote( ) {
-            return this.indexCloseQuote;
-        }
-
-        public void formationMessageRow(StringBuilder editedFormatString) {
+        public void formationMessageRow(StringBuilder builder) {
 
             try {
-                editedFormatString.replace(this.indexOpenQuote - 1, this.indexCloseQuote, this.indexArgument);
+//                System.out.println(this.indexOpenQuote - 1 + "\t" + this.indexCloseQuote + "\t" + this.argument.toString( ));
+                builder.replace(this.indexOpenQuote - 1, this.indexCloseQuote, this.argument.toString( ));
             }
             catch (NullPointerException e) {
             }
