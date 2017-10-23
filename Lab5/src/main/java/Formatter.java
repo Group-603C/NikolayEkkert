@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Formatter {
@@ -14,10 +13,8 @@ public class Formatter {
         ArrayList<Container> reverseContainer = parse(formatString, arguments);
         Collections.reverse(reverseContainer);
         for (Container element : reverseContainer) {
-//            if (element != null) {
 
             element.formationMessageRow(builder);
-//            }
         }
 
         return builder.toString( );
@@ -80,7 +77,7 @@ public class Formatter {
         public void formationMessageRow(StringBuilder builder) {
 
             try {
-//                System.out.println(this.indexOpenQuote - 1 + "\t" + this.indexCloseQuote + "\t" + this.argument.toString( ));
+
                 builder.replace(this.indexOpenQuote - 1, this.indexCloseQuote, this.argument.toString( ));
             }
             catch (NullPointerException e) {
