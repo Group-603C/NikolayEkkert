@@ -2,23 +2,6 @@ import static org.junit.Assert.*;
 
 public class FormatterTest {
 
-    class Box {
-        int width;
-        int height;
-        int depth;
-
-        Box(int width, int height, int depth) {
-            this.width = width;
-            this.height = height;
-            this.depth = depth;
-        }
-
-        @Override
-        public String toString( ) {
-            return "size " + width + " * " + height + " * " + depth;
-        }
-    }
-
     @org.junit.Test
     public void errorInput( ) throws Exception {
         try {
@@ -44,8 +27,6 @@ public class FormatterTest {
             value = errorInput.build("Without parameters");
             expected = "Without parameters";
             assertEquals("Absence of the parameter", expected, value);
-
-            fail( );
         }
         catch (NumberFormatException e) {
         }
@@ -54,37 +35,45 @@ public class FormatterTest {
     }
 
     @org.junit.Test
-    public void build( ) throws Exception {
-
+    public void standardInput( ) throws Exception {
         try {
 
-            Formatter standartInput = new Formatter( );
+            Formatter standardInput = new Formatter( );
 
-            String value = standartInput.build("here {0} here {1}, but {2}", "mom", "dad", "I");
+            String value = standardInput.build("here {0} here {1}, but {2}", "mom", "dad", "I");
             String expected = "here mom here dad, but I";
             assertEquals("Correct writing and sending", expected, value);
 
-            value = standartInput.build("Here come {3}, it's time for me to go through {1} of the country, visit {0} Museum and {2} km", 32, 196, 22, 777);
+            value = standardInput.build("Here come {3}, it's time for me to go through {1} of the country, visit {0} Museum and {2} km", 32, 196, 22, 777);
             expected = "Here come 777, it's time for me to go through 196 of the country, visit 32 Museum and 22 km";
             assertEquals("Not consistent arrangement of labels in the template", expected, value);
 
-            value = standartInput.build("Not {2} to take and {3} {0} {1}", "the lab", "Java", "so", "pass", "otherwise");
+            value = standardInput.build("Not {2} to take and {3} {0} {1}", "the lab", "Java", "so", "pass", "otherwise");
             expected = "Not so to take and pass the lab Java";
             assertEquals("Parameters more than labels", expected, value);
 
-            value = standartInput.build("here {0} here {1}, but {2}", "mom", "dad");
+            value = standardInput.build("here {0} here {1}, but {2}", "mom", "dad");
             expected = "here mom here dad, but {2}";
             assertEquals("Parameters less than labels", expected, value);
 
-            value = standartInput.build("here {0, here {1}, but {2}", "mom", "dad");
+            value = standardInput.build("here {0, here {1}, but {2}", "mom", "dad");
             expected = "here {0, here {1}, but {2}";
             assertEquals("Not a closed label", expected, value);
+        }
+        catch (NumberFormatException e) {
+        }
+        catch (IndexOutOfBoundsException e) {
+        }
+    }
 
+    @org.junit.Test
+    public void inputValuePrimitive( ) throws Exception {
+        try {
 
             Formatter inputValuePrimitive = new Formatter( );
 
-            value = inputValuePrimitive.build("Here int value {0}", 20543);
-            expected = "Here int value 20543";
+            String value = inputValuePrimitive.build("Here int value {0}", 20543);
+            String expected = "Here int value 20543";
             assertEquals("Parameter of type int", expected, value);
 
             value = inputValuePrimitive.build("Here the float value is {0}", 0.68f);
@@ -98,12 +87,22 @@ public class FormatterTest {
             value = inputValuePrimitive.build("Here boolean value {0}", true);
             expected = "Here boolean value true";
             assertEquals("Parameter of type boolean", expected, value);
+        }
+        catch (NumberFormatException e) {
+        }
+        catch (IndexOutOfBoundsException e) {
+        }
+    }
 
+    @org.junit.Test
+    public void inputValueReference( ) throws Exception {
+
+        try {
 
             Formatter inputValueReference = new Formatter( );
 
-            value = inputValueReference.build("Here the char value {0}", 'V');
-            expected = "Here the char value V";
+            String value = inputValueReference.build("Here the char value {0}", 'V');
+            String expected = "Here the char value V";
             assertEquals("Parameter of type char", expected, value);
 
             Object objZero = "Object";
@@ -125,14 +124,28 @@ public class FormatterTest {
             value = inputValueReference.build("Parameter class: {0}", box);
             expected = "Parameter class: size 111 * 222 * 333";
             assertEquals("The transfer of a class with three fields and an overload of toString", expected, value);
-
-            fail( );
         }
         catch (IndexOutOfBoundsException e) {
-
         }
         catch (NumberFormatException e) {
+        }
+    }
 
+
+    class Box {
+        int width;
+        int height;
+        int depth;
+
+        Box(int width, int height, int depth) {
+            this.width = width;
+            this.height = height;
+            this.depth = depth;
+        }
+
+        @Override
+        public String toString( ) {
+            return "size " + width + " * " + height + " * " + depth;
         }
     }
 }
