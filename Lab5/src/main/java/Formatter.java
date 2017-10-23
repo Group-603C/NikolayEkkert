@@ -39,10 +39,10 @@ public class Formatter {
             else if (element == '}' && isReadArgument) {
 
                 isReadArgument = false;
-                String temp = argumentReader.toString( );
+                String storageLabel = argumentReader.toString( );
 
                 try {
-                    int numberArgument = Integer.parseInt(temp);
+                    int numberArgument = Integer.parseInt(storageLabel);
                     result.add(new Container(indexOPenQuite, currentIndex, arguments[numberArgument]));
                 }
                 catch (IndexOutOfBoundsException e) {
