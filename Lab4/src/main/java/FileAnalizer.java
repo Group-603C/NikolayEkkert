@@ -13,7 +13,8 @@ public class FileAnalizer {
 
         try {
 
-            arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8).toArray( );
+            arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8)
+                                  .toArray( );
         }
         catch (IOException e) {
 
@@ -26,7 +27,7 @@ public class FileAnalizer {
 
         for (Object line : arrayLinesFile) {
 
-            String tempLineForLetter = (String) line;
+            String tempLineForLetter = line.toString( );
             if (tempLineForLetter.length( ) == 0) {
                 continue;
             }
@@ -48,7 +49,7 @@ public class FileAnalizer {
         int countWord = 0;
         for (Object line : arrayLinesFile) {
 
-            String tempLineForWord = line.toString();
+            String tempLineForWord = line.toString( );
             if (tempLineForWord.length( ) != 0) {
 
                 countWord += tempLineForWord.split(" +").length;
@@ -76,19 +77,17 @@ public class FileAnalizer {
 
         for (Object line : arrayLinesFile) {
 
-            String tempLineForLetter = (String) line;
+            String tempLineForLetter = line.toString( );
             if (tempLineForLetter.length( ) != 0) {
 
                 char[] tempSymbol = tempLineForLetter.toCharArray( );
                 for (char element : tempSymbol) {
 
-                    if (element != ' ') {
-                        
-                        countSymbol.put(element, 1);
+                    if (countSymbol.get(element) != null) {
+                        countSymbol.put(element, countSymbol.get(element) + 1);
                         continue;
                     }
-                    int tempValue = countSymbol.get(element) + 1;
-                    countSymbol.put(element, tempValue);
+                    countSymbol.put(element, 1);
                 }
             }
         }
