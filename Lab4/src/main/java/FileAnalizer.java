@@ -13,7 +13,8 @@ public class FileAnalizer {
 
         try {
 
-            arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8).toArray( );
+            arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8)
+                                  .toArray( );
         }
         catch (IOException e) {
 
@@ -31,13 +32,8 @@ public class FileAnalizer {
                 continue;
             }
 
-//            char[] tempSymbol = tempLineForLetter.replaceAll("[\\s.|,]", "").toCharArray( );
-            char[] tempSymbol = tempLineForLetter.replaceAll("[^a-zA-Zа-яА-Я0-9]", "").toCharArray( );
-            System.out.println(tempSymbol);
-            for (char element : tempSymbol) {
-
-                countLetter++;
-            }
+            String tempSymbol = tempLineForLetter.replaceAll("[^a-zA-Zа-яА-Я0-9]", "");
+            countLetter += tempSymbol.length( );
         }
 
         return countLetter;
