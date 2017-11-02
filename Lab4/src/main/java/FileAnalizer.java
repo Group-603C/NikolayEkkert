@@ -31,12 +31,12 @@ public class FileAnalizer {
                 continue;
             }
 
-            char[] tempSymbol = tempLineForLetter.toCharArray( );
+//            char[] tempSymbol = tempLineForLetter.replaceAll("[\\s.|,]", "").toCharArray( );
+            char[] tempSymbol = tempLineForLetter.replaceAll("[^a-zA-Zа-яА-Я0-9]", "").toCharArray( );
+            System.out.println(tempSymbol);
             for (char element : tempSymbol) {
 
-                if (element != ' ') {
-                    countLetter++;
-                }
+                countLetter++;
             }
         }
 
