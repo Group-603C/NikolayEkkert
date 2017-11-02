@@ -25,6 +25,9 @@ public class FileAnalizer {
     public int CountLetters( ) {
         int countLetter = 0;
 
+        if (arrayLinesFile == null) {
+            return countLetter;
+        }
         for (Object line : arrayLinesFile) {
 
             String tempLineForLetter = line.toString( );
@@ -42,10 +45,14 @@ public class FileAnalizer {
     public int CountWords( ) {
 
         int countWord = 0;
+
+        if (arrayLinesFile == null) {
+            return countWord;
+        }
         for (Object line : arrayLinesFile) {
 
             String tempLineForWord = line.toString( );
-            if (tempLineForWord.length( ) != 0) {
+            if (tempLineForWord != null && tempLineForWord.length( ) != 0) {
 
                 countWord += tempLineForWord.split("(^|\\A|\\s|\\-).*?(\\s|$|\\Z|\\-)").length;
             }
@@ -70,6 +77,9 @@ public class FileAnalizer {
     public Map<Character, Integer> CountFrequencyCharacteristic( ) {
         Map<Character, Integer> countSymbol = new HashMap<Character, Integer>( );
 
+        if(arrayLinesFile == null){
+            return countSymbol;
+        }
         for (Object line : arrayLinesFile) {
 
             String tempLineForLetter = line.toString( );
