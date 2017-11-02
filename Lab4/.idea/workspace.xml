@@ -13,24 +13,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="61" lean-forward="true" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+            <state relative-caret-position="264">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileAnalizer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FileAnalizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1852">
-              <caret line="92" column="17" lean-forward="false" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+            <state relative-caret-position="418">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1889#1909#0" expanded="true" />
+                <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="e#1880#1900#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/file.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -86,8 +91,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/FileAnalizerTest.java" />
         <option value="$PROJECT_DIR$/file.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/FileAnalizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FileAnalizer.java" />
       </list>
     </option>
   </component>
@@ -177,6 +182,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -337,7 +343,7 @@
       <updated>1506266168883</updated>
       <workItem from="1506266172301" duration="1875000" />
       <workItem from="1509440787439" duration="1068000" />
-      <workItem from="1509538780575" duration="13569000" />
+      <workItem from="1509538780575" duration="13843000" />
     </task>
     <servers />
   </component>
@@ -371,7 +377,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16512000" />
+    <option name="totallyTimeSpent" value="16786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -386,7 +392,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29079497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29079497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -449,7 +455,12 @@
           <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1889#1909#0" expanded="true" />
+            <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="e#1880#1900#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -494,7 +505,12 @@
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1889#1909#0" expanded="true" />
+            <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="e#1880#1900#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -520,27 +536,32 @@
     <entry file="file://$PROJECT_DIR$/file.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1852">
-          <caret line="92" column="17" lean-forward="false" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+        <state relative-caret-position="418">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1889#1909#0" expanded="true" />
+            <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="e#1880#1900#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="61" lean-forward="true" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -14,7 +14,7 @@ public class FileAnalizer {
         try {
 
             arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8)
-                                  .toArray( );
+                                  .toArray();
         }
         catch (IOException e) {
 
@@ -22,37 +22,38 @@ public class FileAnalizer {
         }
     }
 
-    public int CountLetters( ) {
-        int countLetter = 0;
+    public int CountLetters() {
 
+        int countLetter = 0;
         if (arrayLinesFile == null) {
+
             return countLetter;
         }
         for (Object line : arrayLinesFile) {
 
-            String tempLineForLetter = line.toString( );
-            if (tempLineForLetter.length( ) == 0) {
+            String tempLineForLetter = line.toString();
+            if (tempLineForLetter.length() == 0) {
                 continue;
             }
 
             String tempSymbol = tempLineForLetter.replaceAll("[^a-zA-Zа-яА-Я0-9]", "");
-            countLetter += tempSymbol.length( );
+            countLetter += tempSymbol.length();
         }
 
         return countLetter;
     }
 
-    public int CountWords( ) {
+    public int CountWords() {
 
         int countWord = 0;
-
         if (arrayLinesFile == null) {
+
             return countWord;
         }
         for (Object line : arrayLinesFile) {
 
-            String tempLineForWord = line.toString( );
-            if (tempLineForWord.length( ) != 0) {
+            String tempLineForWord = line.toString();
+            if (tempLineForWord.length() != 0) {
 
                 countWord += tempLineForWord.split("(^|\\A|\\s|\\-).*?(\\s|$|\\Z|\\-)").length;
             }
@@ -61,7 +62,7 @@ public class FileAnalizer {
         return countWord;
     }
 
-    public int CountLines( ) {
+    public int CountLines() {
 
         try {
 
@@ -74,18 +75,18 @@ public class FileAnalizer {
         }
     }
 
-    public Map<Character, Integer> CountFrequencyCharacteristic( ) {
-        Map<Character, Integer> countSymbol = new HashMap<Character, Integer>( );
+    public Map<Character, Integer> CountFrequencyCharacteristic() {
+        Map<Character, Integer> countSymbol = new HashMap<Character, Integer>();
 
-        if(arrayLinesFile == null){
+        if (arrayLinesFile == null) {
             return countSymbol;
         }
         for (Object line : arrayLinesFile) {
 
-            String tempLineForLetter = line.toString( );
-            if (tempLineForLetter.length( ) != 0) {
+            String tempLineForLetter = line.toString();
+            if (tempLineForLetter.length() != 0) {
 
-                char[] tempSymbol = tempLineForLetter.toCharArray( );
+                char[] tempSymbol = tempLineForLetter.toCharArray();
                 for (char element : tempSymbol) {
 
                     if (countSymbol.get(element) != null) {
