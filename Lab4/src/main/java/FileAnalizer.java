@@ -52,7 +52,7 @@ public class FileAnalizer {
         for (Object line : arrayLinesFile) {
 
             String tempLineForWord = line.toString( );
-            if (tempLineForWord != null && tempLineForWord.length( ) != 0) {
+            if (tempLineForWord.length( ) != 0) {
 
                 countWord += tempLineForWord.split("(^|\\A|\\s|\\-).*?(\\s|$|\\Z|\\-)").length;
             }

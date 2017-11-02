@@ -2,7 +2,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        FileAnalizer customAnalizer = new FileAnalizer("file.ftxt");
+        FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         System.out.println("Количество строк: " + customAnalizer.CountLines());
         System.out.println("Количество слов: " + customAnalizer.CountWords());
