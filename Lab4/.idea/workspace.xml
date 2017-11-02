@@ -26,13 +26,13 @@
       <file leaf-file-name="FileAnalizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="54" column="77" lean-forward="false" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
+            <state relative-caret-position="546">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
                 <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-                <element signature="e#1804#1824#0" expanded="true" />
+                <element signature="e#1776#1796#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/file.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -339,7 +339,7 @@
       <updated>1506266168883</updated>
       <workItem from="1506266172301" duration="1875000" />
       <workItem from="1509440787439" duration="1068000" />
-      <workItem from="1509538780575" duration="7349000" />
+      <workItem from="1509538780575" duration="9862000" />
     </task>
     <servers />
   </component>
@@ -373,7 +373,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10292000" />
+    <option name="totallyTimeSpent" value="12805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -453,7 +453,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="e#1804#1824#0" expanded="true" />
+            <element signature="e#1776#1796#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -500,7 +500,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="e#1804#1824#0" expanded="true" />
+            <element signature="e#1776#1796#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -521,14 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FileAnalizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -539,15 +531,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/file.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="54" column="77" lean-forward="false" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
+        <state relative-caret-position="546">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="e#1804#1824#0" expanded="true" />
+            <element signature="e#1776#1796#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -13,8 +13,7 @@ public class FileAnalizer {
 
         try {
 
-            arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8)
-                                  .toArray( );
+            arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8).toArray( );
         }
         catch (IOException e) {
 
@@ -52,7 +51,7 @@ public class FileAnalizer {
             String tempLineForWord = line.toString( );
             if (tempLineForWord.length( ) != 0) {
 
-                countWord += tempLineForWord.split("^[a-zA-ZА-Яа-я0-9]|[\\S]|g").length;
+                countWord += tempLineForWord.split("(^|\\A|\\s|\\-).*?(\\s|$|\\Z|\\-)").length;
             }
         }
 
