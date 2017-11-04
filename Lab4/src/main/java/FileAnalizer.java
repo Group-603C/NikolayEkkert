@@ -7,14 +7,14 @@ import java.util.Map;
 
 public class FileAnalizer {
 
-    private Object[] arrayLinesFile;
+    private Object[] linesFile;
 
 
     public FileAnalizer(String path) {
 
         try {
 
-            arrayLinesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8)
+            linesFile = Files.lines(Paths.get(path), StandardCharsets.UTF_8)
                                   .toArray();
         }
         catch (IOException e) {
@@ -28,15 +28,15 @@ public class FileAnalizer {
     public int CountLetters() {
 
         int countLetter = 0;
-        for (Object line : arrayLinesFile) {
+        for (Object line : linesFile) {
 
             String storageLine = line.toString();
             if (storageLine.length() == 0) {
                 continue;
             }
 
-            String tempSymbol = storageLine.replaceAll("[^a-zA-Zа-яА-Я0-9]", "");
-            countLetter += tempSymbol.length();
+            countLetter += storageLine.replaceAll("[^a-zA-Zа-яА-Я0-9]", "")
+                                      .length();
         }
 
         return countLetter;
@@ -45,7 +45,7 @@ public class FileAnalizer {
     public int CountWords() {
 
         int countWord = 0;
-        for (Object line : arrayLinesFile) {
+        for (Object line : linesFile) {
 
             String storageLine = line.toString();
             if (storageLine.length() != 0) {
@@ -59,13 +59,13 @@ public class FileAnalizer {
 
     public int CountLines() {
 
-        return arrayLinesFile.length;
+        return linesFile.length;
     }
 
     public Map<Character, Integer> CountFrequencyCharacteristic() {
 
         Map<Character, Integer> countSymbol = new HashMap<Character, Integer>();
-        for (Object line : arrayLinesFile) {
+        for (Object line : linesFile) {
 
             String storageLine = line.toString();
             if (storageLine.length() != 0) {

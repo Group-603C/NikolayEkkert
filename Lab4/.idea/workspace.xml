@@ -29,16 +29,11 @@
       <file leaf-file-name="FileAnalizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="67" column="39" lean-forward="false" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
-                <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
-                <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
-                <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
-                <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-                <element signature="e#1546#1566#0" expanded="true" />
+                <element signature="e#1516#1536#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,7 +76,12 @@
       <find>j</find>
       <find>toString</find>
       <find>Object line</find>
+      <find>temp</find>
+      <find>linesFiles</find>
     </findStrings>
+    <replaceStrings>
+      <replace>linesFile</replace>
+    </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -112,7 +112,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1088" />
@@ -349,7 +349,7 @@
       <workItem from="1509538780575" duration="14440000" />
       <workItem from="1509673187040" duration="453000" />
       <workItem from="1509777742691" duration="697000" />
-      <workItem from="1509791699771" duration="3476000" />
+      <workItem from="1509791699771" duration="3947000" />
     </task>
     <servers />
   </component>
@@ -383,10 +383,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22009000" />
+    <option name="totallyTimeSpent" value="22480000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="952" y="0" width="976" height="1088" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -398,7 +398,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29598308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29288703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -463,12 +463,7 @@
           <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="e#1546#1566#0" expanded="true" />
+            <element signature="e#1516#1536#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -487,12 +482,7 @@
           <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="e#1546#1566#0" expanded="true" />
+            <element signature="e#1516#1536#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -547,12 +537,7 @@
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="e#1546#1566#0" expanded="true" />
+            <element signature="e#1516#1536#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -589,12 +574,7 @@
           <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="e#1546#1566#0" expanded="true" />
+            <element signature="e#1516#1536#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -638,12 +618,7 @@
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="e#1546#1566#0" expanded="true" />
+            <element signature="e#1516#1536#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -683,16 +658,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="326">
+          <caret line="67" column="39" lean-forward="false" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#FileAnalizer#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLetters#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountWords#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountLines#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#CountFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="e#1546#1566#0" expanded="true" />
+            <element signature="e#1516#1536#0" expanded="true" />
           </folding>
         </state>
       </provider>
