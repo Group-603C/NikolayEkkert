@@ -9,6 +9,7 @@ public class FileAnalizer {
 
     private Object[] arrayLinesFile;
 
+
     public FileAnalizer(String path) {
 
         try {
@@ -22,6 +23,7 @@ public class FileAnalizer {
             System.exit(1);
         }
     }
+
 
     public int CountLetters() {
 
