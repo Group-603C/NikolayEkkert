@@ -35,7 +35,7 @@ public class FileAnalizer {
                 continue;
             }
 
-            countLetter += storageLine.replaceAll("[^a-zA-Zа-яА-Я0-9]", "")
+            countLetter += storageLine.replaceAll("[^a-zA-Zа-яА-Я]", "")
                                       .length();
         }
 
