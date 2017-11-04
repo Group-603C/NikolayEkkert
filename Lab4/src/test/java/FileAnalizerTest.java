@@ -11,7 +11,7 @@ public class FileAnalizerTest
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         int actual = customAnalizer.CountLetters();
-        int expect = 21;
+        int expect = 25;
         assertEquals(actual, expect);
     }
 
@@ -21,7 +21,7 @@ public class FileAnalizerTest
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         int actual = customAnalizer.CountWords();
-        int expect = 4;
+        int expect = 7;
         assertEquals(actual, expect);
     }
 
@@ -31,7 +31,7 @@ public class FileAnalizerTest
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         int actual = customAnalizer.CountLines();
-        int expect = 4;
+        int expect = 5;
         assertEquals(actual, expect);
     }
 
@@ -43,21 +43,24 @@ public class FileAnalizerTest
         Map actual = customAnalizer.CountFrequencyCharacteristic();
 
         Map<Character, Integer> expect = new HashMap<Character, Integer>();
-        expect.put('Б', 2);
-        expect.put('О', 1);
-        expect.put('С', 1);
-        expect.put('а', 3);
-        expect.put('б', 1);
-        expect.put('г', 1);
-        expect.put('и', 1);
-        expect.put('о', 2);
-        expect.put('к', 1);
-        expect.put('л', 1);
+        expect.put('р', 1);
+        expect.put(' ', 9);
+        expect.put('b', 1);
+        expect.put('d', 2);
+        expect.put('f', 3);
+        expect.put('g', 5);
+        expect.put('.', 4);
+        expect.put(',', 1);
+        expect.put('а', 1);
+        expect.put('Б', 1);
+        expect.put('r', 2);
+        expect.put('s', 1);
+        expect.put('v', 2);
+        expect.put('w', 3);
+        expect.put('\\', 1);
+        expect.put('|', 1);
         expect.put('н', 2);
-        expect.put('р', 2);
-        expect.put('у', 1);
-        expect.put('х', 1);
-        expect.put('ь', 1);
+        expect.put('о', 1);
 
         assertEquals(actual, expect);
     }
