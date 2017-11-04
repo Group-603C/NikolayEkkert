@@ -25,7 +25,7 @@ public class FileAnalizer {
     }
 
 
-    public int CountLetters() {
+    public int countLetters() {
 
         int countLetter = 0;
         for (Object line : linesFile) {
@@ -42,7 +42,7 @@ public class FileAnalizer {
         return countLetter;
     }
 
-    public int CountWords() {
+    public int countWords() {
 
         int countWord = 0;
         for (Object line : linesFile) {
@@ -57,12 +57,12 @@ public class FileAnalizer {
         return countWord;
     }
 
-    public int CountLines() {
+    public int countLines() {
 
         return linesFile.length;
     }
 
-    public Map<Character, Integer> CountFrequencyCharacteristic() {
+    public Map<Character, Integer> countFrequencyCharacteristic() {
 
         Map<Character, Integer> countSymbol = new HashMap<Character, Integer>();
         for (Object line : linesFile) {

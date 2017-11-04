@@ -10,7 +10,7 @@ public class FileAnalizerTest
     {
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
-        int actual = customAnalizer.CountLetters();
+        int actual = customAnalizer.countLetters();
         int expect = 25;
         assertEquals(actual, expect);
     }
@@ -20,7 +20,7 @@ public class FileAnalizerTest
     {
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
-        int actual = customAnalizer.CountWords();
+        int actual = customAnalizer.countWords();
         int expect = 7;
         assertEquals(actual, expect);
     }
@@ -30,7 +30,7 @@ public class FileAnalizerTest
     {
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
-        int actual = customAnalizer.CountLines();
+        int actual = customAnalizer.countLines();
         int expect = 5;
         assertEquals(actual, expect);
     }
@@ -40,7 +40,7 @@ public class FileAnalizerTest
     {
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
-        Map actual = customAnalizer.CountFrequencyCharacteristic();
+        Map actual = customAnalizer.countFrequencyCharacteristic();
 
         Map<Character, Integer> expect = new HashMap<Character, Integer>();
         expect.put('р', 1);
