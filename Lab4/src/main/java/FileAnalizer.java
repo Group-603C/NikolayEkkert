@@ -19,24 +19,21 @@ public class FileAnalizer {
         catch (IOException e) {
 
             System.out.println("Ошибка, файл не найден!");
+            System.exit(1);
         }
     }
 
     public int CountLetters() {
 
         int countLetter = 0;
-        if (arrayLinesFile == null) {
-
-            return countLetter;
-        }
         for (Object line : arrayLinesFile) {
 
-            String tempLineForLetter = line.toString();
-            if (tempLineForLetter.length() == 0) {
+            String storageLine = line.toString();
+            if (storageLine.length() == 0) {
                 continue;
             }
 
-            String tempSymbol = tempLineForLetter.replaceAll("[^a-zA-Zа-яА-Я0-9]", "");
+            String tempSymbol = storageLine.replaceAll("[^a-zA-Zа-яА-Я0-9]", "");
             countLetter += tempSymbol.length();
         }
 
@@ -46,16 +43,12 @@ public class FileAnalizer {
     public int CountWords() {
 
         int countWord = 0;
-        if (arrayLinesFile == null) {
-
-            return countWord;
-        }
         for (Object line : arrayLinesFile) {
 
-            String tempLineForWord = line.toString();
-            if (tempLineForWord.length() != 0) {
+            String storageLine = line.toString();
+            if (storageLine.length() != 0) {
 
-                countWord += tempLineForWord.split("(^|\\A|\\s|\\-).*?(\\s|$|\\Z|\\-)").length;
+                countWord += storageLine.split("(^|\\A|\\s|\\-).*?(\\s|$|\\Z|\\-)").length;
             }
         }
 
@@ -64,23 +57,12 @@ public class FileAnalizer {
 
     public int CountLines() {
 
-        try {
-
-            return arrayLinesFile.length;
-        }
-        catch (NullPointerException e) {
-
-            System.out.println("Ошибка, массив строк получен не был!");
-            return 0;
-        }
+        return arrayLinesFile.length;
     }
 
     public Map<Character, Integer> CountFrequencyCharacteristic() {
-        Map<Character, Integer> countSymbol = new HashMap<Character, Integer>();
 
-        if (arrayLinesFile == null) {
-            return countSymbol;
-        }
+        Map<Character, Integer> countSymbol = new HashMap<Character, Integer>();
         for (Object line : arrayLinesFile) {
 
             String tempLineForLetter = line.toString();
