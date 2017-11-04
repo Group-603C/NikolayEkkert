@@ -65,11 +65,11 @@ public class FileAnalizer {
         Map<Character, Integer> countSymbol = new HashMap<Character, Integer>();
         for (Object line : arrayLinesFile) {
 
-            String tempLineForLetter = line.toString();
-            if (tempLineForLetter.length() != 0) {
+            String storageLine = line.toString();
+            if (storageLine.length() != 0) {
 
-                char[] tempSymbol = tempLineForLetter.toCharArray();
-                for (char element : tempSymbol) {
+                char[] symbols = storageLine.toCharArray();
+                for (char element : symbols) {
 
                     if (countSymbol.get(element) != null) {
                         countSymbol.put(element, countSymbol.get(element) + 1);
