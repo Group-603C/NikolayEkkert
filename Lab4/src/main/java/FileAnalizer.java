@@ -31,12 +31,8 @@ public class FileAnalizer {
 
     public int countLetters() {
 
-
-        int countLetter = linesFile.replaceAll("[^a-zA-Zа-яА-Я]", "")
+        return linesFile.replaceAll("[^a-zA-Zа-яА-Я]", "")
                                   .length();
-
-
-        return countLetter;
     }
 
     public int countWords() {
