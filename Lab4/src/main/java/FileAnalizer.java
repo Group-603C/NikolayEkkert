@@ -14,7 +14,6 @@ public class FileAnalizer {
         try {
 
             linesFile = new String(Files.readAllBytes(Paths.get(path)));
-            System.out.println(linesFile.length());
         }
         catch (IOException e) {
 
