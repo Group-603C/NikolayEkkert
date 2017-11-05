@@ -43,8 +43,7 @@ public class FileAnalizer {
 
     public int countLines() {
 
-//        return linesFile.length;
-        return 0;
+        return linesFile.split("\n").length;
     }
 
     public Map<Character, Integer> countFrequencyCharacteristic() {
