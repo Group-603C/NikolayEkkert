@@ -32,22 +32,13 @@ public class FileAnalizer {
     public int countLetters() {
 
         return linesFile.replaceAll("[^a-zA-Zа-яА-Я]", "")
-                                  .length();
+                        .length();
     }
 
     public int countWords() {
 
-        int countWord = 0;
-//        for (Object line : linesFile) {
-//
-//            String storageLine = line.toString();
-//            if (storageLine.length() != 0) {
-//
-//                countWord += storageLine.split("(^|\\A|\\s|\\-).*?(\\s|$|\\Z|\\-)").length;
-//            }
-//        }
-
-        return countWord;
+        return linesFile.replaceAll("([^A-Za-zА-Яа-я])([\\s\\W]+)", " ")
+                        .split(" ").length;
     }
 
     public int countLines() {
