@@ -1,7 +1,4 @@
-import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
@@ -18,8 +15,6 @@ public class FileAnalizer {
 
             linesFile = new String(Files.readAllBytes(Paths.get(path)));
             System.out.println(linesFile.length());
-
-//           Files.lines(Paths.get(path), StandardCharsets.UTF_8).forEach(System.out::println);
         }
         catch (IOException e) {
 
@@ -49,22 +44,19 @@ public class FileAnalizer {
     public Map<Character, Integer> countFrequencyCharacteristic() {
 
         Map<Character, Integer> countSymbol = new HashMap<Character, Integer>();
-//        for (Object line : linesFile) {
-//
-//            String storageLine = line.toString();
-//            if (storageLine.length() != 0) {
-//
-//                char[] symbols = storageLine.toCharArray();
-//                for (char element : symbols) {
-//
-//                    if (countSymbol.get(element) != null) {
-//                        countSymbol.put(element, countSymbol.get(element) + 1);
-//                        continue;
-//                    }
-//                    countSymbol.put(element, 1);
-//                }
-//            }
-//        }
+
+        StringBuilder formatLinesFile = new StringBuilder(linesFile);
+        for (int i = 0; i < formatLinesFile.length(); i++) {
+
+            char var = formatLinesFile.charAt(i);
+            try {
+                countSymbol.put(formatLinesFile.charAt(i), countSymbol.get(var) + 1);
+            }
+            catch (NullPointerException e) {
+                countSymbol.put(formatLinesFile.charAt(i), 1);
+            }
+
+        }
 
         return countSymbol;
     }
