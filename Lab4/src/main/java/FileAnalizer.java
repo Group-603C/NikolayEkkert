@@ -47,13 +47,13 @@ public class FileAnalizer {
         StringBuilder formatLinesFile = new StringBuilder(linesFile);
         for (int i = 0; i < formatLinesFile.length(); i++) {
 
-            char var = formatLinesFile.charAt(i);
+            char symbol = formatLinesFile.charAt(i);
             try {
-                countSymbol.put(var, countSymbol.get(var) + 1);
+                countSymbol.put(symbol, countSymbol.get(symbol) + 1);
             }
             catch (NullPointerException e) {
 
-                countSymbol.put(var, 1);
+                countSymbol.put(symbol, 1);
             }
         }
 
