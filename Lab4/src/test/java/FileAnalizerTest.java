@@ -3,11 +3,12 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 
-public class FileAnalizerTest
-{
+public class FileAnalizerTest {
+
+    private final Map<String, byte[]> toHexStringData = new HashMap<String, byte[]>();
+
     @org.junit.Test
-    public void countLetters() throws Exception
-    {
+    public void countLetters() throws Exception {
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         int actual = customAnalizer.countLetters();
@@ -16,8 +17,7 @@ public class FileAnalizerTest
     }
 
     @org.junit.Test
-    public void countWords() throws Exception
-    {
+    public void countWords() throws Exception {
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         int actual = customAnalizer.countWords();
@@ -26,8 +26,7 @@ public class FileAnalizerTest
     }
 
     @org.junit.Test
-    public void countLines() throws Exception
-    {
+    public void countLines() throws Exception {
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         int actual = customAnalizer.countLines();
@@ -36,11 +35,8 @@ public class FileAnalizerTest
     }
 
     @org.junit.Test
-    public void countFrequencyCharacteristic() throws Exception
-    {
+    public void countFrequencyCharacteristic() throws Exception {
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
-
-        Map actual = customAnalizer.countFrequencyCharacteristic();
 
         Map<Character, Integer> expect = new HashMap<Character, Integer>();
         expect.put('р', 1);
@@ -49,8 +45,10 @@ public class FileAnalizerTest
         expect.put('d', 2);
         expect.put('f', 3);
         expect.put('g', 5);
-        expect.put('.', 4);
+        expect.put('\n', 10);
         expect.put(',', 1);
+        expect.put('\r', 4);
+        expect.put('.', 4);
         expect.put('а', 1);
         expect.put('Б', 1);
         expect.put('r', 2);
@@ -62,7 +60,12 @@ public class FileAnalizerTest
         expect.put('н', 2);
         expect.put('о', 1);
 
-        assertEquals(actual, expect);
-    }
+        Map actual = customAnalizer.countFrequencyCharacteristic();
 
+        System.out.println(expect.equals(actual));
+
+        assertEquals(actual, expect);
+
+
+    }
 }

@@ -49,13 +49,21 @@ public class FileAnalizer {
 
             char var = formatLinesFile.charAt(i);
             try {
-                countSymbol.put(formatLinesFile.charAt(i), countSymbol.get(var) + 1);
+                countSymbol.put(var, countSymbol.get(var) + 1);
             }
             catch (NullPointerException e) {
-                countSymbol.put(formatLinesFile.charAt(i), 1);
+
+                countSymbol.put(var, 1);
             }
 
+
         }
+//        System.out.println("--------------------------");
+//        for (Object element : countSymbol.keySet()) {
+//            int temp = element.hashCode();
+//            System.out.println(temp + "  " + countSymbol.get(element));
+//        }
+//        System.out.println("--------------------------");
 
         return countSymbol;
     }
