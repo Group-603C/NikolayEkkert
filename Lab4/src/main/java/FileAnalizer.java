@@ -55,20 +55,8 @@ public class FileAnalizer {
 
                 countSymbol.put(var, 1);
             }
-
-
         }
-//        System.out.println("--------------------------");
-//        for (Object element : countSymbol.keySet()) {
-//            int temp = element.hashCode();
-//            System.out.println(temp + "  " + countSymbol.get(element));
-//        }
-//        System.out.println("--------------------------");
 
         return countSymbol;
     }
-
-
-
-
 }

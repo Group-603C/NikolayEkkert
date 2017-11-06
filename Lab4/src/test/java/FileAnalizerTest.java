@@ -1,16 +1,9 @@
-
-
-import com.sun.xml.internal.ws.util.StringUtils;
-
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 import static org.junit.Assert.*;
 
 public class FileAnalizerTest {
-
-//    private final Map<String, byte[]> toHexStringData = new HashMap<String, byte[]>();
 
     @org.junit.Test
     public void countLetters() throws Exception {
