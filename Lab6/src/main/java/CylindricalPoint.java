@@ -24,4 +24,11 @@ public class CylindricalPoint {
     double getZ() {
         return this.z;
     }
+
+    Point toCartessian() {
+        double convertFromX = this.rho * Math.cos(this.phi);
+        double convertFromY = this.rho * Math.sin(this.phi);
+
+        return new Point(convertFromX, convertFromY, this.z);
+    }
 }

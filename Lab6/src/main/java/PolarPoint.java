@@ -1,11 +1,9 @@
-import java.util.regex.Matcher;
-
-public class PolarPoint extends Point {
+public class PolarPoint {
 
     private double rho;
     private double phi;
 
-    private PolarPoint(double rho,
+    PolarPoint(double rho,
                        double phi) {
 
         this.phi = phi;
@@ -23,7 +21,7 @@ public class PolarPoint extends Point {
     Point toCartesin() {
         double convertFromX = this.rho * Math.cos(this.phi);
         double convertFromY = this.rho * Math.sin(this.phi);
-        
+
         return new Point(convertFromX, convertFromY);
     }
 }
