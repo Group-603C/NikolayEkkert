@@ -6,54 +6,55 @@ import java.util.Map;
 
 public class FileAnalizer {
 
-    private String linesFile;
+    private String content;
 
 
     public FileAnalizer(String path) {
 
         try {
 
-            linesFile = new String(Files.readAllBytes(Paths.get(path)));
+            content = new String(Files.readAllBytes(Paths.get(path)));
+
         }
         catch (IOException e) {
 
-            System.out.println("Ошибка, файл не найден!");
-            System.exit(1);
+            throw new IllegalArgumentException("File not found!");
         }
     }
 
 
     public int countLetters() {
 
-        return linesFile.replaceAll("[^a-zA-Zа-яА-Я]", "")
-                        .length();
+        return content.replaceAll("[^a-zA-Zа-яА-Я]", "")
+                      .length();
     }
 
     public int countWords() {
 
-        return linesFile.replaceAll("([^A-Za-zА-Яа-я])([\\s\\W]+)", " ")
-                        .split(" ").length;
+        return content.replaceAll("([^A-Za-zА-Яа-я])([\\s\\W]+)", " ")
+                      .split(" ").length;
     }
 
     public int countLines() {
 
-        return linesFile.split("\n").length;
+        return content.split("\n").length;
     }
 
     public Map<Character, Integer> countFrequencyCharacteristic() {
 
         Map<Character, Integer> countSymbol = new HashMap<Character, Integer>();
 
-        StringBuilder formatLinesFile = new StringBuilder(linesFile);
-        for (int i = 0; i < formatLinesFile.length(); i++) {
+        char[] formatContent = content.toCharArray();
+        for (char element : formatContent) {
 
-            char symbol = formatLinesFile.charAt(i);
-            try {
-                countSymbol.put(symbol, countSymbol.get(symbol) + 1);
+            if (countSymbol.get(element) != null) {
+
+
+                countSymbol.put(element, countSymbol.get(element) + 1);
             }
-            catch (NullPointerException e) {
+            else {
 
-                countSymbol.put(symbol, 1);
+                countSymbol.put(element, 1);
             }
         }
 
