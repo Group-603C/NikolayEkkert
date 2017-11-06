@@ -35,13 +35,6 @@ public class Point {
 
     double distanceTo(Point point) {
 
-        try {
-
-            return Math.sqrt(Math.pow(point.x - this.x, 2) + Math.pow(point.y - this.y, 2) + Math.pow(point.z - this.z, 2));
-        }
-        catch (NullPointerException e) {
-
-            return Math.sqrt(Math.pow(point.x - this.x, 2) + Math.pow(point.y - this.y, 2));
-        }
+        return Math.sqrt(Math.pow(point.x - this.x, 2) + Math.pow(point.y - this.y, 2) + Math.pow(point.z - this.z, 2));
     }
 }
