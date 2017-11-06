@@ -1,11 +1,16 @@
+
+
+import com.sun.xml.internal.ws.util.StringUtils;
+
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import static org.junit.Assert.*;
 
 public class FileAnalizerTest {
 
-    private final Map<String, byte[]> toHexStringData = new HashMap<String, byte[]>();
+//    private final Map<String, byte[]> toHexStringData = new HashMap<String, byte[]>();
 
     @org.junit.Test
     public void countLetters() throws Exception {
@@ -45,7 +50,7 @@ public class FileAnalizerTest {
         expect.put('d', 2);
         expect.put('f', 3);
         expect.put('g', 5);
-        expect.put('\n', 10);
+        expect.put('\n', 4);
         expect.put(',', 1);
         expect.put('\r', 4);
         expect.put('.', 4);
@@ -62,10 +67,6 @@ public class FileAnalizerTest {
 
         Map actual = customAnalizer.countFrequencyCharacteristic();
 
-        System.out.println(expect.equals(actual));
-
         assertEquals(actual, expect);
-
-
     }
 }

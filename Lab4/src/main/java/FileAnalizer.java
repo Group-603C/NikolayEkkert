@@ -67,4 +67,8 @@ public class FileAnalizer {
 
         return countSymbol;
     }
+
+
+
+
 }
