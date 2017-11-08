@@ -5,9 +5,10 @@ import static org.junit.Assert.*;
 
 public class FileAnalizerTest {
 
+    private FileAnalizer customAnalizer = new FileAnalizer("file.txt");
+
     @org.junit.Test
     public void countLetters() throws Exception {
-        FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         int actual = customAnalizer.countLetters();
         int expect = 25;
@@ -16,7 +17,6 @@ public class FileAnalizerTest {
 
     @org.junit.Test
     public void countWords() throws Exception {
-        FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         int actual = customAnalizer.countWords();
         int expect = 7;
@@ -25,7 +25,6 @@ public class FileAnalizerTest {
 
     @org.junit.Test
     public void countLines() throws Exception {
-        FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         int actual = customAnalizer.countLines();
         int expect = 5;
@@ -34,7 +33,6 @@ public class FileAnalizerTest {
 
     @org.junit.Test
     public void countFrequencyCharacteristic() throws Exception {
-        FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
         Map<Character, Integer> expect = new HashMap<Character, Integer>();
         expect.put('р', 1);

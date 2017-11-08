@@ -49,7 +49,6 @@ public class FileAnalizer {
 
             if (countSymbol.get(element) != null) {
 
-
                 countSymbol.put(element, countSymbol.get(element) + 1);
             }
             else {
