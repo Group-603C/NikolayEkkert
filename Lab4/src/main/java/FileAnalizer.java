@@ -23,6 +23,7 @@ public class FileAnalizer {
 //        isEqualityDate(12321321);
 //        clearUsingFile();
 //        appendUsingFileWriter("\nrgffdg567687678");
+        findNeedString("fd");
 
 
 //        try {
@@ -168,4 +169,23 @@ public class FileAnalizer {
         }
     }
 
+    private String findNeedString(String label) {
+
+        try {
+
+            String temp = new String(Files.readAllBytes(Paths.get(nameFileCash)));
+
+            for(String elem : temp.split("\n")){
+                if(elem.contains("2)")){
+                    System.out.println(elem.replaceAll("2\\) ", ""));
+                }
+            }
+
+        }
+        catch (IOException e) {
+
+            throw new IllegalArgumentException("File - the end!");
+        }
+        return "";
+    }
 }
