@@ -21,7 +21,7 @@ public class FileAnalizer {
 //        createFile();
 //        double temp = getLastModified("file.txt");
 //        isEqualityDate(12321321);
-//        isEqualityDate(2131232);
+//        appendUsingFileWriter("\nrgffdg567687678");
 
 
 //        try {
@@ -77,7 +77,6 @@ public class FileAnalizer {
 
     private void createFile() {
 
-        String absolutePath = new File(".").getAbsolutePath();
         File newFile = new File(nameFileCash);
         try {
 
@@ -128,6 +127,31 @@ public class FileAnalizer {
         }
         catch (NullPointerException e) {
             throw new IllegalArgumentException("Not string!");
+        }
+    }
+
+    private void appendUsingFileWriter(String data) {
+
+        File file = new File(nameFileCash);
+        FileWriter fr = null;
+        try {
+
+            fr = new FileWriter(file, true);
+            fr.write(data);
+        }
+        catch (IOException e) {
+
+            e.printStackTrace();
+        }
+        finally {
+            try {
+
+                fr.close();
+            }
+            catch (IOException e) {
+
+                e.printStackTrace();
+            }
         }
     }
 }

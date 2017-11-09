@@ -29,7 +29,7 @@
       <file leaf-file-name="FileAnalizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="330">
               <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -37,11 +37,20 @@
                 <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
                 <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
                 <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-                <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
                 <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
                 <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
                 <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dateModified.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dateModified.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -347,7 +356,7 @@
       <workItem from="1510117354232" duration="59000" />
       <workItem from="1510122738845" duration="198000" />
       <workItem from="1510238847970" duration="5070000" />
-      <workItem from="1510250386458" duration="1659000" />
+      <workItem from="1510250386458" duration="2637000" />
     </task>
     <servers />
   </component>
@@ -384,7 +393,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54956000" />
+    <option name="totallyTimeSpent" value="55934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -399,7 +408,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -460,7 +469,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -504,7 +512,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -548,7 +555,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -574,7 +580,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -626,7 +631,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -652,7 +656,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -714,7 +717,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -740,7 +742,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -802,7 +803,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -846,7 +846,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -889,7 +888,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
@@ -956,7 +954,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="330">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -964,7 +962,6 @@
             <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
-            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
