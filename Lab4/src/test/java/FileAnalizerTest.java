@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 public class FileAnalizerTest {
 
-    private FileAnalizer customAnalizer = new FileAnalizer("file.txt");
+    private FileAnalizer customAnalizer = new FileAnalizer("text2.txt");
 
     @org.junit.Test
     public void countLetters() throws Exception {

@@ -1,8 +1,14 @@
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+
+import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Stream;
 
 public class FileAnalizer {
 
@@ -11,15 +17,42 @@ public class FileAnalizer {
 
     public FileAnalizer(String path) {
 
-        try {
+//        try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
+//            stream.forEach(System.out::println);
+//        }
 
-            content = new String(Files.readAllBytes(Paths.get(path)));
+//        try (Stream<String> lines = Files.lines(path, Charset.defaultCharset())) {
+//            lines.forEachOrdered(System.out::println);
+//        }
+
+        try (Stream<String> lines = Files.lines (Paths.get(path), StandardCharsets.UTF_8))
+        {
+            for (String line : (Iterable<String>) lines::iterator)
+            {
+                System.out.println(line);
+            }
+        }
+        catch (IOException e){
 
         }
-        catch (IOException e) {
+//
+//        try (Stream<String> str = Files.lines(Paths.get(path))) {
+//            str.forEach(System.out::println);
+//        }
+//        catch (IOException e) {
+//
+//        }
 
-            throw new IllegalArgumentException("File not found!");
-        }
+//        try {
+//
+//            content = new String(Files.lines(Paths.get(path)));
+//            System.out.println(content);
+//
+//        }
+//        catch (IOException e) {
+//
+//            throw new IllegalArgumentException("File not found!");
+//        }
     }
 
 
