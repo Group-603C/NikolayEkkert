@@ -21,6 +21,7 @@ public class FileAnalizer {
 //        createFile();
 //        double temp = getLastModified("file.txt");
 //        isEqualityDate(12321321);
+//        clearUsingFile();
 //        appendUsingFileWriter("\nrgffdg567687678");
 
 
@@ -127,6 +128,18 @@ public class FileAnalizer {
         }
         catch (NullPointerException e) {
             throw new IllegalArgumentException("Not string!");
+        }
+    }
+
+    private void clearUsingFile() {
+
+        try {
+
+            Files.write(Paths.get(nameFileCash), "".getBytes());
+        }
+        catch (IOException e) {
+
+            throw new IllegalArgumentException("File - the end!");
         }
     }
 
