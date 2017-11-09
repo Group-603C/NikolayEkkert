@@ -18,9 +18,13 @@ public class FileAnalizer {
 
         nameFileCash = "dateModified.txt";
 
+
+
 //        createFile();
 //        double temp = getLastModified("file.txt");
+//        isEqualityDate(12321321);
 
+        
 
 //        try {
 //
