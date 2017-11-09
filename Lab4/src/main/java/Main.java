@@ -4,9 +4,9 @@ public class Main
     {
         FileAnalizer customAnalizer = new FileAnalizer("file.txt");
 
-        System.out.println("Количество букв: " + customAnalizer.countLetters());
-        System.out.println("Количество слов: " + customAnalizer.countWords());
-        System.out.println("Количество строк: " + customAnalizer.countLines());
-        System.out.println("Частотный анализ: " + customAnalizer.countFrequencyCharacteristic());
+//        System.out.println("Количество букв: " + customAnalizer.countLetters());
+//        System.out.println("Количество слов: " + customAnalizer.countWords());
+//        System.out.println("Количество строк: " + customAnalizer.countLines());
+//        System.out.println("Частотный анализ: " + customAnalizer.countFrequencyCharacteristic());
     }
 }

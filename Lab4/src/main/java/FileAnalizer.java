@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -6,20 +7,28 @@ import java.util.Map;
 
 public class FileAnalizer {
 
+    private String nameFileCash;
     private String content;
 
 
     public FileAnalizer(String path) {
 
-        try {
+        nameFileCash = "dateModified.txt";
 
-            content = new String(Files.readAllBytes(Paths.get(path)));
+//        createFile();
+//        double temp = getLastModified("file.txt");
 
-        }
-        catch (IOException e) {
 
-            throw new IllegalArgumentException("File not found!");
-        }
+//        try {
+//
+//
+//            content = new String(Files.readAllBytes(Paths.get(path)));
+//
+//        }
+//        catch (IOException e) {
+//
+//            throw new IllegalArgumentException("File not found!");
+//        }
     }
 
 
@@ -58,5 +67,42 @@ public class FileAnalizer {
         }
 
         return countSymbol;
+    }
+
+
+    private void createFile() {
+
+        String absolutePath = new File(".").getAbsolutePath();
+        File newFile = new File(nameFileCash);
+        try {
+
+            newFile.createNewFile();
+        }
+        catch (IOException e) {
+
+            throw new IllegalArgumentException("The file is not create!");
+        }
+    }
+
+    private double getLastModified(String path) {
+
+        File file = new File(path);
+        if (file.exists()) {
+
+            return file.lastModified();
+        }
+        else {
+
+            throw new IllegalArgumentException("File not found!");
+        }
+    }
+
+    private boolean isEqualityDate(double lastModified) {
+
+        File file = new File(nameFileCash);
+        if (file.exists()) {
+            return file.lastModified() == lastModified ? true : false;
+        }
+        throw new IllegalArgumentException("File not found!");
     }
 }

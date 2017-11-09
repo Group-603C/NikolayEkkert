@@ -19,8 +19,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+            <state relative-caret-position="198">
+              <caret line="9" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -29,10 +29,16 @@
       <file leaf-file-name="FileAnalizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="231">
+              <caret line="86" column="34" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -41,7 +47,7 @@
       <file leaf-file-name="FileAnalizerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/FileAnalizerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="154">
               <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -98,9 +104,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/file.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/FileAnalizerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/FileAnalizer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/FileAnalizerTest.java" />
       </list>
     </option>
   </component>
@@ -117,13 +123,13 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="952" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1088" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -136,13 +142,29 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Lab4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab4" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
@@ -165,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FileAnalizerTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="FileAnalizerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Lab4" />
@@ -287,8 +309,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FileAnalizerTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FileAnalizerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -317,6 +339,7 @@
       <workItem from="1510054321360" duration="274000" />
       <workItem from="1510117354232" duration="59000" />
       <workItem from="1510122738845" duration="198000" />
+      <workItem from="1510238847970" duration="4945000" />
     </task>
     <servers />
   </component>
@@ -353,10 +376,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48227000" />
+    <option name="totallyTimeSpent" value="53172000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -367,25 +390,25 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39039665" sideWeight="0.4958159" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2807933" sideWeight="0.4958159" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30677083" sideWeight="0.5041841" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="7.6161465E-4" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,16 +424,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -443,6 +456,12 @@
           <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -479,6 +498,12 @@
           <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -515,6 +540,12 @@
           <caret line="42" column="66" lean-forward="false" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -533,6 +564,12 @@
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -577,6 +614,12 @@
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -595,6 +638,12 @@
           <caret line="64" column="66" lean-forward="false" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,6 +698,12 @@
           <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -667,6 +722,12 @@
           <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -721,6 +782,12 @@
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -757,6 +824,12 @@
           <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -800,6 +873,12 @@
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -818,17 +897,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FileAnalizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="154">
           <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -844,12 +915,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateModified.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="231">
+          <caret line="86" column="34" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countWords#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countLines#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#countFrequencyCharacteristic#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#createFile#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
