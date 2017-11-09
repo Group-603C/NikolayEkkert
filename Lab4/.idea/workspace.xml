@@ -29,8 +29,8 @@
       <file leaf-file-name="FileAnalizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="429">
+              <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
@@ -40,6 +40,8 @@
                 <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
                 <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
                 <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+                <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -356,7 +358,7 @@
       <workItem from="1510117354232" duration="59000" />
       <workItem from="1510122738845" duration="198000" />
       <workItem from="1510238847970" duration="5070000" />
-      <workItem from="1510250386458" duration="2818000" />
+      <workItem from="1510250386458" duration="2878000" />
     </task>
     <servers />
   </component>
@@ -393,7 +395,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56115000" />
+    <option name="totallyTimeSpent" value="56175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -472,6 +474,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -515,6 +519,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -558,6 +564,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -583,6 +591,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -634,6 +644,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -659,6 +671,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -720,6 +734,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -745,6 +761,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -806,6 +824,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -849,6 +869,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -891,6 +913,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -954,8 +978,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FileAnalizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="429">
+          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#countLetters#0;class#FileAnalizer#0" expanded="false" />
@@ -965,6 +989,8 @@
             <element signature="method#getLastModified#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#isEqualityDate#0;class#FileAnalizer#0" expanded="false" />
             <element signature="method#firstString#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#appendUsingFileWriter#0;class#FileAnalizer#0" expanded="false" />
+            <element signature="method#clearUsingFile#0;class#FileAnalizer#0" expanded="false" />
           </folding>
         </state>
       </provider>

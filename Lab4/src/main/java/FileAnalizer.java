@@ -131,18 +131,6 @@ public class FileAnalizer {
         }
     }
 
-    private void clearUsingFile() {
-
-        try {
-
-            Files.write(Paths.get(nameFileCash), "".getBytes());
-        }
-        catch (IOException e) {
-
-            throw new IllegalArgumentException("File - the end!");
-        }
-    }
-
     private void appendUsingFileWriter(String data) {
 
         File file = new File(nameFileCash);
@@ -167,4 +155,17 @@ public class FileAnalizer {
             }
         }
     }
+
+    private void clearUsingFile() {
+
+        try {
+
+            Files.write(Paths.get(nameFileCash), "".getBytes());
+        }
+        catch (IOException e) {
+
+            throw new IllegalArgumentException("File - the end!");
+        }
+    }
+
 }
