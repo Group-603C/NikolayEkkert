@@ -1,5 +1,4 @@
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -19,12 +18,11 @@ public class FileAnalizer {
         nameFileCash = "dateModified.txt";
 
 
-
 //        createFile();
 //        double temp = getLastModified("file.txt");
 //        isEqualityDate(12321321);
+//        isEqualityDate(2131232);
 
-        
 
 //        try {
 //
@@ -108,8 +106,28 @@ public class FileAnalizer {
 
         File file = new File(nameFileCash);
         if (file.exists()) {
-            return file.lastModified() == lastModified ? true : false;
+
+            return firstString() == lastModified ? true : false;
         }
-        throw new IllegalArgumentException("File not found!");
+
+        throw new IllegalArgumentException("File not found " + file.getName());
+    }
+
+    private double firstString() {
+
+        try {
+
+            FileInputStream fstream = new FileInputStream(nameFileCash);
+            BufferedReader firstString = new BufferedReader(new InputStreamReader(fstream));
+
+            return Double.parseDouble(firstString.readLine());
+        }
+        catch (IOException e) {
+
+            throw new IllegalArgumentException("File - the end!");
+        }
+        catch (NullPointerException e) {
+            throw new IllegalArgumentException("Not string!");
+        }
     }
 }
