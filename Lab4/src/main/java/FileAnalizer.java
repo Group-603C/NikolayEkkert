@@ -23,7 +23,7 @@ public class FileAnalizer {
 //        isEqualityDate(12321321);
 //        clearUsingFile();
 //        appendUsingFileWriter("\nrgffdg567687678");
-        findNeedString("fd");
+//        System.out.println(findNeedString("2"));
 
 
 //        try {
@@ -174,18 +174,18 @@ public class FileAnalizer {
         try {
 
             String temp = new String(Files.readAllBytes(Paths.get(nameFileCash)));
+            for (String elem : temp.split("\n")) {
+                if (elem.contains(label + ")")) {
 
-            for(String elem : temp.split("\n")){
-                if(elem.contains("2)")){
-                    System.out.println(elem.replaceAll("2\\) ", ""));
+                    return elem.replaceAll(label + "\\) ", "");
                 }
             }
-
         }
         catch (IOException e) {
 
             throw new IllegalArgumentException("File - the end!");
         }
-        return "";
+
+        return "Label not found!";
     }
 }
