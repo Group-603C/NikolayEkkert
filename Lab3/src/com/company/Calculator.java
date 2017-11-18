@@ -6,7 +6,63 @@ import java.util.Stack;
 public class Calculator {
 
     static double calculate(String expression) {
-        return -1d;
+
+        if (!isCorrect(expression)) {
+            return Double.NaN;
+        }
+
+        Stack<Character> stack = new Stack<>();
+        ArrayList<String> postfixExpression = new ArrayList<>();
+
+        for (int i = 0; i < expression.length(); i++) {
+
+            char currentChar = expression.charAt(i);
+            if (Character.isDigit(currentChar)) {
+
+                int counter = 0;
+                while (i + counter != expression.length() && Character.isDigit(expression.charAt(i + counter))) {
+
+                    counter++;
+                }
+
+                postfixExpression.add(expression.substring(i, i + counter));
+
+                i += counter - 1;
+            }
+            else if (currentChar == '(') {
+
+                stack.push(currentChar);
+            }
+            else if (currentChar == ')') {
+
+                while (stack.peek() != '(') {
+                    postfixExpression.add(stack.pop()
+                                               .toString());
+                }
+                stack.pop();
+            }
+            else if (currentChar != ' ') {
+
+                while (!stack.empty() && PriorityOperation(currentChar) <= PriorityOperation(stack.peek())) {
+
+                    postfixExpression.add(stack.pop()
+                                               .toString());
+                }
+                stack.push(currentChar);
+            }
+        }
+
+        while (!stack.empty()) {
+            postfixExpression.add(stack.pop()
+                                       .toString());
+        }
+
+        if (postfixExpression.size() == 0) {
+
+            return Double.NaN;
+        }
+
+        return postfixCalculate(postfixExpression);
     }
 
     private static double postfixCalculate(ArrayList<String> expression) {
