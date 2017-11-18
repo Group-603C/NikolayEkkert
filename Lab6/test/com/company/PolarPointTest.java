@@ -37,5 +37,4 @@ public class PolarPointTest {
 
         assertEquals("Convert type Point to Cartesian", expected, actual);
     }
-
 }
