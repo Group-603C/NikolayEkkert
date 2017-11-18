@@ -8,6 +8,7 @@ public class PolarPointTest {
 
     private PolarPoint instance = new PolarPoint(32, 23);
 
+
     @Test
     public void getRho() throws Exception {
 

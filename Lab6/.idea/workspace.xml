@@ -12,32 +12,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Point.java">
+      <file leaf-file-name="CylindricalPointTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/company/CylindricalPointTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-466">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="418">
+              <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
               <folding>
-                <element signature="method#Point#0;class#Point#0" expanded="false" />
-                <element signature="method#Point#1;class#Point#0" expanded="false" />
-                <element signature="method#getX#0;class#Point#0" expanded="false" />
-                <element signature="method#getY#0;class#Point#0" expanded="false" />
-                <element signature="method#getZ#0;class#Point#0" expanded="false" />
-                <element signature="method#distanceTo#0;class#Point#0" expanded="false" />
-                <element signature="method#toCylindrical#0;class#Point#0" expanded="false" />
-                <element signature="method#multiplicationVectors#0;class#Point#0" expanded="false" />
-                <element signature="method#convertToPhi#0;class#Point#0" expanded="false" />
+                <element signature="method#getRho#0;class#CylindricalPointTest#0" expanded="false" />
+                <element signature="method#getPhi#0;class#CylindricalPointTest#0" expanded="false" />
+                <element signature="method#getZ#0;class#CylindricalPointTest#0" expanded="false" />
+                <element signature="method#toCartesian#0;class#CylindricalPointTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <file leaf-file-name="PointTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/company/PointTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
-              <folding />
+            <state relative-caret-position="176">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="method#getX#0;class#PointTest#0" expanded="false" />
+                <element signature="method#getY#0;class#PointTest#0" expanded="false" />
+                <element signature="method#getZ#0;class#PointTest#0" expanded="false" />
+                <element signature="method#distanceTo#0;class#PointTest#0" expanded="false" />
+                <element signature="method#toPolar#0;class#PointTest#0" expanded="false" />
+                <element signature="method#toCylindrical#0;class#PointTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PolarPointTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/company/PolarPointTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="method#getRho#0;class#PolarPointTest#0" expanded="false" />
+                <element signature="method#getPhi#0;class#PolarPointTest#0" expanded="false" />
+                <element signature="method#toCartesian#0;class#PolarPointTest#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,9 +72,11 @@
     <findStrings>
       <find>;</find>
       <find>com.sun</find>
+      <find>vectorTwo</find>
     </findStrings>
     <replaceStrings>
       <replace>{}</replace>
+      <replace>secondVector</replace>
     </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -72,10 +90,10 @@
         <option value="$PROJECT_DIR$/src/com/company/CylindricalPoint.java" />
         <option value="$PROJECT_DIR$/test/com/company/PointTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/PolarPoint.java" />
-        <option value="$PROJECT_DIR$/test/com/company/PolarPointTest.java" />
         <option value="$PROJECT_DIR$/test/com/company/CylindricalPointTest.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Point.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Point.java" />
+        <option value="$PROJECT_DIR$/test/com/company/PolarPointTest.java" />
       </list>
     </option>
   </component>
@@ -341,14 +359,11 @@
       <updated>1511021051145</updated>
       <workItem from="1511021054847" duration="1406000" />
       <workItem from="1511029572842" duration="4896000" />
-      <workItem from="1511037170069" duration="4267000" />
+      <workItem from="1511037170069" duration="4582000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CylindricalPointTest - 2017.11.19 at 02h 47m 49s.xml">
-      <configuration name="CylindricalPointTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CylindricalPointTest - 2017.11.19 at 03h 32m 55s.xml">
       <configuration name="CylindricalPointTest" configurationId="JUnit" />
     </history-entry>
@@ -359,6 +374,9 @@
       <configuration name="PointTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="PointTest - 2017.11.19 at 05h 00m 44s.xml">
+      <configuration name="PointTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PointTest - 2017.11.19 at 05h 04m 15s.xml">
       <configuration name="PointTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="PolarPointTest - 2017.11.19 at 02h 42m 01s.xml">
@@ -378,7 +396,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10569000" />
+    <option name="totallyTimeSpent" value="10884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -421,7 +439,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -430,7 +448,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="method#CylindricalPoint#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#getRho#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#getPhi#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#getZ#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#toCartesian#0;class#CylindricalPoint#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -470,7 +494,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#CylindricalPoint#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#getRho#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#getPhi#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#getZ#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#toCartesian#0;class#CylindricalPoint#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -485,7 +515,53 @@
             <element signature="method#getY#0;class#Point#0" expanded="false" />
             <element signature="method#getZ#0;class#Point#0" expanded="false" />
             <element signature="method#distanceTo#0;class#Point#0" expanded="false" />
+            <element signature="method#toPolar#0;class#Point#0" expanded="false" />
             <element signature="method#toCylindrical#0;class#Point#0" expanded="false" />
+            <element signature="method#isOneStraightLine#0;class#Point#0" expanded="false" />
+            <element signature="method#isOnePlane#0;class#Point#0" expanded="false" />
+            <element signature="method#multiplicationVectors#0;class#Point#0" expanded="false" />
+            <element signature="method#convertToPhi#0;class#Point#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/CylindricalPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding>
+            <element signature="method#CylindricalPoint#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#getRho#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#getPhi#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#getZ#0;class#CylindricalPoint#0" expanded="false" />
+            <element signature="method#toCartesian#0;class#CylindricalPoint#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="method#Point#0;class#Point#0" expanded="false" />
+            <element signature="method#Point#1;class#Point#0" expanded="false" />
+            <element signature="method#getX#0;class#Point#0" expanded="false" />
+            <element signature="method#getY#0;class#Point#0" expanded="false" />
+            <element signature="method#getZ#0;class#Point#0" expanded="false" />
+            <element signature="method#distanceTo#0;class#Point#0" expanded="false" />
+            <element signature="method#toPolar#0;class#Point#0" expanded="false" />
+            <element signature="method#toCylindrical#0;class#Point#0" expanded="false" />
+            <element signature="method#isOneStraightLine#0;class#Point#0" expanded="false" />
+            <element signature="method#isOnePlane#0;class#Point#0" expanded="false" />
             <element signature="method#multiplicationVectors#0;class#Point#0" expanded="false" />
             <element signature="method#convertToPhi#0;class#Point#0" expanded="false" />
           </folding>
@@ -494,40 +570,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/PolarPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="44">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="method#PolarPoint#0;class#PolarPoint#0" expanded="false" />
+            <element signature="method#getRho#0;class#PolarPoint#0" expanded="false" />
+            <element signature="method#getPhi#0;class#PolarPoint#0" expanded="false" />
             <element signature="method#toCartesian#0;class#PolarPoint#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/PolarPointTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/CylindricalPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/CylindricalPointTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="method#getRho#0;class#CylindricalPointTest#0" expanded="false" />
-            <element signature="method#getPhi#0;class#CylindricalPointTest#0" expanded="false" />
-            <element signature="method#getZ#0;class#CylindricalPointTest#0" expanded="false" />
-            <element signature="method#toCartesian#0;class#CylindricalPointTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -547,28 +596,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/test/com/company/PolarPointTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
-          <folding />
+        <state relative-caret-position="176">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="method#getRho#0;class#PolarPointTest#0" expanded="false" />
+            <element signature="method#getPhi#0;class#PolarPointTest#0" expanded="false" />
+            <element signature="method#toCartesian#0;class#PolarPointTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Point.java">
+    <entry file="file://$PROJECT_DIR$/test/com/company/CylindricalPointTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-466">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="418">
+          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding>
-            <element signature="method#Point#0;class#Point#0" expanded="false" />
-            <element signature="method#Point#1;class#Point#0" expanded="false" />
-            <element signature="method#getX#0;class#Point#0" expanded="false" />
-            <element signature="method#getY#0;class#Point#0" expanded="false" />
-            <element signature="method#getZ#0;class#Point#0" expanded="false" />
-            <element signature="method#distanceTo#0;class#Point#0" expanded="false" />
-            <element signature="method#toCylindrical#0;class#Point#0" expanded="false" />
-            <element signature="method#multiplicationVectors#0;class#Point#0" expanded="false" />
-            <element signature="method#convertToPhi#0;class#Point#0" expanded="false" />
+            <element signature="method#getRho#0;class#CylindricalPointTest#0" expanded="false" />
+            <element signature="method#getPhi#0;class#CylindricalPointTest#0" expanded="false" />
+            <element signature="method#getZ#0;class#CylindricalPointTest#0" expanded="false" />
+            <element signature="method#toCartesian#0;class#CylindricalPointTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

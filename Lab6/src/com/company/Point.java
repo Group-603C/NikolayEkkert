@@ -6,6 +6,7 @@ public class Point {
     private double y;
     private double z;
 
+
     Point(double x,
           double y) {
 
@@ -70,18 +71,18 @@ public class Point {
                                      Point third,
                                      Point fourth) {
 
-        Point firstSecond = new Point(second.x - first.x, second.y - first.y, second.z - first.z);
-        Point thirdFourth = new Point(fourth.x - third.x, fourth.y - third.y, fourth.z - third.z);
+        Point vectorFirstSecond = new Point(second.x - first.x, second.y - first.y, second.z - first.z);
+        Point vectorThirdFourth = new Point(fourth.x - third.x, fourth.y - third.y, fourth.z - third.z);
 
-        return multiplicationVectors(firstSecond, thirdFourth) == 0;
+        return multiplicationVectors(vectorFirstSecond, vectorThirdFourth) == 0;
     }
 
-    static private double multiplicationVectors(Point vectorOne,
-                                                Point vectorTwo) {
+    static private double multiplicationVectors(Point firstVector,
+                                                Point secondVector) {
 
-        return (vectorOne.y * vectorTwo.y - vectorOne.z * vectorTwo.z) -
-               (vectorOne.x * vectorTwo.z - vectorOne.z * vectorTwo.x) +
-               (vectorOne.x * vectorTwo.y - vectorOne.y * vectorTwo.x);
+        return (firstVector.y * secondVector.y - firstVector.z * secondVector.z) -
+               (firstVector.x * secondVector.z - firstVector.z * secondVector.x) +
+               (firstVector.x * secondVector.y - firstVector.y * secondVector.x);
     }
 
     private double convertToPhi() {
