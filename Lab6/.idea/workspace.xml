@@ -34,21 +34,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PolarPoint.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PolarPoint.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/PolarPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="220">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="method#PolarPoint#0;class#PolarPoint#0" expanded="false" />
+                <element signature="method#getRho#0;class#PolarPoint#0" expanded="false" />
+                <element signature="method#getPhi#0;class#PolarPoint#0" expanded="false" />
+                <element signature="method#toCartesian#0;class#PolarPoint#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CylindricalPoint.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CylindricalPoint.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/CylindricalPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="407">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -81,6 +86,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Point.java" />
         <option value="$PROJECT_DIR$/src/com/company/PolarPoint.java" />
+        <option value="$PROJECT_DIR$/src/com/company/CylindricalPoint.java" />
       </list>
     </option>
   </component>
@@ -204,12 +210,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511021051145</updated>
       <workItem from="1511021054847" duration="1406000" />
-      <workItem from="1511029572842" duration="1353000" />
+      <workItem from="1511029572842" duration="1628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2759000" />
+    <option name="totallyTimeSpent" value="3034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -251,7 +257,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -267,7 +275,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="method#PolarPoint#0;class#PolarPoint#0" expanded="false" />
+            <element signature="method#getRho#0;class#PolarPoint#0" expanded="false" />
+            <element signature="method#getPhi#0;class#PolarPoint#0" expanded="false" />
+            <element signature="method#toCartesian#0;class#PolarPoint#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -297,6 +310,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PolarPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="method#PolarPoint#0;class#PolarPoint#0" expanded="false" />
+            <element signature="method#getRho#0;class#PolarPoint#0" expanded="false" />
+            <element signature="method#getPhi#0;class#PolarPoint#0" expanded="false" />
+            <element signature="method#toCartesian#0;class#PolarPoint#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -309,16 +335,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/CylindricalPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PolarPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="407">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
