@@ -4,6 +4,7 @@ public class CylindricalPoint extends PolarPoint {
 
     private double z;
 
+
     CylindricalPoint(double rho,
                      double phi,
                      double z) {
@@ -26,7 +27,6 @@ public class CylindricalPoint extends PolarPoint {
 
         return z;
     }
-
 
     @Override
     Point toCartesian() {
