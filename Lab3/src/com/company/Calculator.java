@@ -1,9 +1,51 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Stack;
+
 public class Calculator {
 
     static double calculate(String expression) {
         return -1d;
+    }
+
+    private static double postfixCalculate(ArrayList<String> expression) {
+
+        Stack<Double> stack = new Stack<>();
+        for (String element : expression) {
+
+            if (isNumber(element)) {
+
+                stack.push(Double.parseDouble(element));
+            }
+            else if (stack.size() < 2) {
+
+                return Double.NaN;
+            }
+            else {
+
+                double secondNumber = stack.pop();
+                switch (element) {
+
+                    case "+":
+                        stack.push(stack.pop() + secondNumber);
+                        break;
+                    case "-":
+                        stack.push(stack.pop() - secondNumber);
+                        break;
+                    case "*":
+                        stack.push(stack.pop() * secondNumber);
+                        break;
+                    case "/":
+                        if (secondNumber == 0) {
+                            return Double.NaN;
+                        }
+                        stack.push(stack.pop() / secondNumber);
+                }
+            }
+        }
+
+        return stack.pop();
     }
 
     private static boolean isCorrect(String expression) {
