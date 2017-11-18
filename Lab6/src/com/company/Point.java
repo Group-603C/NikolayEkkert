@@ -40,7 +40,8 @@ public class Point {
 
     double distanceTo(Point point) {
 
-        return Math.sqrt(Math.pow(x - point.getX(), 2.0) + Math.pow(y - point.getY(), 2.0) + Math.pow(z - point.getZ(), 2.0));
+        return Math.sqrt(
+                Math.pow(x - point.getX(), 2.0) + Math.pow(y - point.getY(), 2.0) + Math.pow(z - point.getZ(), 2.0));
     }
 
     PolarPoint toPolar() {
@@ -64,12 +65,23 @@ public class Point {
         return x == y && y == z;
     }
 
-    static public boolean isOnePlane(Point first,
-                                     Point send,
+    public static boolean isOnePlane(Point first,
+                                     Point second,
                                      Point third,
                                      Point fourth) {
 
-        return false;
+        Point firstSecond = new Point(second.x - first.x, second.y - first.y, second.z - first.z);
+        Point thirdFourth = new Point(fourth.x - third.x, fourth.y - third.y, fourth.z - third.z);
+
+        return multiplicationVectors(firstSecond, thirdFourth) == 0;
+    }
+
+    static private double multiplicationVectors(Point vectorOne,
+                                                Point vectorTwo) {
+
+        return (vectorOne.y * vectorTwo.y - vectorOne.z * vectorTwo.z) -
+               (vectorOne.x * vectorTwo.z - vectorOne.z * vectorTwo.x) +
+               (vectorOne.x * vectorTwo.y - vectorOne.y * vectorTwo.x);
     }
 
     private double convertToPhi() {
