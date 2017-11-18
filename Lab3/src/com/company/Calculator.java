@@ -37,16 +37,34 @@ public class Calculator {
         return character == '+' || character == '-' || character == '/' || character == '*';
     }
 
-    private static boolean isNumber(String number){
+    private static boolean isNumber(String number) {
 
-        try{
+        try {
 
             Double.parseDouble(number);
             return true;
         }
-        catch (NumberFormatException e){
-            
+        catch (NumberFormatException e) {
+
             return false;
+        }
+    }
+
+    private static int PriorityOperation(char operation) {
+
+        switch (operation) {
+
+            case '+':
+            case '-':
+
+                return 1;
+            case '/':
+            case '*':
+
+                return 2;
+            default:
+
+                return 0;
         }
     }
 }

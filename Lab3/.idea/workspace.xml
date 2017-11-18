@@ -25,13 +25,15 @@
       <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="47" column="12" lean-forward="true" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+            <state relative-caret-position="352">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="e#96#97#0" expanded="true" />
                 <element signature="e#122#123#0" expanded="true" />
                 <element signature="method#isCorrect#0;class#Calculator#0" expanded="false" />
                 <element signature="method#isOperator#0;class#Calculator#0" expanded="false" />
+                <element signature="method#isNumber#0;class#Calculator#0" expanded="false" />
+                <element signature="method#PriorityOperation#0;class#Calculator#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -173,12 +175,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511045406542</updated>
       <workItem from="1511045409373" duration="5000" />
-      <workItem from="1511045547872" duration="1046000" />
+      <workItem from="1511045547872" duration="1208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1051000" />
+    <option name="totallyTimeSpent" value="1213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="952" y="0" width="976" height="1088" extended-state="0" />
@@ -241,13 +243,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="47" column="12" lean-forward="true" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        <state relative-caret-position="352">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="e#96#97#0" expanded="true" />
             <element signature="e#122#123#0" expanded="true" />
             <element signature="method#isCorrect#0;class#Calculator#0" expanded="false" />
             <element signature="method#isOperator#0;class#Calculator#0" expanded="false" />
+            <element signature="method#isNumber#0;class#Calculator#0" expanded="false" />
+            <element signature="method#PriorityOperation#0;class#Calculator#0" expanded="false" />
           </folding>
         </state>
       </provider>
