@@ -36,4 +36,17 @@ public class Calculator {
 
         return character == '+' || character == '-' || character == '/' || character == '*';
     }
+
+    private static boolean isNumber(String number){
+
+        try{
+
+            Double.parseDouble(number);
+            return true;
+        }
+        catch (NumberFormatException e){
+            
+            return false;
+        }
+    }
 }
