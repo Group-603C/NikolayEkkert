@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class PointTest {
 
     private Point instance = new Point(12, 24, 36);
-    
+
 
     @Test
     public void getX() throws Exception {
