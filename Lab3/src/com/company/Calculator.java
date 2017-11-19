@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class Calculator {
 
-    static double calculate(String expression) {
+    public static double calculate(String expression) {
 
         if (!isCorrect(expression)) {
             return Double.NaN;
@@ -15,40 +15,31 @@ public class Calculator {
         ArrayList<String> postfixExpression = new ArrayList<>();
 
         for (int i = 0; i < expression.length(); i++) {
-
-            char currentChar = expression.charAt(i);
-            if (Character.isDigit(currentChar)) {
-
+            char symbol = expression.charAt(i);
+            if (Character.isDigit(symbol)) {
                 int counter = 0;
                 while (i + counter != expression.length() && Character.isDigit(expression.charAt(i + counter))) {
-
                     counter++;
                 }
-
                 postfixExpression.add(expression.substring(i, i + counter));
-
                 i += counter - 1;
             }
-            else if (currentChar == '(') {
-
-                stack.push(currentChar);
+            else if (symbol == '(') {
+                stack.push(symbol);
             }
-            else if (currentChar == ')') {
-
+            else if (symbol == ')') {
                 while (stack.peek() != '(') {
                     postfixExpression.add(stack.pop()
                                                .toString());
                 }
                 stack.pop();
             }
-            else if (currentChar != ' ') {
-
-                while (!stack.empty() && PriorityOperation(currentChar) <= PriorityOperation(stack.peek())) {
-
+            else if (symbol != ' ') {
+                while (!stack.empty() && operatorPriority(symbol) <= operatorPriority(stack.peek())) {
                     postfixExpression.add(stack.pop()
                                                .toString());
                 }
-                stack.push(currentChar);
+                stack.push(symbol);
             }
         }
 
@@ -56,23 +47,21 @@ public class Calculator {
             postfixExpression.add(stack.pop()
                                        .toString());
         }
-
         if (postfixExpression.size() == 0) {
 
             return Double.NaN;
         }
-
         return postfixCalculate(postfixExpression);
     }
 
     private static double postfixCalculate(ArrayList<String> expression) {
 
         Stack<Double> stack = new Stack<>();
-        for (String element : expression) {
+        for (String i : expression) {
 
-            if (isNumber(element)) {
+            if (isNumber(i)) {
 
-                stack.push(Double.parseDouble(element));
+                stack.push(Double.parseDouble(i));
             }
             else if (stack.size() < 2) {
 
@@ -81,7 +70,7 @@ public class Calculator {
             else {
 
                 double secondNumber = stack.pop();
-                switch (element) {
+                switch (i) {
 
                     case "+":
                         stack.push(stack.pop() + secondNumber);
@@ -94,6 +83,7 @@ public class Calculator {
                         break;
                     case "/":
                         if (secondNumber == 0) {
+
                             return Double.NaN;
                         }
                         stack.push(stack.pop() / secondNumber);
@@ -104,35 +94,61 @@ public class Calculator {
         return stack.pop();
     }
 
+    private static int operatorPriority(char operation) {
+
+        switch (operation) {
+
+            case '+':
+            case '-':
+                return 1;
+            case '/':
+            case '*':
+                return 2;
+                
+            default:
+                return 0;
+        }
+    }
+
     private static boolean isCorrect(String expression) {
 
         if (expression == null) {
+
             return false;
         }
 
         int counter = 0;
-        for (char symbol : expression.toCharArray()) {
+        for(char symbol:expression.toCharArray()){
 
             if (symbol == '(') {
+
                 counter++;
             }
             else if (symbol == ')') {
 
                 if (counter < 1) {
+
                     return false;
                 }
+                counter--;
             }
             else if (symbol != ' ' && !isOperator(symbol) && !Character.isDigit(symbol)) {
+
                 return false;
             }
         }
 
-        return counter > 0 ? false : true;
+        if (counter > 0) {
+
+            return false;
+        }
+
+        return true;
     }
 
-    private static boolean isOperator(char character) {
+    private static boolean isOperator(char operation) {
 
-        return character == '+' || character == '-' || character == '/' || character == '*';
+        return operation == '+' || operation == '-' || operation == '/' || operation == '*';
     }
 
     private static boolean isNumber(String number) {
@@ -145,24 +161,6 @@ public class Calculator {
         catch (NumberFormatException e) {
 
             return false;
-        }
-    }
-
-    private static int PriorityOperation(char operation) {
-
-        switch (operation) {
-
-            case '+':
-            case '-':
-
-                return 1;
-            case '/':
-            case '*':
-
-                return 2;
-            default:
-
-                return 0;
         }
     }
 }
