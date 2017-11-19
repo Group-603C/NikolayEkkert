@@ -1,26 +1,41 @@
 package com.company;
 
-public class Locker {
+public class Locker{
 
     private boolean isLock;
     private int value;
 
 
-    void set(int value){
-        
-        this.value = value;
+    public Locker() {
+
+        unlock();
+        this.value = Integer.MIN_VALUE;
     }
 
-    int get(){
+    void set(int value) throws LockerException {
+
+        if (isLock == true) {
+
+            this.value = value;
+        }
+        else {
+
+            throw new LockerException();
+        }
+    }
+
+    int get() {
 
         return value;
     }
 
-    void lock(){
+    void lock() {
 
+        this.isLock = false;
     }
 
-    void unlock(){
+    void unlock() {
 
+        this.isLock = true;
     }
 }
