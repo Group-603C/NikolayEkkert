@@ -22,14 +22,7 @@ public class UnaryExpression {
 
     public int bitwiseComplementOf() {
 
-        StringBuilder result = new StringBuilder();
-        for (char element : Integer.toBinaryString((int) firstValue)
-                                   .toCharArray()) {
-
-            result.append(element == '0' ? "1" : "0");
-        }
-
-        return Integer.parseInt(result.toString(), 2);
+        return ~(int) firstValue;
     }
 
     public int increment() {
