@@ -262,6 +262,8 @@ class Locker {
 * Создание собвстенных исключений
 	* Хороший тон
 	
+	
+> Помощь: 
 >* https://beginnersbook.com/2013/04/try-catch-in-java/
 >* https://beginnersbook.com/2013/04/java-finally-block/
 >* https://beginnersbook.com/2013/04/user-defined-exception-in-java/
