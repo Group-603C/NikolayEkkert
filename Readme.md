@@ -9,6 +9,8 @@
 *   [Лаб.№3 - Коллекции](#lab3)
 *   [Лаб.№4 - Работа с файлами](#lab4)
 *   [Лаб.№5 - Formatter](#lab5)
+*   [Лаб.№6 - Класс "Точка"](#lab6)
+*   [Лаб.№8 - Exceptions](#lab8)
 
 ***
 
@@ -174,4 +176,96 @@ System.out.println(result); //Hello hell, I am 15 years old
 * Перевод объекта в строку
 * Важное свойство строк, их изменяемость
 * Применение StringBuilder
+
+***
+
+
+<h2 id="lab6">Лабораторная работа № 6 - Класс "Точка"</h2>
+
+Реализовать класс Точка с необходимыми методами.
+
+```java
+public class Point {
+ 
+    Point(double x, double y);
+    Point(double x, double y, double z);
+ 
+    double getX();
+    double getY();
+    double getZ();
+ 
+    double distanceTo(Point point);
+ 
+    PolarPoint toPolar();
+    CylindricalPoint toCylindrical();
+ 
+    static isOneStraightLine(Point first, Point send, Point third);
+    static isOnePlane(Point first, Point send, Point third, Point fourth);
+}
+
+public class PolarPoint() {
+ 
+    PolarPoint(double rho, double phi);
+ 
+    double getRho();
+    double getPhi();
+ 
+    Point toCartesian()
+}
+
+public class CylindricalPoint() {
+ 
+    CylindricalPoint(double rho, double phi, double z);
+ 
+    double getRho();
+    double getPhi();
+    double getZ();
+ 
+    Point toCartesian()
+}
+```
+
+<h4>Обратить внимание:</h4>
+
+* Принципы ООП
+	* Наследование
+	* Инкапсуляция
+	* Полиморфизм
+* Валидация входных параметров
+
+***
+
+<h2 id="lab8">Лабораторная работа №8 - Exceptions</h2>
+
+Реализовать класс со следующим интерфейсом и поведением.
+
+```java
+class Locker {
+     
+    void set(int value);
+    int get()
+    void lock();
+    void unlock();
+}
+```
+
+<h4>Обратить внимание:</h4>
+* Стандартные исключения
+	* Рассказать какие знаете
+	* С какими сталкивались на практике и где они лежат
+* Обработка исключений
+	* try - catch
+	* try - catch - finally
+	* Типизация исключений
+	* Множество catch
+* throw vs throws
+* Создание собвстенных исключений
+	* Хороший тон
+	
+>
+* https://beginnersbook.com/2013/04/try-catch-in-java/
+* https://beginnersbook.com/2013/04/java-finally-block/
+* https://beginnersbook.com/2013/04/user-defined-exception-in-java/
+* https://beginnersbook.com/2013/04/difference-between-throw-and-throws-in-java/ 
+
 
