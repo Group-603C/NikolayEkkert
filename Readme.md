@@ -262,10 +262,9 @@ class Locker {
 * Создание собвстенных исключений
 	* Хороший тон
 	
->
-* https://beginnersbook.com/2013/04/try-catch-in-java/
-* https://beginnersbook.com/2013/04/java-finally-block/
-* https://beginnersbook.com/2013/04/user-defined-exception-in-java/
-* https://beginnersbook.com/2013/04/difference-between-throw-and-throws-in-java/ 
+>* https://beginnersbook.com/2013/04/try-catch-in-java/
+>* https://beginnersbook.com/2013/04/java-finally-block/
+>* https://beginnersbook.com/2013/04/user-defined-exception-in-java/
+>* https://beginnersbook.com/2013/04/difference-between-throw-and-throws-in-java/ 
 
 
