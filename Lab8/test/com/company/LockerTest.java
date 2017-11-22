@@ -1,7 +1,7 @@
 package com.company;
 
-import org.junit.Assert;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class LockerTest {
@@ -14,9 +14,10 @@ public class LockerTest {
         instance.lock();
         try {
             instance.set(154);
+            fail("LockerException");
         }
-        catch (LockerException le) {
-            Assert.assertNotEquals("", le.getMessage());
+        catch (LockerException e) {
+            assertNotEquals("", e.getMessage());
         }
 
         assertEquals("Lock Container", Integer.MIN_VALUE, instance.get());
@@ -28,9 +29,10 @@ public class LockerTest {
         instance.unlock();
         try {
             instance.set(154);
+            fail("LockerException");
         }
-        catch (LockerException le) {
-            Assert.assertNotEquals("", le.getMessage());
+        catch (LockerException e) {
+            assertNotEquals("", e.getMessage());
         }
 
         assertEquals("Unlock container", 154, instance.get());
