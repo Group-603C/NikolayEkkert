@@ -1,7 +1,4 @@
-package medvedstudio.sandbox.ci.lab4.tests;
-
-
-import medvedstudio.sandbox.ci.lab4.src.FileAnalizer;
+import com.company.FileAnalizer;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.HashMap;
-import java.util.Map;
+
 
 public class FileAnalizerTests {
 
@@ -40,7 +37,8 @@ public class FileAnalizerTests {
             FileAnalizer image = new FileAnalizer(imageFile);
             Assertions.fail("Init FileAnalizer for image file.");
         }
-        catch (IllegalArgumentException exception) {}
+        catch (IllegalArgumentException exception) {
+        }
     }
 
     @BeforeEach
@@ -76,43 +74,50 @@ public class FileAnalizerTests {
     @Test
     public void usingLargeFile() {
 
-        for(int i = 0; i < 100; i++) {
+        for (int i = 0; i < 100; i++) {
 
             Assertions.assertNotEquals(-1, new FileAnalizer(largeFile).countLines());
         }
     }
+
     @Test
-    public void checkCaching(){
+    public void checkCaching() {
 
         String path = "../test.txt";
         clearFile(path);
-        for(int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 10000; i++) {
 
-            if (0 == i % 5){
+            if (0 == i % 5) {
                 clearFile(path);
             }
             else {
                 setOneLine(path);
             }
 
-            Assertions.assertEquals(i % 5,  new FileAnalizer(path).countLines());
+            Assertions.assertEquals(i % 5, new FileAnalizer(path).countLines());
         }
     }
 
     private void clearFile(String path) {
         setContent(path, "", false);
     }
+
     private void setOneLine(String path) {
         setContent(path, "One line\n", true);
     }
-    private void setContent(String path, String content, boolean append) {
+
+    private void setContent(String path,
+                            String content,
+                            boolean append) {
 
         try {
+
             File file = new File(path);
             FileWriter writer = new FileWriter(file, append);
             writer.write(content);
             writer.close();
         }
-        catch (Exception exception) {}
+        catch (Exception exception) {
+        }
     }
 }

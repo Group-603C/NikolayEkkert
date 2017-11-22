@@ -1,7 +1,4 @@
-package medvedstudio.sandbox.ci.lab4.src;
-
-//Letters - "[a-zA-Zа-яА-Я]"
-//Words - "([^A-Za-zА-Яа-я])([\\s\\W]+)"
+package com.company;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -85,6 +82,8 @@ public class FileAnalizer {
 
     private class Container {
 
+        private final File file;
+
         public final String path;
         public long timestamp;
 
@@ -93,7 +92,6 @@ public class FileAnalizer {
         public int countLetters;
         public int countLines;
 
-        private final File file;
 
         public Container(String path) {
 
@@ -102,11 +100,13 @@ public class FileAnalizer {
             this.timestamp = file.lastModified();
 
             try {
+
                 String type = Files.probeContentType(file.toPath());
                 if (!"text/plain".equals(type)) {
                     throw new IllegalArgumentException("Bad file type.");
                 }
-            } catch (IOException ioException) {
+            }
+            catch (IOException ioException) {
                 throw new IllegalArgumentException("Can't check file extension.", ioException);
             }
 
@@ -127,7 +127,7 @@ public class FileAnalizer {
             if (null == statistic) {
                 analyze();
             }
-            else if(isModified()) {
+            else if (isModified()) {
                 statistic.clear();
                 statistic = null;
 
@@ -151,14 +151,16 @@ public class FileAnalizer {
                 while ((line = reader.readLine()) != null) {
 
                     this.countWords += countWordsIn(line);
-                    this.countLines ++;
+                    this.countLines++;
                     countCharactersTo(this.statistic, line);
                 }
 
                 reader.close();
-            } catch (FileNotFoundException notFound) {
+            }
+            catch (FileNotFoundException notFound) {
                 throw new IllegalArgumentException("File not found.", notFound);
-            } catch (IOException ioException) {
+            }
+            catch (IOException ioException) {
                 throw new IllegalArgumentException("Problem with read file's content.", ioException);
             }
         }
@@ -178,17 +180,21 @@ public class FileAnalizer {
 
             return result;
         }
-        private void countCharactersTo(HashMap<Character, Integer> statistic, String line) {
+
+        private void countCharactersTo(HashMap<Character, Integer> statistic,
+                                       String line) {
 
             StringBuilder builder = new StringBuilder(line);
             builder.append('\n');
 
-            for (Character symbol : builder.toString().toCharArray()) {
+            for (Character symbol : builder.toString()
+                                           .toCharArray()) {
 
                 Integer count = statistic.get(symbol);
                 if (count != null) {
                     statistic.put(symbol, count + 1);
-                } else {
+                }
+                else {
                     statistic.put(symbol, 1);
                 }
             }
