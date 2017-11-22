@@ -146,11 +146,6 @@ public class Calculator {
         return operatorPriority(operation) > 0;
     }
 
-    //private static boolean isOperator(char operation) {
-
-    //    return operation == '+' || operation == '-' || operation == '/' || operation == '*';
-    //}
-
     private static boolean isEmpty(char symbol) {
 
         return symbol != ' ';
