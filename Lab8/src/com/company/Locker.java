@@ -15,27 +15,22 @@ public class Locker{
     void set(int value) throws LockerException {
 
         if (isLock == true) {
-
             this.value = value;
         }
         else {
-
             throw new LockerException();
         }
     }
 
     int get() {
-
         return value;
     }
 
     void lock() {
-
         this.isLock = false;
     }
 
     void unlock() {
-
         this.isLock = true;
     }
 }

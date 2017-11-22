@@ -13,7 +13,6 @@ public class LockerTest {
 
         instance.lock();
         try {
-
             instance.set(154);
         }
         catch (LockerException le) {
@@ -28,11 +27,9 @@ public class LockerTest {
 
         instance.unlock();
         try {
-
             instance.set(154);
         }
         catch (LockerException le) {
-
             Assert.assertNotEquals("", le.getMessage());
         }
 
