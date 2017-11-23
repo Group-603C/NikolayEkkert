@@ -32,7 +32,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void presenceSymbols(){
+    public void presenceSymbols() {
 
         assertEquals("The expression contains the characters", NaN, instance.calculate("qwertyu"), 0.001);
     }

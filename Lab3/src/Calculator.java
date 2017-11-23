@@ -113,7 +113,7 @@ public class Calculator {
         }
 
         int counter = 0;
-        for(char symbol:expression.toCharArray()){
+        for (char symbol : expression.toCharArray()) {
 
             if (symbol == '(') {
 
