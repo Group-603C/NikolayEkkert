@@ -235,6 +235,49 @@ public class CylindricalPoint() {
 
 ***
 
+<h2 id="lab7">Лабораторная работа №7 - Математические выражения</h2>
+
+Реализовать набор классов, для описания и составления мат выражений. Основная задач уметь составлять полноценные выражения, хоть и в префиксной записи
+
+* Описать базовый интерфейс Expression, содержащий метод calculate(). 
+* Отнаследовать два вида выражений: UnaryExpression и BinaryExpression.
+* Реализовать функциональность в классах
+    * Addition
+    * Subtraction
+    * Multiplication
+    * Division
+    * Rest
+    * Power
+    * Negative
+    * Absolute
+    * Square
+    * Value
+* О иерархии наследования догадайтесь сами
+* Необходимы конструкторы для работы в том числе с int и double
+
+```java
+interface Expression {
+ 
+    double calculate();
+}
+class UnaryExpression: Expression  {
+//...
+}
+class BinaryExpression: Expression  {
+//...
+}
+```
+
+<h4>Обратить внимание:</h4>
+
+* ООП
+    * Перегрузки
+    * **final**
+    * Таблица виртуальных методов 
+
+
+***
+
 <h2 id="lab8">Лабораторная работа №8 - Exceptions</h2>
 
 Реализовать класс со следующим интерфейсом и поведением.
@@ -269,4 +312,6 @@ https://beginnersbook.com/2013/04/try-catch-in-java/
 https://beginnersbook.com/2013/04/java-finally-block/
 https://beginnersbook.com/2013/04/user-defined-exception-in-java/
 https://beginnersbook.com/2013/04/difference-between-throw-and-throws-in-java/ 
+
+***
 
