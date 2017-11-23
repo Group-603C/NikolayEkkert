@@ -1,6 +1,6 @@
 package com.company;
 
-public class Locker{
+public class Locker {
 
     private boolean isLock;
     private int value;
