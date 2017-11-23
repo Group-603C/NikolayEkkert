@@ -187,8 +187,7 @@ public class FileAnalizer {
             StringBuilder builder = new StringBuilder(line);
             builder.append('\n');
 
-            for (Character symbol : builder.toString()
-                                           .toCharArray()) {
+            for (Character symbol : builder.toString().toCharArray()) {
 
                 Integer count = statistic.get(symbol);
                 if (count != null) {
