@@ -29,9 +29,7 @@ public class PolarPointTest {
     public void toCartesian() throws Exception {
 
         String expected = "Point";
-        String actual = instance.toCartesian()
-                .getClass()
-                .getTypeName();
+        String actual = instance.toCartesian().getClass().getTypeName();
 
         assertEquals("Convert type Point to Cartesian", expected, actual);
     }

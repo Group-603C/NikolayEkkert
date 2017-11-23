@@ -53,7 +53,9 @@ public class Point {
         return new CylindricalPoint(Math.sqrt(Math.pow(x, 2.0) + Math.pow(y, 2.0)), convertToPhi(), z);
     }
 
-    static public boolean isOneStraightLine(Point first, Point second, Point third) {
+    static public boolean isOneStraightLine(Point first,
+                                            Point second,
+                                            Point third) {
 
         double x = (third.getX() - first.getX()) * (second.getY() - first.getY()) * (second.getZ() - first.getZ());
         double y = (third.getY() - first.getY()) * (second.getX() - first.getX()) * (second.getZ() - first.getZ());
@@ -62,7 +64,10 @@ public class Point {
         return x == y && y == z;
     }
 
-    public static boolean isOnePlane(Point first, Point second, Point third, Point fourth) {
+    public static boolean isOnePlane(Point first,
+                                     Point second,
+                                     Point third,
+                                     Point fourth) {
 
         Point vectorFirstSecond = new Point(second.x - first.x, second.y - first.y, second.z - first.z);
         Point vectorThirdFourth = new Point(fourth.x - third.x, fourth.y - third.y, fourth.z - third.z);
@@ -70,11 +75,12 @@ public class Point {
         return multiplicationVectors(vectorFirstSecond, vectorThirdFourth) == 0;
     }
 
-    static private double multiplicationVectors(Point firstVector, Point secondVector) {
+    static private double multiplicationVectors(Point firstVector,
+                                                Point secondVector) {
 
         return (firstVector.y * secondVector.y - firstVector.z * secondVector.z) -
-                (firstVector.x * secondVector.z - firstVector.z * secondVector.x) +
-                (firstVector.x * secondVector.y - firstVector.y * secondVector.x);
+               (firstVector.x * secondVector.z - firstVector.z * secondVector.x) +
+               (firstVector.x * secondVector.y - firstVector.y * secondVector.x);
     }
 
     private double convertToPhi() {

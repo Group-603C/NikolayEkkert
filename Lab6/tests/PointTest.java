@@ -47,9 +47,7 @@ public class PointTest {
     public void toPolar() throws Exception {
 
         String expected = "PolarPoint";
-        String actual = instance.toPolar()
-                .getClass()
-                .getTypeName();
+        String actual = instance.toPolar().getClass().getTypeName();
 
         assertEquals("Convert type Point to PolarPoint", expected, actual);
     }
@@ -58,13 +56,10 @@ public class PointTest {
     public void toCylindrical() throws Exception {
 
         String expected = "CylindricalPoint";
-        String actual = instance.toCylindrical()
-                .getClass()
-                .getTypeName();
+        String actual = instance.toCylindrical().getClass().getTypeName();
 
         assertEquals("Convert type Point to CylindricalPoint", expected, actual);
     }
-
 
 
 }

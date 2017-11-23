@@ -38,13 +38,10 @@ public class CylindricalPointTest {
     public void toCartesian() throws Exception {
 
         String expected = "Point";
-        String actual = instance.toCartesian()
-                .getClass()
-                .getTypeName();
+        String actual = instance.toCartesian().getClass().getTypeName();
 
         assertEquals("Convert type CylindricalPoint to Cartesian", expected, actual);
     }
-
 
 
 }

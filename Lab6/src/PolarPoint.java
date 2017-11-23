@@ -3,19 +3,17 @@ public class PolarPoint {
     private double rho;
     private double phi;
 
-    PolarPoint(double rho, double phi)
-    {
-        this.rho=rho;
-        this.phi=phi;
+    PolarPoint(double rho,
+               double phi) {
+        this.rho = rho;
+        this.phi = phi;
     }
 
-    double getRho()
-    {
+    double getRho() {
         return rho;
     }
 
-    double getPhi()
-    {
+    double getPhi() {
         return phi;
     }
 

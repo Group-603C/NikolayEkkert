@@ -2,10 +2,11 @@ public class CylindricalPoint extends PolarPoint {
 
     private double z;
 
-    CylindricalPoint(double rho, double phi, double z)
-    {
-        super(rho,phi);
-        this.z=z;
+    CylindricalPoint(double rho,
+                     double phi,
+                     double z) {
+        super(rho, phi);
+        this.z = z;
     }
 
     public double getRho() {
