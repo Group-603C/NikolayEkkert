@@ -12,6 +12,7 @@
 *   [Лаб.№6 - Класс "Точка"](#lab6)
 *   [Лаб.№7 - Математические выражения](#lab7)
 *   [Лаб.№8 - Exceptions](#lab8)
+*   [Лаб.№9 - Generics](#lab9)
 
 
 ***
@@ -317,3 +318,52 @@ https://beginnersbook.com/2013/04/difference-between-throw-and-throws-in-java/
 
 ***
 
+<h2 id="lab9">Лабораторная работа №9 - Generics</h2>
+
+Реализовать свой список (LinkedList).
+
+```java
+class LinkedList<T> implements Iterable<T> {
+     
+    LinkedList();
+    LinkedList(Iterable<T> entities);
+ 
+    void add(T value);
+    void add(Iterable<T> range);
+    void addToBegin(T value);
+    void insert(T value, int position);
+ 
+    boolean removeFirst();
+    boolean removeLast();
+    boolean remove(T value);
+    boolean remove(int position);
+    boolean removeAll();
+ 
+    T find(int index);
+    int indexOf(T value);
+     
+    T first();
+    T last();
+    boolean isEmpty();
+    int length();
+}
+```
+
+<h4>Обратить внимание:</h4>
+
+* Generic
+    * Что это
+    * Отличие от шаблонов в С++
+    * Существуют ли они на момент исполнения
+* Структуры данных (объяснить что это и какие свойства есть)
+    * Очередь 
+    * Стек
+    * Словарь (Map)
+    * Список
+        * Односвязный
+        * Двусвязный
+        * Циклический
+        * Основное преимущество и недостаток перед массивом
+
+Помощь:
+http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Iterable.html
