@@ -1,8 +1,8 @@
 package com.company;
 
-public class UnaryExpression {
+public class BinaryExpression {
 
-    UnaryExpression(double value) {
+    BinaryExpression() {
 
     }
 
