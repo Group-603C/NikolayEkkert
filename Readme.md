@@ -365,5 +365,5 @@ class LinkedList<T> implements Iterable<T> {
         * Циклический
         * Основное преимущество и недостаток перед массивом
 
-Помощь:
+> Помощь:
 http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Iterable.html
