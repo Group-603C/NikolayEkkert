@@ -2,37 +2,32 @@ package com.company;
 
 public class UnaryExpression {
 
-    private double firstValue;
-
-
     UnaryExpression(double value) {
 
-        this.firstValue = value;
     }
 
     public double negative() {
 
-        return -firstValue;
+        return -1;
     }
 
     public double plus() {
 
-        return firstValue;
+        return -1;
     }
 
     public int bitwiseComplementOf() {
 
-        return ~(int) firstValue;
+        return -1;
     }
 
     public int increment() {
 
-        return (int) firstValue + 1;
+        return -1;
     }
 
     public long decrement() {
 
-        return (int) firstValue - 1;
+        return -1;
     }
-
 }
