@@ -12,7 +12,7 @@ public class Locker {
         this.value = value;
     }
 
-    void set(int value) throws LockerException {
+    public void set(int value) throws LockerException {
 
         if (this.isLock) {
             throw new LockerException();
@@ -20,15 +20,15 @@ public class Locker {
         this.value = value;
     }
 
-    int get() {
+    public int get() {
         return this.value;
     }
 
-    void lock() {
+    public void lock() {
         this.isLock = true;
     }
 
-    void unlock() {
+    public void unlock() {
         this.isLock = false;
     }
 }
