@@ -1,6 +1,5 @@
 package com.company;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,15 +10,23 @@ public class LockerTest {
 
 
     @Test
-    public void lockContainer() {
+    public void verification() throws LockerException {
 
+        instance.unlock();
+        instance.set(154);
+        assertEquals(154, instance.get());
+
+        instance.lock();
         try {
-            instance.set(154);
-            Assert.fail("Exception");
+            instance.set(666);
+            fail("LockerException but value changed.");
         }
         catch (LockerException e) {
+            assertEquals(154, instance.get());
         }
 
-        assertEquals("Lock Container", 5, instance.get());
+        instance.unlock();
+        instance.set(777);
+        assertEquals(777, instance.get());
     }
 }

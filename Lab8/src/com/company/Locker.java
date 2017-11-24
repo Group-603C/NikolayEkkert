@@ -2,20 +2,21 @@ package com.company;
 
 public class Locker {
 
-    private boolean isLock = false;
+    private boolean isLock;
     private int value;
 
 
     public Locker(int value) {
+
+        this.isLock = false;
         this.value = value;
     }
 
     void set(int value) throws LockerException {
 
-        if (!this.isLock) {
+        if (this.isLock) {
             throw new LockerException();
         }
-
         this.value = value;
     }
 
@@ -24,10 +25,10 @@ public class Locker {
     }
 
     void lock() {
-        this.isLock = false;
+        this.isLock = true;
     }
 
     void unlock() {
-        this.isLock = true;
+        this.isLock = false;
     }
 }
