@@ -83,9 +83,7 @@ public class LinkedList <T> implements Iterable<T> {
 
         //Search
         Container prev = this.first;
-        for (int i = 0; i < position - 1; i++) {
-            prev = prev.next;
-        }
+        prev = search(position);
 
         //Adding
         Container added = new Container(value);
@@ -171,10 +169,7 @@ public class LinkedList <T> implements Iterable<T> {
 
         //Search
         Container prev = this.first;
-        for (int i = 0; i < position - 1; i++) {
-            prev = prev.next;
-        }
-
+        prev = search(position);
         removeByPrev(prev);
 
         return true;
@@ -298,6 +293,17 @@ public class LinkedList <T> implements Iterable<T> {
 
     public int length() {
         return length;
+    }
+
+
+    private LinkedList.Container search(int position) {
+
+        Container prev = this.first;
+        for (int i = 0; i < position - 1; i++) {
+            prev = prev.next;
+        }
+
+        return prev;
     }
 
     //Iterable
