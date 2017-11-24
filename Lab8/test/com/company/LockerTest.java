@@ -1,41 +1,25 @@
 package com.company;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class LockerTest {
 
-    private Locker instance = new Locker();
+    private Locker instance = new Locker(5);
+
 
     @Test
-    public void lockContainer() throws LockerException {
+    public void lockContainer() {
 
-        instance.lock();
         try {
             instance.set(154);
-            fail("LockerException");
+            Assert.fail("Exception");
         }
         catch (LockerException e) {
-            assertNotEquals("", e.getMessage());
         }
 
-        assertEquals("Lock Container", Integer.MIN_VALUE, instance.get());
+        assertEquals("Lock Container", 5, instance.get());
     }
-
-    @Test
-    public void unlockContainer() throws LockerException {
-
-        instance.unlock();
-        try {
-            instance.set(154);
-            fail("LockerException");
-        }
-        catch (LockerException e) {
-            assertNotEquals("", e.getMessage());
-        }
-
-        assertEquals("Unlock container", 154, instance.get());
-    }
-
 }
