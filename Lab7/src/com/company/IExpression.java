@@ -1,9 +1,15 @@
 package com.company;
 
-public class UnaryExpression {
+public interface IExpression {
 
-    UnaryExpression(double value) {
+    double calculate();
+}
 
+class BinaryExpression implements IExpression{
+
+    @Override
+    public double calculate() {
+        return 0;
     }
 
     public double addition() {
@@ -19,6 +25,22 @@ public class UnaryExpression {
     public double rest() {return -1;}
 
     public double power() {return -1;}
+
+    public double negative() {return -1;}
+
+    public double absolute() {return -1;}
+
+    public double square() {return -1;}
+
+    public double value() {return -1;}
+}
+
+class UnaryExpression implements  IExpression{
+
+    @Override
+    public double calculate() {
+        return 0;
+    }
 
     public double negative() {return -1;}
 
