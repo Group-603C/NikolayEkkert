@@ -245,16 +245,16 @@ public class CylindricalPoint() {
 * Описать базовый интерфейс Expression, содержащий метод calculate(). 
 * Отнаследовать два вида выражений: UnaryExpression и BinaryExpression.
 * Реализовать функциональность в классах
-    * Addition
-    * Subtraction
-    * Multiplication
-    * Division
-    * Rest
-    * Power
-    * Negative
-    * Absolute
-    * Square
-    * Value
+    * Addition - сумма двух элементов
+    * Subtraction - разность двух элементов
+    * Multiplication - произведение двух элементов
+    * Division - частное двух элементов
+    * Rest - остаток от деления двух элементов
+    * Power - первый (левый) элемент возводится в степень равную значению второго (правого) элемента
+    * Negative - разность нуля и элемента
+    * Absolute - модуль элемента
+    * Square - квадрат элемента
+    * Value - передача числовых значений для выражений
 * О иерархии наследования догадайтесь сами
 * Необходимы конструкторы для работы в том числе с int и double
 
