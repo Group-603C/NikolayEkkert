@@ -1,8 +1,7 @@
 package com.company;
 
-public interface IMapper {
+public interface IMapper <TDestination, TSource> {
 
-    TDestination map <TDestination, TSource>(TSource obj){
-
-    }
+    TDestination map(TSource source,
+                     Class<TDestination> destionationType) throws Exception;
 }
