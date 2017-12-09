@@ -568,6 +568,44 @@ interface IDeepCompare{
 
 <h2 id="lab13">Лабораторная работа №13 - Коллекции 2.0</h2>
 
+Для написанного в лабораторной работе №9 класса список реализовать следующие операции:
+
+* filter - возвращает новый список, состоящий из элементов e, для которых predicate(e) == true
+* map - возвращает новый список, состоящий из элементов списка, к которым последовательно была применена function
+* count - возвращает количество элементов удовлетворяющих условию
+* first - возвращает первый элемент удовлетворяющий условию, если такого нет - возвращает null
+* last - возвращает последний элемент удовлетворяющий условию, если его нет - возвращает null
+* single - возвращает элемент удовлетворяющий условию. Если он не один или таких нет, то возвращает null
+* all - возвращает true, если все элементы удовлетворяют условию
+* any - возвращает true, если хотя бы один элемент удовлетворяет условию
+
+```java
+interface ILinkedList<TType> {
+    //.....
+    // Я могу наврать с лямбда типами, если что - включаем голову
+    ILinkedList<TType> filter(Predicate<TType> predicate);
+    ILinkedList<TType> map(Consumer<TType> function);
+    ILinkedList<TResult> select<TResult>(Function<TType, TResult> predicate);
+ 
+    int count(Predicate<TType> predicate);
+ 
+    TType first(Predicate<TType> predicate);
+    TType last(Predicate<TType> predicate);
+    TType single(Predicate<TType> predicate);
+ 
+    boolean all(Predicate<TType> predicate);
+    boolean any(Predicate<TType> predicate);
+}
+```
+
+<h4>Обратить внимание:</h4>
+
+* К данному времени вы должны быть уже достаточно учёными
+
+<h4>Теория:</h4>
+
+* Отсутствует
+
 ***
 
 <h2 id="lab14">Лабораторная работа №14 - BlockingQueue</h2>
