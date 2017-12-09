@@ -454,6 +454,42 @@ http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Iterable.html
 
 <h2 id="lab10">Лабораторная работа №10 - Reflection</h2>
 
+Реализовать класс для копирования полей объекта одного класса в поля другого. 
+
+```java
+interface IMapper<TDestination, TSource> {
+ 
+    TDestination map(TSource obj)
+}
+```
+
+<h4>Обратить внимание:</h4>
+
+* К данному времени вы должны быть уже достаточно учёными
+
+<h4>Теория</h4>
+
+* Рефлексия
+    * Что это такое
+    * Что позволяет нам сделать - в общих чертах
+* Байт код
+    * Что это
+    * Зачем нам нужен
+    
+<h5>Примечания</h5>
+
+* Наличие публичного конструктора без параметров гарантируется
+* Ссылочные типы просто копировать ссылку (кроме строк)
+* Value-type и строковые поля копировать
+* Поля копировать по именам
+
+> Помощь<br>
+https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html<br>
+https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Field.html<br>
+https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Constructor.html<br>
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html<br>
+http://cs.fit.edu/~ryan/java/language/java-data.html - краткая справка о примитивах
+
 ***
 
 <h2 id="lab11">Лабораторная работа №11 - JSON Serializer</h2>
