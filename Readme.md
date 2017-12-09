@@ -454,6 +454,10 @@ http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Iterable.html
 
 <h2 id="lab10">Лабораторная работа №10 - Reflection</h2>
 
+***
+
+<h2 id="lab11">Лабораторная работа №11 - JSON Serializer</h2>
+
 Написать сериализатор для объектов в JSON и обратно.
 
 ```java
@@ -496,10 +500,6 @@ interface IJsonConvert{
     * boolean
     * Объекты
     * Перечислимых
-
-***
-
-<h2 id="lab11">Лабораторная работа №11 - JSON Serializer</h2>
 
 ***
 
