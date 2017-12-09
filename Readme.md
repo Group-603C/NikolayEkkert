@@ -48,6 +48,7 @@ boolean isCorrect(String sequence);
 * Как оформляются методы
 
 <h4>Теория:</h4>
+
 * Отсутствует
 
 ***
