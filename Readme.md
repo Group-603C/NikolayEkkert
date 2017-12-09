@@ -13,6 +13,12 @@
 *   [Лаб.№7 - Математические выражения](#lab7)
 *   [Лаб.№8 - Exceptions](#lab8)
 *   [Лаб.№9 - Generics](#lab9)
+*   [Лаб.№10 - Reflection](#lab10)
+*   [Лаб.№11 - JSON Serializer](#lab11)
+*   [Лаб.№12 - Deep compare](#lab12)
+*   [Лаб.№13 - Коллекции 2.0](#lab13)
+*   [Лаб.№14 - BlockingQueue](#lab14)
+*   [Лаб.№15 - Parallel computations](#lab15)
 
 
 ***
@@ -443,3 +449,29 @@ class LinkedList<T> implements Iterable<T> {
     * Словарь (Map)
 > Помощь:
 http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Iterable.html
+
+***
+
+<h2 id="lab10">Лабораторная работа №10 - Reflection</h2>
+
+***
+
+<h2 id="lab11">Лабораторная работа №11 - JSON Serializer</h2>
+
+***
+
+<h2 id="lab12">Лабораторная работа №12 - Deep compare</h2>
+
+***
+
+<h2 id="lab13">Лабораторная работа №13 - Коллекции 2.0</h2>
+
+***
+
+<h2 id="lab14">Лабораторная работа №14 - BlockingQueue</h2>
+
+***
+
+<h2 id="lab15">Лабораторная работа №15 - Parallel computations</h2>
+
+***
