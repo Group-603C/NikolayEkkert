@@ -1,9 +1,6 @@
 package com.company;
 
-import com.company.binary.Addition;
-import com.company.binary.Multiplication;
-import com.company.binary.Power;
-import com.company.binary.Subtraction;
+import com.company.binary.*;
 import com.company.tools.CacheValue;
 import com.company.unary.Negative;
 import com.company.unary.Value;
@@ -14,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class IExpressionTest {
 
-    private final double eps = 0.0000001;
+    private final double eps = 0.000000001;
 
     private IExpression expression;
 
@@ -54,6 +51,21 @@ public class IExpressionTest {
         //Multi
         expression = new Multiplication("1.2", 1.2, "1");
         assertEquals(1.44, expression.calculate(), eps);
+    }
+
+    @Test
+    public void division(){
+        //Single
+        expression = new Division("37.2");
+        assertEquals(37.2, expression.calculate(), eps);
+
+        //Pair
+        expression = new Division("37.2", 2.5);
+        assertEquals(14.88, expression.calculate(), eps);
+
+        //Multi
+        expression = new Division("35.5", 2.5, "3");
+        assertEquals(14.2, expression.calculate(), eps);
     }
 
     @Test

@@ -13,6 +13,7 @@ public class CacheValue implements IExpression {
     private IExpression expression;
     private Double calculated;
 
+
     public CacheValue(Object value) {
         this(new Value(value));
     }
