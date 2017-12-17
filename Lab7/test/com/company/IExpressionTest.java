@@ -63,9 +63,28 @@ public class IExpressionTest {
         expression = new Division("37.2", 2.5);
         assertEquals(14.88, expression.calculate(), eps);
 
+        //Zero
+        expression = new Division("37.2", 0);
+        assertEquals(-1, expression.calculate(), eps);
+
         //Multi
         expression = new Division("35.5", 2.5, "3");
         assertEquals(14.2, expression.calculate(), eps);
+    }
+
+    @Test
+    public void rest(){
+        //Single
+        expression = new Rest("15.5");
+        assertEquals(0.5, expression.calculate(), eps);
+
+        //Pair
+        expression = new Rest("43.5", 1.2);
+        assertEquals(0.1, expression.calculate(), eps);
+
+        //Multi
+        expression = new Rest("43.5", 1.2, "4");
+        assertEquals(Double.NaN, expression.calculate(), eps);
     }
 
     @Test

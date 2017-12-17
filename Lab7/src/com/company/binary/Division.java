@@ -19,12 +19,13 @@ public class Division extends BinaryExpression implements IExpression {
             this.setRight(root);
 
             for (int i = 1; i < right.length - 1; i++) {
-
+                System.out.println(1231321);
                 Division next = new Division(right[i], 1);
                 root.setRight(next);
                 root = next;
             }
         }
+
 
         this.cache = new CacheCalculation(()->this.getLeft().calculate() / this.getRight().calculate());
     }
