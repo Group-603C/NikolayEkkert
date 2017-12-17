@@ -50,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Absolute.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Absolute.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/unary/Absolute.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -59,6 +59,20 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#411#412#0" expanded="true" />
                 <element signature="e#456#457#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Square.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/unary/Square.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,6 +103,7 @@
       <replace>Division</replace>
       <replace>Rest</replace>
       <replace>Absolute</replace>
+      <replace>Square</replace>
     </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -117,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/com/company/binary/Division.java" />
         <option value="$PROJECT_DIR$/src/com/company/binary/Rest.java" />
         <option value="$PROJECT_DIR$/src/com/company/unary/Absolute.java" />
+        <option value="$PROJECT_DIR$/src/com/company/unary/Square.java" />
       </list>
     </option>
   </component>
@@ -398,7 +414,7 @@
       <option name="presentableId" value="Default" />
       <updated>1513447524563</updated>
       <workItem from="1513447527280" duration="2520000" />
-      <workItem from="1513450360452" duration="4482000" />
+      <workItem from="1513450360452" duration="4582000" />
     </task>
     <servers />
   </component>
@@ -435,7 +451,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7002000" />
+    <option name="totallyTimeSpent" value="7102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -673,6 +689,18 @@
             <element signature="imports" expanded="true" />
             <element signature="e#411#412#0" expanded="true" />
             <element signature="e#456#457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/unary/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
           </folding>
         </state>
       </provider>
