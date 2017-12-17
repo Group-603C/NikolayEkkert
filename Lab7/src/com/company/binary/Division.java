@@ -10,7 +10,9 @@ public class Division extends BinaryExpression implements IExpression {
 
         super(left, new Value(1));
 
+
         if (1 == right.length) {
+
             this.setRight(new Division(right[0], new Object[] {}));
         }
         else if (1 < right.length) {
@@ -19,14 +21,22 @@ public class Division extends BinaryExpression implements IExpression {
             this.setRight(root);
 
             for (int i = 1; i < right.length - 1; i++) {
-                System.out.println(1231321);
+
                 Division next = new Division(right[i], 1);
                 root.setRight(next);
                 root = next;
             }
         }
 
+        if (this.getRight().calculate() == 0) {
+            calculation(Double.NaN);
+        }
+        else {
+            calculation(this.getLeft().calculate() / this.getRight().calculate());
+        }
+    }
 
-        this.cache = new CacheCalculation(()->this.getLeft().calculate() / this.getRight().calculate());
+    private void calculation(double operand) {
+        this.cache = new CacheCalculation(()->operand);
     }
 }
