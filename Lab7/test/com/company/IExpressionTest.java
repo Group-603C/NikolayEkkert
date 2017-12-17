@@ -2,7 +2,9 @@ package com.company;
 
 import com.company.binary.*;
 import com.company.tools.CacheValue;
+import com.company.unary.Absolute;
 import com.company.unary.Negative;
+import com.company.unary.Square;
 import com.company.unary.Value;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -129,6 +131,30 @@ public class IExpressionTest {
         //Negative
         expression = new Negative(-10.1);
         assertEquals(10.1, expression.calculate(), eps);
+    }
+
+    @Test
+    public void absolute(){
+
+        //Positive
+        expression = new Absolute("-10.2");
+        assertEquals(10.2, expression.calculate(), eps);
+
+        //Negative
+        expression = new Absolute(302.56);
+        assertEquals(302.56, expression.calculate(), eps);
+    }
+
+    @Test
+    public void square(){
+
+        //Positive
+        expression = new Square("2.5");
+        assertEquals(6.25, expression.calculate(), eps);
+
+        //Negative
+        expression = new Square("-2.5");
+        assertEquals(6.25, expression.calculate(), eps);
     }
 
     @Test
