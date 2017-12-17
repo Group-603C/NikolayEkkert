@@ -24,13 +24,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/binary/Rest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
-              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Negative.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/unary/Negative.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="46" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Absolute.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/unary/Absolute.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,12 +81,14 @@
       <find>Fuck</find>
       <find>Division</find>
       <find>Multiplication</find>
+      <find>Negative</find>
     </findStrings>
     <replaceStrings>
       <replace>Addition</replace>
       <replace>Fall</replace>
       <replace>Division</replace>
       <replace>Rest</replace>
+      <replace>Absolute</replace>
     </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -86,6 +116,7 @@
         <option value="$PROJECT_DIR$/src/com/company/tools/CacheCalculation.java" />
         <option value="$PROJECT_DIR$/src/com/company/binary/Division.java" />
         <option value="$PROJECT_DIR$/src/com/company/binary/Rest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/unary/Absolute.java" />
       </list>
     </option>
   </component>
@@ -367,7 +398,7 @@
       <option name="presentableId" value="Default" />
       <updated>1513447524563</updated>
       <workItem from="1513447527280" duration="2520000" />
-      <workItem from="1513450360452" duration="4346000" />
+      <workItem from="1513450360452" duration="4482000" />
     </task>
     <servers />
   </component>
@@ -404,7 +435,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6866000" />
+    <option name="totallyTimeSpent" value="7002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -490,18 +521,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/IExpression.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/unary/Negative.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/unary/Value.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-642">
@@ -627,9 +646,33 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/binary/Rest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
-          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/unary/Negative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/unary/Absolute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
           </folding>
         </state>
       </provider>

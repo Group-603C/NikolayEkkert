@@ -19,7 +19,7 @@ public class Rest extends BinaryExpression implements IExpression {
             this.setRight(root);
 
             for (int i = 1; i < right.length - 1; i++) {
-                
+
                 Rest next = new Rest(right[i], 1);
                 root.setRight(next);
                 root = next;
