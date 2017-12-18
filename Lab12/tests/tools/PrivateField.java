@@ -7,6 +7,7 @@ public class PrivateField {
 
     
     public PrivateField(int intValue, char charValue){
+
         this.intValue = intValue;
         this.charValue = charValue;
     }

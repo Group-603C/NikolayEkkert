@@ -2,10 +2,18 @@ package tools;
 
 public class PublicField <T> {
 
-    public T value;
+    private T value;
 
 
     public PublicField(T value) {
+        this.value = value;
+    }
+
+    public T getValue() {
+        return value;
+    }
+
+    public void setValue(T value) {
         this.value = value;
     }
 }

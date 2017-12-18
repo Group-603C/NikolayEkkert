@@ -1,5 +1,6 @@
 package com.company;
 
+
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -30,7 +31,7 @@ public class DeepCompare implements IDeepCompare {
             return false;
 
         }
-        
+
         if (left instanceof Boolean) {
             return (boolean) left == (boolean) right;
 

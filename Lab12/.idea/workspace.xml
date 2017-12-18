@@ -12,28 +12,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DeepCompare.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/DeepCompare.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-924">
-              <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2587#2588#0" expanded="true" />
-                <element signature="e#2640#2641#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PublicField.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/tools/PublicField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
               <folding>
-                <element signature="e#102#103#0" expanded="true" />
-                <element signature="e#136#137#0" expanded="true" />
+                <element signature="e#103#104#0" expanded="true" />
+                <element signature="e#137#138#0" expanded="true" />
+                <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/tests/tools/PrivateField.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,9 +42,26 @@
       <file leaf-file-name="Cyclic.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/tools/Cyclic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="44">
+              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+              <folding>
+                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#217#218#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeepCompareTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/com/company/DeepCompareTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1628">
+              <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,6 +82,7 @@
       <find>verifiAbleObjects</find>
       <find>ToCyclic</find>
       <find>PrivateFields</find>
+      <find>setField</find>
     </findStrings>
     <replaceStrings>
       <replace>verifiAbleObjects</replace>
@@ -91,11 +99,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/com/company/IDeepCompare.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DeepCompare.java" />
         <option value="$PROJECT_DIR$/tests/tools/Cyclic.java" />
         <option value="$PROJECT_DIR$/tests/tools/PrivateField.java" />
         <option value="$PROJECT_DIR$/tests/tools/PublicField.java" />
         <option value="$PROJECT_DIR$/tests/com/company/DeepCompareTest.java" />
-        <option value="$PROJECT_DIR$/src/com/company/DeepCompare.java" />
       </list>
     </option>
   </component>
@@ -199,21 +208,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DeepCompareTest">
-    <configuration name="DeepCompareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="JUnit.All in Lab12">
+    <configuration name="All in Lab12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Lab12" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.DeepCompareTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -225,21 +229,105 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    <configuration name="DeepCompareTest.compareStrings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Lab12" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.DeepCompareTest" />
+      <option name="METHOD_NAME" value="compareStrings" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Lab12" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <patterns />
+    </configuration>
+    <configuration name="DeepCompareTest.cyclicLinks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Lab12" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.DeepCompareTest" />
+      <option name="METHOD_NAME" value="cyclicLinks" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="DeepCompareTest.privateField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Lab12" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.DeepCompareTest" />
+      <option name="METHOD_NAME" value="privateField" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="DeepCompareTest.publicField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Lab12" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.DeepCompareTest" />
+      <option name="METHOD_NAME" value="publicField" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -256,13 +344,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DeepCompareTest" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DeepCompareTest.cyclicLinks" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DeepCompareTest.publicField" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DeepCompareTest.compareStrings" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DeepCompareTest.privateField" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in Lab12" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DeepCompareTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Lab12" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DeepCompareTest.publicField" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DeepCompareTest.compareStrings" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DeepCompareTest.privateField" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DeepCompareTest.cyclicLinks" />
       </list>
     </recent_temporary>
   </component>
@@ -281,26 +376,44 @@
       <updated>1513483007739</updated>
       <workItem from="1513483009164" duration="200000" />
       <workItem from="1513498409917" duration="597000" />
-      <workItem from="1513609364715" duration="2374000" />
+      <workItem from="1513609364715" duration="3464000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DeepCompareTest - 2017.12.18 at 22h 35m 28s.xml">
-      <configuration name="DeepCompareTest" configurationId="JUnit" />
+    <history-entry file="All_in_Lab12 - 2017.12.18 at 22h 59m 21s.xml">
+      <configuration name="All in Lab12" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeepCompareTest - 2017.12.18 at 22h 36m 54s.xml">
-      <configuration name="DeepCompareTest" configurationId="JUnit" />
+    <history-entry file="All_in_Lab12 - 2017.12.18 at 23h 00m 28s.xml">
+      <configuration name="All in Lab12" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeepCompareTest - 2017.12.18 at 22h 37m 05s.xml">
-      <configuration name="DeepCompareTest" configurationId="JUnit" />
+    <history-entry file="DeepCompareTest_compareStrings - 2017.12.18 at 22h 58m 33s.xml">
+      <configuration name="DeepCompareTest.compareStrings" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeepCompareTest - 2017.12.18 at 22h 40m 53s.xml">
-      <configuration name="DeepCompareTest" configurationId="JUnit" />
+    <history-entry file="DeepCompareTest_compareStrings - 2017.12.18 at 22h 58m 43s.xml">
+      <configuration name="DeepCompareTest.compareStrings" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeepCompareTest_cyclicLinks - 2017.12.18 at 22h 58m 37s.xml">
+      <configuration name="DeepCompareTest.cyclicLinks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeepCompareTest_privateField - 2017.12.18 at 22h 58m 40s.xml">
+      <configuration name="DeepCompareTest.privateField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeepCompareTest_publicField - 2017.12.18 at 22h 57m 59s.xml">
+      <configuration name="DeepCompareTest.publicField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeepCompareTest_publicField - 2017.12.18 at 22h 58m 29s.xml">
+      <configuration name="DeepCompareTest.publicField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeepCompareTest_publicField - 2017.12.18 at 22h 58m 47s.xml">
+      <configuration name="DeepCompareTest.publicField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeepCompareTest_publicField - 2017.12.18 at 22h 59m 16s.xml">
+      <configuration name="DeepCompareTest.publicField" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3171000" />
+    <option name="totallyTimeSpent" value="4261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -315,7 +428,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -370,21 +483,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tools/Cyclic.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/IDeepCompare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="44">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tools/PublicField.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/DeepCompare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="44">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#102#103#0" expanded="true" />
-            <element signature="e#136#137#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2580#2581#0" expanded="true" />
+            <element signature="e#2633#2634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tools/Cyclic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -392,37 +519,32 @@
     <entry file="file://$PROJECT_DIR$/tests/tools/PrivateField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/IDeepCompare.java">
+    <entry file="file://$PROJECT_DIR$/tests/tools/PublicField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding>
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#137#138#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/com/company/DeepCompareTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="1628">
+          <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DeepCompare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2587#2588#0" expanded="true" />
-            <element signature="e#2640#2641#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,13 +1,21 @@
 package tools;
 
 public class Cyclic {
-    
-    public Cyclic field;
 
-    public Cyclic() {
-    }
+    private Cyclic field;
+
+
+    public Cyclic() {}
 
     public Cyclic(Cyclic field) {
+        this.field = field;
+    }
+
+    public Cyclic getField() {
+        return field;
+    }
+
+    public void setField(Cyclic field) {
         this.field = field;
     }
 }
