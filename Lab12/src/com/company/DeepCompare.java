@@ -95,7 +95,7 @@ public class DeepCompare implements IDeepCompare {
                         return false;
                     }
                 }
-                catch (IllegalAccessException e) {
+                catch (IllegalAccessException ignored) {
                 }
             }
         }
