@@ -1,6 +1,5 @@
 package com.company;
 
-
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -8,7 +7,7 @@ import java.util.Objects;
 
 public class DeepCompare implements IDeepCompare {
 
-    private ArrayList verifyObjects = new ArrayList();
+    private ArrayList<Object> verifyObjects = new ArrayList<>();
 
 
     @Override
@@ -41,11 +40,11 @@ public class DeepCompare implements IDeepCompare {
 
         }
         else if (left instanceof Byte) {
-            return Objects.equals((Byte) left, (Byte) right);
+            return Objects.equals(left, right);
 
         }
         else if (left instanceof Short) {
-            return Objects.equals((Short) left, (Short) right);
+            return Objects.equals(left, right);
 
         }
         else if (left instanceof Integer) {
@@ -64,7 +63,6 @@ public class DeepCompare implements IDeepCompare {
             return (double) left == (double) right;
 
         }
-
 
         verifyObjects.add(left);
         verifyObjects.add(right);
@@ -108,6 +106,7 @@ public class DeepCompare implements IDeepCompare {
 
     private int analyzeObject(Object element) {
         return verifyObjects.indexOf(element);
+
     }
 
     private void remove(Object left, Object right) {
