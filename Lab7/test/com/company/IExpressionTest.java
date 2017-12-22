@@ -62,6 +62,13 @@ class IExpressionTest {
 
         expression = new Division("-1.5", 2);
         assertEquals(-0.75, expression.calculate(), eps, "Division negative value");
+
+        expression = new Division("2.5", -2);
+        assertEquals(-1.25, expression.calculate(), eps, "Division negative value");
+
+        expression = new Division("-10.5", -2.5);
+        assertEquals(4.2, expression.calculate(), eps, "Division negative value");
+
     }
 
     @Test
@@ -81,6 +88,9 @@ class IExpressionTest {
 
         expression = new Rest("-20.5", 2.5);
         assertEquals(-0.5, expression.calculate(), eps);
+
+        expression = new Rest("-17.5", -4.5);
+        assertEquals(-4, expression.calculate(), eps);
     }
 
     @Test
