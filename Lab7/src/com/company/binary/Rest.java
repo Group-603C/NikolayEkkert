@@ -17,14 +17,12 @@ public class Rest extends BinaryExpression implements IExpression {
             if (dividend == 0) {
                 return Double.NaN;
             }
-            if (divider < 0 && dividend > 0) {
-                double rounding = Math.floor(divider / dividend);
-                return divider - (rounding * dividend);
-            }
+//            if (divider < 0 && dividend > 0) {
+//                double rounding = Math.floor(divider / dividend);
+//                return divider - (rounding * dividend);
+//            }
 
             return divider % dividend;
-
-
         });
     }
 }

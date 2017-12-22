@@ -78,6 +78,9 @@ class IExpressionTest {
 
         expression = new Rest("43.5", -2);
         assertEquals(1.5, expression.calculate(), eps);
+
+        expression = new Rest("-20.5", 2.5);
+        assertEquals(-0.5, expression.calculate(), eps);
     }
 
     @Test
