@@ -11,198 +11,162 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class IExpressionTest {
+class IExpressionTest {
 
     private final double eps = 0.000000001;
-
     private IExpression expression;
 
 
     @BeforeEach
-    public void beforeEach() {
+    void beforeEach() {
         expression = null;
     }
 
     @Test
-    public void addition() {
+    void addition() {
 
-        //Single
         expression = new Addition("123.123");
         assertEquals(123.123, expression.calculate(), eps);
 
-        //Pair
         expression = new Addition("123.123", 1.4);
         assertEquals(124.523, expression.calculate(), eps);
 
-        //Multi
         expression = new Addition("123.123", 1.2, "1.1", 42, "0");
         assertEquals(167.423, expression.calculate(), eps);
     }
 
     @Test
-    public void multiplication() {
+    void multiplication() {
 
-        //Single
         expression = new Multiplication("1.2");
         assertEquals(1.2, expression.calculate(), eps);
 
-        //Pair
         expression = new Multiplication("1.2", 1.3);
         assertEquals(1.56, expression.calculate(), eps);
 
-        //Multi
         expression = new Multiplication("1.2", 1.2, "1");
         assertEquals(1.44, expression.calculate(), eps);
     }
 
     @Test
-    public void division(){
+    void division() {
 
-        //Single
-        expression = new Division("37.2");
-        assertEquals(37.2, expression.calculate(), eps, "Division single");
-
-        //Pair
         expression = new Division("37.2", 2.5);
         assertEquals(14.88, expression.calculate(), eps, "Division pair");
 
-        //Zero left
         expression = new Division("0", 1);
         assertEquals(0, expression.calculate(), eps, "Division zero left");
 
-        //Zero right
         expression = new Division("1.5", 0);
         assertEquals(Double.NaN, expression.calculate(), eps, "Division zero right");
-
-        //Multi
-        expression = new Division("35.5", 2.5, "3");
-        assertEquals(14.2, expression.calculate(), eps, "Division multi");
     }
 
     @Test
-    public void rest(){
-        //Single
-        expression = new Rest("15.5");
+    void rest() {
+
+        expression = new Rest("15.5", 3);
         assertEquals(0.5, expression.calculate(), eps);
 
-        //Pair
-        expression = new Rest("43.5", 1.2);
-        assertEquals(0.1, expression.calculate(), eps);
+        expression = new Rest("43.5", 1.75);
+        assertEquals(1.5, expression.calculate(), eps);
 
-        //Multi
-        expression = new Rest("43.5", 1.2, "4");
+        expression = new Rest("43.5", 0);
         assertEquals(Double.NaN, expression.calculate(), eps);
     }
 
     @Test
-    public void power() {
+    void power() {
 
-        //Normal
         expression = new Power("4.1", 2);
         assertEquals(16.81, expression.calculate(), eps);
 
-        //Root
         expression = new Power(16.81, 1.0 / 2);
         assertEquals(4.1, expression.calculate(), eps);
 
-        //Root with minus
         expression = new Power(-27, 1.0 / 3);
         assertEquals(-3, expression.calculate(), eps);
 
-
-        //Root with minus
         expression = new Power(-8, 5.0 / 3);
         assertEquals(-32, expression.calculate(), eps);
 
-        //Nan
         expression = new Power(-16.81, 1.0 / 2);
         assertTrue(Double.isNaN(expression.calculate()));
     }
 
     @Test
-    public void subtraction() {
+    void subtraction() {
 
         expression = new Subtraction("1.2", 10.1);
         assertEquals(-8.9, expression.calculate(), eps);
     }
 
     @Test
-    public void negative() {
+    void negative() {
 
-        //Positive
         expression = new Negative("1.2");
         assertEquals(-1.2, expression.calculate(), eps);
 
-        //Negative
         expression = new Negative(-10.1);
         assertEquals(10.1, expression.calculate(), eps);
     }
 
     @Test
-    public void absolute(){
+    void absolute() {
 
-        //Positive
         expression = new Absolute("-10.2");
         assertEquals(10.2, expression.calculate(), eps);
 
-        //Negative
         expression = new Absolute(302.56);
         assertEquals(302.56, expression.calculate(), eps);
     }
 
     @Test
-    public void square(){
+    void square() {
 
-        //Positive
         expression = new Square("2.5");
         assertEquals(6.25, expression.calculate(), eps);
 
-        //Negative
         expression = new Square("-2.5");
         assertEquals(6.25, expression.calculate(), eps);
     }
 
     @Test
-    public void value() {
+    void value() {
 
-        //null
         try {
             expression = new Value(null);
             fail("Process null reference");
         }
-        catch (NullPointerException exception) {
+        catch (NullPointerException ignored) {
         }
 
-        //Custom object
+
         try {
             expression = new Value(new Object());
             fail("Process custom object");
         }
-        catch (NumberFormatException exception) {
+        catch (NumberFormatException ignored) {
         }
 
-        //Bad string
         try {
             expression = new Value(new Object());
             fail("Fall");
         }
-        catch (NumberFormatException exception) {
+        catch (NumberFormatException ignored) {
         }
 
-        //Boolean
         try {
             expression = new Value(false);
             fail("Fall");
         }
-        catch (NumberFormatException exception) {
+        catch (NumberFormatException ignored) {
         }
 
-        //Char
         try {
             expression = new Value('f');
             fail("Fall");
         }
-        catch (NumberFormatException exception) {
+        catch (NumberFormatException ignored) {
         }
 
         check(42, new Value(new TestExpression()));
@@ -221,11 +185,10 @@ public class IExpressionTest {
     }
 
     @Test
-    public void cacheValue() {
+    void cacheValue() {
 
         TestExpression tester = new TestExpression();
 
-        //Single
         expression = new CacheValue(tester);
         assertEquals(0, tester.callCounter);
 
@@ -233,7 +196,6 @@ public class IExpressionTest {
         assertEquals(42, expression.calculate(), eps);
         assertEquals(42, expression.calculate(), eps);
         assertEquals(1, tester.callCounter);
-
 
         expression = new CacheValue(tester);
         assertEquals(1, tester.callCounter);
@@ -246,10 +208,10 @@ public class IExpressionTest {
 
     private class TestExpression implements IExpression {
 
-        public int callCounter;
+        int callCounter;
 
 
-        public TestExpression() {
+        TestExpression() {
             callCounter = 0;
         }
 

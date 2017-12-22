@@ -2,30 +2,29 @@ package com.company.binary;
 
 import com.company.IExpression;
 import com.company.tools.CacheCalculation;
-import com.company.unary.Value;
 
 public class Rest extends BinaryExpression implements IExpression {
 
-    public Rest(Object left, Object... right) {
+    public Rest(Object left, Object right) {
 
-        super(left, new Value(1));
+        super(left, right);
 
-        if (1 == right.length) {
-            this.setRight(new Rest(right[0], new Object[] {}));
-        }
-        else if (1 < right.length) {
+        this.cache = new CacheCalculation(()->{
 
-            Rest root = new Rest(right[0], 1);
-            this.setRight(root);
+            double divider = this.getLeft().calculate();
+            double dividend = this.getRight().calculate();
 
-            for (int i = 1; i < right.length - 1; i++) {
-
-                Rest next = new Rest(right[i], 1);
-                root.setRight(next);
-                root = next;
+            if (dividend == 0) {
+                return Double.NaN;
             }
-        }
+            if (divider < 0 && dividend > 0) {
+                double rounding = Math.floor(divider / dividend);
+                return divider - (rounding * dividend);
+            }
 
-        this.cache = new CacheCalculation(()->this.getLeft().calculate() % this.getRight().calculate());
+            return divider % dividend;
+
+
+        });
     }
 }
