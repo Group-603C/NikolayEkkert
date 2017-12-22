@@ -59,6 +59,9 @@ class IExpressionTest {
 
         expression = new Division("1.5", 0);
         assertEquals(Double.NaN, expression.calculate(), eps, "Division zero right");
+
+        expression = new Division("-1.5", 2);
+        assertEquals(-0.75, expression.calculate(), eps, "Division negative value");
     }
 
     @Test
@@ -72,6 +75,9 @@ class IExpressionTest {
 
         expression = new Rest("43.5", 0);
         assertEquals(Double.NaN, expression.calculate(), eps);
+
+        expression = new Rest("43.5", -2);
+        assertEquals(1.5, expression.calculate(), eps);
     }
 
     @Test
